@@ -1,0 +1,8 @@
+h1 {font-size:100px;color:#444;}
+div{color:#ff0;}
+.민재 {color:#f00;}
+#원빈 {color:#00f;}
+
+figure {background:#ff0;}
+figure img {margin-left:100px;transition:2s;}
+figure.on img {margin-left:1000px;}
