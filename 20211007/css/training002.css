@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+.container {display:flex;width:1200px;margin:0 auto;}
+
+header h1 {padding:0 15px;}
+header nav {margin-left:auto;line-height:100px;}
+header nav ul {display:flex;}
+header nav li a {padding:0 25px;}
+header nav li~li:after {content:"";display:block;width:1px;height:12px;background:#333;position:absolute;top:50%;left:0;transform:translateY(-50%);}
+header nav li {position:relative;}
+
+header .search {font-size:30px;padding:0 15px;line-height:100px;}
+.main_slider img {width:100%;}
+
+#visual {position:relative;}
+#visual .main_slider img {width:100%;}
+#visual .main_slogan {position:absolute;top:200px;left:50%;width:1200px;transform:translateX(-50%);padding:0 15px;color:#fff;}
+#visual .main_slogan h2 {font-size:80px;font-weight:900;margin-bottom: 30px;text-shadow: 2px 2px 2px #000;}
+#visual .main_slogan p {font-size:20px;font-weight:300;}
+
+#content01 {padding:100px 0;text-align:center;}
+#content01 h2 {font-size:30px;font-weight:700;margin-bottom: 10px;}
+#content01 p {font-size:15px;font-weight:300;margin-bottom: 30px;}
+#content01 figure {flex:1;padding:0 15px;}
+#content01 figure img {width:100%;margin-bottom: 10px;}
+#content01 figure a {display:block;width:120px;line-height: 30px;border: 1px solid #333;margin:0 auto;}
+#content01 figure a:hover {color:#fff;background:#533;} 
+
+#content02 {padding:100px 0;text-align:center;background: #f4f4f4;}
+#content02 h2 {font-size:30px;font-weight:700;margin-bottom: 10px;}
+#content02 p {font-size:15px;font-weight:300;margin-bottom: 30px;}
+#content02 figure {flex:1;padding:0 15px;}
+#content02 figure img {width:100%;margin-bottom: 10px;}
+#content02 figure a {display:block;width:120px;line-height: 30px;border: 1px solid #333;margin:0 auto;}
+#content21 figure a:hover {color:#fff;background:#533;} 
+
+footer {padding:60px 0;background:#444;color:#fefefe;text-align:center;line-height:2;}
