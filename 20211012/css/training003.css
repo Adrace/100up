@@ -1,0 +1,6 @@
+ul {width: 1200px;background: #333;color:#fff;margin: 0 auto;}
+ul {display:flex;}
+ul>li {flex:1; line-height: 40px;text-align:center;}
+ul>li~li {border-left: 1px solid #fff;}
+ul>li a {display:block;}
+ul>li a:hover {background: #f00;}
