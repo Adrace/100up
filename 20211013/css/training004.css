@@ -9,7 +9,7 @@ nav>ul {display:flex;}
 nav>ul>li {line-height: 100px;position: relative;} 
 nav>ul>li>a {display:block;padding:0 20px;}
 
-nav .submenu {display:none; position:absolute;top:100px; left:0;background:#ff0;line-height: 20px;width:100px;text-align: center;z-index: 1;}
+nav .submenu {display:none; position:absolute;top:100px; left:0;background:#ff0;line-height: 20px;width:100%;text-align: center;z-index: 1;}
 
 nav>ul>li:hover .submenu {display:block;}
 
@@ -26,7 +26,7 @@ main img {width:100%;}
     nav>ul>li {line-height: 30px;position: relative;border-bottom: 1px solid #ddd;} 
     nav>ul>li>a {display:block;padding:0 20px;}
     nav.on {left:0;}
-    nav .submenu {display:none; position:static;top:100px; left:0;background:#ff0;line-height: 20px;width:100px;text-align: center;z-index: 1;}
+    nav .submenu {display:none; position:static;top:100px; left:0;background:#ff0;line-height: 20px;width:100%;text-align: center;z-index: 1;}
 
     nav>ul>li:hover .submenu {display:none;}
 
