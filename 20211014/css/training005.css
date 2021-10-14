@@ -1,0 +1,45 @@
+#se01 {display: flex;margin-bottom: 100px;}
+#se01 div {background: #ff0;padding: 30px;}
+#se02 {position:relative;padding: 300px 0;} 
+#se02 div {position:absolute;top:0;left:0;padding: 30px;background:rgba(255, 0, 0, 1);}
+
+#se02 div:nth-child(1) {top:20px;left: 20px;z-index: 999;}
+#se02 div:nth-child(2) {top:40px;left: 40px;z-index: 1;}
+#se02 div:nth-child(3) {top:60px;left: 60px;}
+#se02 div:nth-child(4) {top:80px;left: 80px;}
+#se02 div:nth-child(5) {top:100px;left:100px;}
+#se02 div:nth-child(6) {top:120px;left: 120px;}
+#se02 div:nth-child(7) {top:140px;left: 140px;z-index: 1;}
+#se02 div:nth-child(8) {top:160px;left: 160px;}
+#se02 div:nth-child(9) {top:180px;left: 180px;}
+#se02 div:nth-child(10) {position:fixed; top:200px;left: 200px;z-index: -1;}
+
+#se03 {padding: 150px 0; background: #ddd;}
+#se03 .container {display:flex;width: 1200px;margin: 0 auto;}
+#se03 .container figure {position:relative;flex:1;padding: 0 15px;}
+#se03 .container figure img {width:100%;}
+#se03 .case {position:relative;overflow: hidden;}
+#se03 .container .case strong {position:absolute; top:100%;left:0;width:100%;height:100%;
+    background: rgba(0,0,0,0.5);color:#fff;text-align: center;padding-top: 150px;transition: 0.5s;}
+
+#se03 .container .case:hover strong {top:0;}
+
+#se04 {padding: 150px 0; background: #fff;text-align: center;}
+#se04 h2 {font-size: 30px; font-weight: 700;margin-bottom: 10px;}
+#se04 h2:after {content: "";display: block;width:40px;height:1px;background: #369;margin: 10px auto;}
+#se04 p {font-size: 15px; font-weight: 300;margin-bottom: 40px;}
+#se04 .container {display:flex;width: 1200px;margin: 0 auto;}
+#se04 .container figure {position:relative;flex:1;padding: 0 15px;}
+#se04 .container figure img {width:100%;}
+#se04 .case {position:relative;overflow: hidden;}
+#se04 .container .case strong {position:absolute; top:100%;left:0;width:100%;height:100%;
+    background: rgba(0,0,0,0.5);color:#fff;text-align: center;line-height:80px;transition: 0.5s;}
+
+#se04 .container .case:hover strong {top:calc(100% - 80px);}
+#se04 .container .case a {border: 1px solid #fff; padding: 2px 20px 5px 20px;}
+
+#se04 .container .case a:hover {background: #fff; color:#333;}
+
+
+
+
