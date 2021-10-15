@@ -1,0 +1,43 @@
+body {color:#444;}
+.container {width:1200px;margin:0 auto;}
+#header {}
+#header .container{display: flex;padding: 10px 0;}
+#header h1 {padding: 0 15px;}
+#header nav {margin-left: auto; padding: 0 15px;}
+#header nav>ul {display: flex;line-height: 100px;}
+#header nav>ul>li {padding: 0 15px;}
+#header .search {padding: 0 15px;line-height: 100px}
+#header .search i {font-size: 30px;}
+
+#visual {position:relative;height:600px;background: #f00 url(../img/main_visual01.jpg) no-repeat
+     center center/ cover}
+ 
+#visual .container {position:absolute;top:50%; left:50%;transform: translate(-50%,-50%);
+padding: 0 15px;color:#fff;}
+#visual h2 {font-size:80px;font-weight: 700;text-transform:uppercase ;margin-bottom: 20px;
+text-shadow: 0px 0 2px #333;}
+
+#content01 {padding: 150px 0;text-align: center;}
+#content01 .container {display:flex;}
+#content01  figure {flex:1;padding: 0 15px;}
+#content01  figure img {width:100%;}
+#content01 h2 {font-size: 30px; font-weight: 700;margin-bottom:10px;}
+#content01 h2:after {content: "";display:block;width:60px;height:1px;background: #369;margin:10px auto;}
+#content01 p {font-size: 15px; font-weight: 300;margin-bottom:30px;}
+
+#content02 {position:relative;height:300px;background: #f00 url(../img/main_visual01.jpg) no-repeat
+    center center/ cover; background-attachment: fixed;}
+#content02 .container {position:absolute;top:50%; left:50%;transform: translate(-50%,-50%);
+    padding: 0 15px;color:#fff;text-align: center;}
+
+#content02 h2 {font-size: 20px; font-weight:700px;margin-bottom: 20px;letter-spacing: 2em;}    
+
+#content03 {padding: 150px 0;text-align: center;}
+#content03 .container {display:flex;}
+#content03  figure {flex:1;padding: 0 15px;}
+#content03  figure img {width:100%;}
+#content03 h2 {font-size: 30px; font-weight: 700;margin-bottom:10px;}
+#content03 h2:after {content: "";display:block;width:30px;height:2px;background: #369;margin:30px auto;transform: rotate(-45deg)}
+#content03 p {font-size: 15px; font-weight: 300;margin-bottom:30px;}
+
+#footer {padding: 60px 0;background: #444;color:#fff; text-align: center;}
