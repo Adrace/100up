@@ -1,0 +1,31 @@
+#visual {position: relative;}
+#visual .main_slider figure {position:relative;height:600px;}
+#visual .main_slider .item01 {background: url(../img/main_visual01.jpg) no-repeat center center/cover}
+#visual .main_slider .item02 {background: url(../img/main_visual02.jpg) no-repeat center center/cover}
+#visual .main_slider .item03 {background: url(../img/main_visual03.jpg) no-repeat center center/cover}
+
+
+#visual .main_slider .slick-dots {display:flex;position:absolute;
+    bottom:30px; left:50%; transform: translateX(-50%);}
+#visual .main_slider .slick-dots li {background: #fff;height: 4px;
+    width:80px;margin:0 2px;}
+#visual .main_slider .slick-dots li.slick-active {background: #333;}
+#visual .main_slider .slick-dots li button {display:none;}
+
+#visual .main_btn i {position: absolute;top:50%;padding:20px;background:rgba(0,0,0,0.5);
+    color:#fff;font-size:30px;border-radius: 50%;cursor: pointer;}
+#visual .main_btn i.xi-angle-left {left:100px;}
+#visual .main_btn i.xi-angle-right {right:100px;}
+
+#visual .slg {position: absolute;top: 50%;left: 50%;width:1200px;padding:0 15px;
+   transform: translate(-50%,-50%); color:#fff;}
+
+#visual figure .slg h3 {font-size: 80px;font-weight: 900;margin-bottom: 20px;text-shadow: 0 0 2px #333;opacity: 0;transform: translateY(100px);}
+
+#visual figure.on .slg h3 {opacity: 1;transition:1s;transform:translateY(0) ;}
+
+#visual figure .slg p {opacity: 0;transform: translateY(100px);}
+#visual figure.on .slg p {opacity: 1;transition:1s 0.5s;transform:translateY(0);}
+
+
+
