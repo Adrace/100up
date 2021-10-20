@@ -7,7 +7,7 @@ $(function(){
 
     $('.main_slider').slick({
         arrows:false,
-        dots:true,
+        // dots:true,
         autoplay:true,
         pauseOnHover:false,
     });
@@ -16,7 +16,26 @@ $(function(){
         
         $('.main_slider figure').eq(c+1).addClass('on').siblings().removeClass('on');
     });
+
+$('#con04 i.xi-pause').on('click',function(){
+    $('#mv01').trigger('pause');
+
 });
+$('#con04 i.xi-play').on('click',function(){
+    $('#mv01').trigger('play');
+
+});
+
+
+
+
+
+
+
+});
+
+
+
 
 
 
