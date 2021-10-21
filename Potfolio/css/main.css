@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+#header h1 {font-family: 'Nanum Myeongjo', serif;font-weight: 400;position: fixed;top:10px; left: 50px;z-index: 999;}
+
+
+.section {background: #fff url(../img/bg01.png);}
+.section:nth-child(even) {background: #fff url(../img/bg03.png);}
+.container {text-align: center;}
+.sc01 h2 {font-family: 'Nanum Myeongjo', serif;font-size: 100px;font-weight: 700;margin-bottom:50px;transform: translateY(100px);opacity: 0;}
+.sc01.on h2 {transform: translateY(0);opacity: 1;transition: 0.8s;color:#333}
+.sc01 p {font-family: 'Nanum Myeongjo', serif;font-size: 16px;font-weight: 400;margin-bottom:50px;transform: translateY(100px);opacity: 0;}
+.sc01.on p {transform: translateY(0);opacity: 1;transition: 0.8s 1s;}
+.sc01 figure {position:relative;width:250px;margin:0 auto;border-radius:50%;margin-bottom: 30px;
+overflow: hidden;transform:scale(0.3);opacity:0 ;}
+    
+.sc01 figure:before {content: "\e91c";font-family: xeicon!important;display: block;width: 100%;height: 100%;position: absolute;
+top:0; left: 0;background: url(../img/bg02.png);opacity: 1;color:#fff;font-size: 80px;}   
+.sc01.on figure {transform:scale(1); opacity:1 ;transition: 0.8s 0.5s;}
+.sc01 figure img {width:100%;}
+
+
+
+
+
+
