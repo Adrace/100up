@@ -1,0 +1,66 @@
+#wrap {min-width:1200px;}
+
+
+#header {}
+#header h1 {text-align: center;padding:10px 0;font-size: 30px;}
+
+#gnb {border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;} 
+#gnb>ul {display:flex;justify-content: center;line-height: 60px;}
+#gnb>ul>li>a {display: block;padding: 0 25px;}
+
+#main_visual {position: relative;}
+#main_visual figure img {width: 100%;}
+
+#main_visual .slogan {position: absolute;top:50%; left:50%;color:#fff;
+transform: translate(-50%, -50%);text-align: center;width:1200px; padding: 0 15px;}
+#main_visual .slogan h2 {font-size: 30px;font-weight: 100;letter-spacing: 0.5em;
+margin-bottom: 20px;}
+#main_visual .slogan p {font-weight: 100;line-height: 1.6;}
+
+
+#Event {padding: 150px 0;}
+#Event h2 {text-align: center; margin-bottom: 30px;font-size: 30px; font-weight: 300;}
+#Event .container {display:flex;width:1200px; margin: 0 auto;}
+#Event .container figure {flex:1; padding:0 15px;}
+#Event .container figure img {width:100%;}
+
+#tapcontent {padding: 150px 0;background: #f7f7f7;}
+#tapcontent .container {width:1200px;margin:0 auto;}
+#tapcontent ul {display: flex; line-height: 40px;margin-bottom: 20px;}
+#tapcontent .tab>div {display:none;}
+#tapcontent .tab>div.oo {display:block;}
+#tapcontent ul li {flex:1; text-align: center; background: #333; color :#fff;cursor: pointer;}
+#tapcontent ul li.oo {background:#369;}
+#tapcontent ul li~li {border-left: 1px solid #fff;}
+
+#footer {padding: 80px 0 120px 0;background: #333;color:#f2f2f2;text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
