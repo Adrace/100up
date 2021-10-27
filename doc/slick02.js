@@ -9,6 +9,31 @@ $(function(){
 
     });
 
+    $('#main_visual span.left').on('click',function(){
+        $('.main_slider').slick('slickPrev');
+    });
+    $('#main_visual span.right').on('click',function(){
+        $('.main_slider').slick('slickNext');
+    });
+
+
+    $('#main_visual .list li').on('click',function(){
+        var idx=$(this).index();
+        console.log(idx);
+        $('.main_slider').slick('slickGoTo',idx)
+        $(this).addClass('on').siblings().removeClass('on');
+    
+    });
+
+    $('.main_slider').on('afterChange',function(e,s,c){
+        console.log(c);
+        $('#main_visual .list li').eq(c).addClass('on').siblings().removeClass('on');
+        $('#main_visual .poto').css({transform:'rotate('+120*c+'deg)'});
+    });
+
+
+
+
     $('.pr_slider').slick({
         arrows:false,
         autoplay:true,
