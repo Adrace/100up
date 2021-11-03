@@ -60,8 +60,20 @@
         });
 
 
-        $('#content02 .impo i').on('click',function(){
-            $('#content02 .impo').toggleClass('on');
+        $('#content02  .pr_slider01 .impo i').on('click',function(){
+            $('#content02  .pr_slider01 .impo').toggleClass('on');
+            $(this).toggleClass('on');
+
+        });
+       
+        $('#content02  .pr_slider02 .impo i').on('click',function(){
+            $('#content02  .pr_slider02 .impo').toggleClass('on');
+            $(this).toggleClass('on');
+
+        });
+       
+        $('#content02  .pr_slider03 .impo i').on('click',function(){
+            $('#content02  .pr_slider03 .impo').toggleClass('on');
             $(this).toggleClass('on');
 
         });
@@ -117,55 +129,63 @@
         $(window).on('scroll',function(){
             var sct=$(window).scrollTop();
 
-        //     if( sct > 900) {$('#header').css({"opacity":0});
-        // }else{
-        //     $('#header').css({"opacity":1});
-        // }
+            if( sct > 900) {$('#header').css({"opacity":0});
+        }else{
+            $('#header').css({"opacity":1});
+        }
             
             
        
-        //     if( sct < 800 ) {$('#content01 .box01').css({"opacity": 0,});
-		// }else{
-		// 	$('#content01 .box01').css({"opacity": 1});
-		// }
-        //     if( sct < 1000 ) {$('#content01 .box02').css({"opacity": 0,});
-		// }else{
-		// 	$('#content01 .box02').css({"opacity": 1});
-		// }
+            if( sct < 800 ) {$('#content01 .box01').css({"opacity": 0,});
+		}else{
+			$('#content01 .box01').css({"opacity": 1});
+		}
+            if( sct < 1000 ) {$('#content01 .box02').css({"opacity": 0,});
+		}else{
+			$('#content01 .box02').css({"opacity": 1});
+		}
         
-        //     if( sct < 1000 ) {$('#content01 .link').css({"opacity": 0,});
-		// }else{
-		// 	$('#content01 .link').css({"opacity": 1});
-		// }
+            if( sct < 1000 ) {$('#content01 .link').css({"opacity": 0,});
+		}else{
+			$('#content01 .link').css({"opacity": 1});
+		}
        
-        //     if( sct < 2000 ) {$('#content02 .pr_slider').css({"opacity": 0,});
-		// }else{
-		// 	$('#content02 .pr_slider').css({"opacity": 1});
-        // }    
+            if( sct < 2000 ) {$('#content02 .pr_slider01').css({"opacity": 0,});
+		}else{
+			$('#content02 .pr_slider01').css({"opacity": 1});
+        }    
+            if( sct < 3000 ) {$('#content02 .pr_slider02').css({"opacity": 0,});
+		}else{
+			$('#content02 .pr_slider02').css({"opacity": 1});
+        }    
+            if( sct < 3600 ) {$('#content02 .pr_slider03').css({"opacity": 0,});
+		}else{
+			$('#content02 .pr_slider03').css({"opacity": 1});
+        }    
 
-        //     if( sct < 2000 ) {$('#content02 .btn').css({"scale": 0,});
-		// }else{
-		// 	$('#content02 .btn').css({"scale": 1});
-		// }
-        //     if( sct < 2900 ) {$('#content03').css({"opacity": -100,});
-		// }else{
-		// 	$('#content03').css({"opacity": 100});
-		// }
+            if( sct < 2000 ) {$('#content02 .btn').css({"scale": 0,});
+		}else{
+			$('#content02 .btn').css({"scale": 1});
+		}
+            if( sct < 2900 ) {$('#content03').css({"opacity": -100,});
+		}else{
+			$('#content03').css({"opacity": 100});
+		}
         
         
-        //     if( sct < 4000 ) {$('#content04 .section').css({"margin-left": -1500});
-		// }else{
-		// 	$('#content04 .section').css({"margin-left": 350});
-		// }
+            if( sct < 4000 ) {$('#content04 .section').css({"margin-left": -1500});
+		}else{
+			$('#content04 .section').css({"margin-left": 350});
+		}
         
-        //     if( sct < 5000 ) {$('#content05 .container').css({"opacity": 0});
-		// }else{
-		// 	$('#content05 .container').css({"opacity": 1});
-		// }
-        //     if( sct < 900 ) {$('#totop').fadeOut();
-		// }else{
-		// 	$('#totop').fadeIn();
-		// }
+            if( sct < 5000 ) {$('#content05 .container').css({"opacity": 0});
+		}else{
+			$('#content05 .container').css({"opacity": 1});
+		}
+            if( sct < 900 ) {$('#totop').fadeOut();
+		}else{
+			$('#totop').fadeIn();
+		}
         
      
      
