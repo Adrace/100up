@@ -167,18 +167,18 @@
 		}else{
 			$('#content02 .btn').css({"scale": 1});
 		}
-            if( sct < 2900 ) {$('#content03').css({"opacity": -100,});
+            if( sct < 4500 ) {$('#content03').css({"opacity": -100,});
 		}else{
 			$('#content03').css({"opacity": 100});
 		}
         
         
-            if( sct < 4000 ) {$('#content04 .section').css({"margin-left": -1500});
+            if( sct < 5600 ) {$('#content04 .section').css({"margin-left": -1500});
 		}else{
 			$('#content04 .section').css({"margin-left": 350});
 		}
         
-            if( sct < 5000 ) {$('#content05 .container').css({"opacity": 0});
+            if( sct < 6600 ) {$('#content05 .container').css({"opacity": 0});
 		}else{
 			$('#content05 .container').css({"opacity": 1});
 		}
