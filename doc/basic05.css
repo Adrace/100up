@@ -144,7 +144,7 @@ margin-bottom: 20px;}
 #product04 .container .con {flex: 2;overflow: hidden;position: relative;}
 #product04 .container .con figure {padding: 0 15px}
 #product04 .container .con img {max-width: 100%;}
-#product04 .container i {position: absolute;top: 50%;background: #fff;
+#product04 .btn i {position: absolute;top: 50%;background: #fff;
 padding: 10px;border: 1px solid #ddd;}
 #product04 .container i.xi-angle-left {left: 0;}
 #product04 .container i.xi-angle-right {right: 0;}
@@ -155,10 +155,8 @@ margin-bottom: 10px;}
 width:40px; height: 1px;background: #369369;margin:20px 0;}
 #product04 .dis p {font-weight: 300;letter-spacing: -0.025em;
 margin-bottom: 20px;}
-/* 
-#product04 .dis a i {font-size: 20px;padding: 5px;background: #369;
-border-radius: 12px 34px 56px 78px;margin-left: 10px;vertical-align: middle;
-color: #fff;transition: 0.4s;} */
+
+#product04 .dis a i {font-size:20px;padding:5px;background:#369;color:#fff;border-radius:50% 0;vertical-align:middle;margin-left:10px;transition:0.4s;}
     
 #product04 .dis a:hover i {border-radius: 50%;background: #fe5500;}
    
