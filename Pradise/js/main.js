@@ -48,14 +48,17 @@
     
         $('.pr_slider01').slick({
             arrows:false, 
+            dots:true,
 
         });
         $('.pr_slider02').slick({
             arrows:false, 
+            dots:true,
 
         });
         $('.pr_slider03').slick({
             arrows:false, 
+            dots:true,
 
         });
 
