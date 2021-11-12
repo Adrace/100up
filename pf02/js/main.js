@@ -31,6 +31,8 @@ $(function(){
     
     // $('#con01 .slider').slick({
     //     arrows:false,
+
+
     
         
     // });
@@ -59,8 +61,18 @@ $(function(){
         $('#con04 .case').slideToggle(300);
     });
     
+    $('#toTop').on('click',function(){
+        $('html, body').animate({scrollTop:0});
+    });
     
-    
+    $(window).on('scroll',function(){
+        var sct=$(window).scrollTop();
+
+        sct>400 ? $('#toTop').fadeIn() : $('#toTop').fadeOut();
+
+        $('#scroll_banner').css({top:300+sct})
+        
+    });
     
     
     
