@@ -1,0 +1,65 @@
+body {background: #333;color: #fff;font-weight: 300;text-align: center;}
+
+#animate {margin: 200px 0;padding: 100px 0;position: relative;}
+#animate .container {width: 450px;margin: 0 auto;height: 450px;
+overflow: hidden;position: relative;}
+#animate h2 {font-size: 18px;font-weight: 100;letter-spacing: 1em;
+margin-bottom: 20px;} 
+#animate p {font-size: 14px;font-weight: 100;margin-bottom: 20px;
+line-height: 1.6;} 
+
+#animate .case {position: absolute;top: 0;left: 0;}
+
+#animate .btn {display: flex;justify-content: center;}
+#animate .btn li {width: 30px;height: 30px;background: #fff;
+border-radius: 50%;margin:0 5px;cursor: pointer;text-indent: -9999px;}
+
+.sun {position: absolute;top: 150px;left: 150px;animation: sunmove 0.1s infinite
+linear;}
+.sun img {width: 450px;height: 450px;}
+@keyframes sunmove {
+    to {transform: rotate(360deg);}
+}
+
+.wing {position: absolute;bottom: 0;left: 150px;animation: wing 2s both infinite;}
+.wing img {width: 200px;height: 200px;}
+.wing figure {animation: wings 0.7s infinite;}
+/* @keyframes wings {
+    0% {transform: scaleX(0);}
+    50% {transform: scaleX(1);}
+    100% {transform: scaleX(0);}
+} */
+@keyframes wing {
+    0% {transform: translate(0,0) rotate(0deg);}
+    10% {transform: translate(1000px,0) rotate(90deg);}
+    20% {transform: translate(0,0) rotate(180deg);}
+    30% {transform: translate(1000px,0) rotate(270deg);}
+    40% {transform: translate(0,0) rotate(360deg);}
+    50% {transform: translate(1000px,0) rotate(450deg);}
+    60% {transform: translate(0,0) rotate(540deg);}
+    70% {transform: translate(1000px,0) rotate(630deg);}
+    80% {transform: translate(0,0) rotate(720deg);}
+    90% {transform: translate(1000px,0) rotate(810deg);}
+    100% {transform: translate(0,0) rotate(900deg);}
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
