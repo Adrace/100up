@@ -1,0 +1,141 @@
+html {font-size: 20px;}
+body {font-size: 0.8rem;}
+/* * {outline: 1px solid #369;} */
+
+.wrap {min-width: 60rem;}
+
+.header {line-height: 5rem;}
+.header .container {width: 60rem;margin: 0 auto;display: flex;}
+.header .container>* {padding: 0 0.75rem;}
+
+.gnb {margin-left:auto;}
+.gnb>ul {display: flex;}
+.gnb>ul>li {position: relative;}
+.gnb>ul>li>a {display: block;padding: 0 2rem;position: relative;}
+.gnb>ul>li~li>a:after {content: "";display: block;background: #333;
+width: 0.05rem;height: 0.65rem;position: absolute;top: 50%;left:0;
+transform: translateY(-50%);}
+.gnb>ul>li .submenu {line-height: 1.5rem;position: absolute;top: 4.5rem;left: 0;
+z-index: 999;width: 100%;background: #fff;display: none;
+border: 1px solid #ddd;padding: 0.5rem 1.5rem;}
+.gnb>ul>li:hover .submenu {display: block;}
+.gnb>ul .submenu a {display: block;text-align: center;}
+.gnb>ul .submenu li~li a {border-top: 1px solid #ddd;}
+
+
+
+
+.main_visual {position: relative;}
+
+.main_visual .main_slider {}
+.main_visual .main_slider figure {height: calc(100vh - 10rem);}
+.main_visual .main_slider .item01 {background: url(../lib/base/main_visual01.jpg)no-repeat center center/cover;}
+.main_visual .main_slider .item02 {background: url(../lib/base/main_visual02.jpg)no-repeat center center/cover;}
+.main_visual .main_slider .item03 {background: url(../lib/base/main_visual03.jpg)no-repeat center center/cover;}
+
+.main_visual .slogan {position: absolute;top: 50%;left: 50%;
+transform: translate(-50%,-50%);color: #fff;text-align: center;
+width: 60rem;padding: 0 0.75rem;}
+.main_visual h2 {font-size: 2rem;font-weight: 300;letter-spacing: 0.25em;
+margin-bottom: 1.5rem;}
+.main_visual p {font-weight: 400;letter-spacing: 0.25em;}
+
+
+.footer {background: #333;text-align: center;line-height: 5rem;color: #fff;}
+
+.mopen {position: fixed;top: 1rem;right: 1rem;font-size: 1.5rem;
+display: none;}
+.mopen i {padding: 0.25rem;background: #ccc;z-index: 999;}
+
+/* 
+
+
+max-width 768
+
+
+
+
+*/
+
+@media (max-width:768px){
+    html {font-size: 20px;}
+    body {font-size: 0.8rem;}
+    /* * {outline: 1px solid #369;} */
+
+    .wrap {min-width: auto;}
+
+    .header {line-height: 5rem;}
+    .header .container {width: auto;margin: 0 auto;display: flex;}
+    .header .container>* {padding: 0 0.75rem;}
+    .header .sns {position: fixed;top: 1rem;left: 1rem;font-size: 1.5rem;
+    z-index: 999;display: none;} 
+
+    .gnb {margin-left:auto;position: fixed;top: 0;left: -100%;z-index: 999;
+    background: #fff;height: 100vh;width: calc(100% - 4rem);
+    border-right: 1px solid #ddd;transition: 0.5s;}
+    .gnb.on {left: 0;}
+    .gnb>ul {display: flex;flex-direction: column;padding: 5rem 0.5rem 0 0.5rem;}
+    .gnb>ul>li {position: relative;}
+    .gnb>ul>li>a {display: block;padding: 0 3rem;position: relative;
+    line-height: 3rem;border-bottom: 1px solid #ddd;}
+    .gnb>ul>li~li>a:after {content: "";display:none;background: #333;
+    width: 0.05rem;height: 0.65rem;position: absolute;top: 50%;left:0;
+    transform: translateY(-50%);}
+    .gnb>ul>li .submenu {line-height: 1.5rem;position: static;top: 4.5rem;left: 0;
+    z-index: 999;width: 100%;background: #f4f4f4;display: none;
+    border:none;padding: 0.2rem 1.5rem 0.2rem 0.2rem;}
+    .gnb>ul>li:hover .submenu {display: none;}
+    .gnb>ul .submenu a {display: block;text-align: center;padding: 0 3rem;}
+    .gnb>ul .submenu a:before {content: "- ";}
+    .gnb>ul .submenu li~li a {border-top: 1px solid #ddd;}
+
+
+
+
+    .main_visual {position: relative;}
+
+    .main_visual .main_slider {}
+    .main_visual .main_slider figure {height: calc(100vh - 10rem);}
+    .main_visual .main_slider .item01 {background: url(../lib/base/main_visual01.jpg)no-repeat center center/cover;}
+    .main_visual .main_slider .item02 {background: url(../lib/base/main_visual02.jpg)no-repeat center center/cover;}
+    .main_visual .main_slider .item03 {background: url(../lib/base/main_visual03.jpg)no-repeat center center/cover;}
+
+    .main_visual .slogan {position: absolute;top: 50%;left: 50%;
+    transform: translate(-50%,-50%);color: #fff;text-align: center;
+    width: 100%;padding: 0 0.75rem;}
+    .main_visual h2 {font-size: 2rem;font-weight: 300;letter-spacing: 0.25em;
+    margin-bottom: 1.5rem;}
+    .main_visual p {font-weight: 400;letter-spacing: 0.25em;}
+
+
+    .footer {background: #333;text-align: center;line-height: 5rem;color: #fff;}
+
+    .mopen {display: block;cursor: pointer;}
+    
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
