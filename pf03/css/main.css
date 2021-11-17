@@ -1,0 +1,272 @@
+html {font-size: 20px;}
+body {font-size: 0.8rem;}
+
+.wrap {}
+.container {width: 60rem;margin: 0 auto;}
+/* * {outline: 1px solid #369;} */
+h2,h3 {letter-spacing: -0.025em;}
+p {letter-spacing: -0.025em;}
+span {letter-spacing: -0.025em;}
+
+
+
+/* ---------------------- header --------------------------- */
+
+
+
+header {}
+header .container {justify-content: space-between;padding: 0 0.75rem;
+line-height: 2.5rem;}
+
+header .top {display: flex;width: 60rem;margin: 0 auto;
+line-height: 5rem;position: relative;border-bottom: 1px solid #006633;} 
+
+header h1 {margin: 0 auto;}
+header .rightbanner {display: flex;position: absolute;right: 0;padding: 0 0.75rem;} 
+header .subgnb {display: flex;}
+header .subgnb li {padding: 0 0.5rem;font-size: 0.7rem;color: #333;
+position: relative;}
+header .subgnb li~li:after {content: "";display: block;width: 0.05rem;
+height: 0.5rem; background: #333;position: absolute;top: 46%;
+left: 0;}
+
+
+header .submenu {margin-left: 1rem;}
+header .submenu span {background: #006633;padding: 0.5rem;color: #fff;
+font-weight: 700;border-radius: 0.5rem;cursor: pointer;transition: 0.3s;}
+header .submenu span:hover {background: #00cc66;}
+
+
+
+header nav {width: 60rem;margin: 0 auto;}
+header .gnb {display: flex;justify-content: space-between;color: #333;
+position: relative;}
+header .gnb>li {padding: 0 0.75rem;line-height: 2.5rem;font-weight: 500;}
+header .gnb>li>ul {position: absolute;top: 2rem;z-index: 999;
+background: none;padding: 0.25rem 0.5rem;width: 10rem;
+transition: 0.3s;}
+header .gnb>li:hover>ul>li {height: 2.5rem;}
+header .gnb>li:hover>ul {background: #006633;border-top: 10px solid #66cc99;}
+header .gnb>li>ul>li {font-size: 0.7rem;font-weight: 400;color: #fff;
+transition: 0.5s;height: 0;overflow: hidden;}
+header .gnb>li>ul>li:hover {border-bottom: 2px solid #fff;padding: 0 0.5rem;
+color: #ccffcc;font-size: 0.8rem;}
+
+
+
+/* ---------------------- mainVisual --------------------------- */
+
+
+
+.mainVisual {border-top: 1px solid #999;border-bottom: 1px solid #999;}
+.mainVisual .menu {display: flex;}
+.mainVisual .visual {position: relative;}
+.mainVisual figure {height: 30rem;}
+.mainVisual .item {background: url(../imges/main_visual.jpg)no-repeat center center/cover;}
+
+.mainVisual .slogan {position: absolute;top: 50%;left: 50%;
+transform: translate(-50%,-50%);color: #fff;text-align: center;}
+.mainVisual .slogan h2 {font-family: 'Nanum Pen Script', cursive;font-size: 4rem;
+margin-bottom: 0.75rem;text-shadow: 0.05rem 0.05rem 0.05rem #000;}
+.mainVisual .slogan p {font-weight: 300;line-height: 1rem;margin-bottom: 1.5rem;}
+.mainVisual .slogan span {font-weight: 500;line-height: 1rem;font-size: 1.2rem;
+text-shadow:0.05rem 0.05rem 0.05rem #333;}
+.mainVisual .slogan i {font-size: 1.2rem;margin-left: 0.5rem;text-shadow:0.05rem 0.05rem 0.05rem #333;}
+.mainVisual .slogan a {transition: 0.3s;}
+.mainVisual .slogan a:hover {color: #006633;}
+
+
+
+/* ---------------------- con01 --------------------------- */
+
+
+
+.con01 {padding: 7.5rem 0;background: #e5efea;position: relative;}
+.con01 .container {}
+.con01 h2 {font-size: 1.2rem;font-weight: 700;color: #006633;margin-bottom: 1rem;text-align: center;
+position: relative;}
+.con01 p {font-weight: 400;color: #000;margin-bottom: 2.5rem;text-align: center;
+position: relative;}
+.con01 h2:after {content: "";display: block;width: 7rem;height: 3.2rem;
+position: absolute;top: 0;left: 38%;background: rgba(255,255,0,0.2);}
+.con01 p:after {content: "";display: block;width: 9rem;height: 1.5rem;
+position: absolute;top: 0;left: 45%;background: rgba(255,0,0,0.1);}
+
+.con_slider {}
+.con_slider .case {padding: 0 0.75rem;position: relative;}
+.con_slider .case a {display:block;}
+.con_slider .case img {}
+
+.con_slider .case .info {position: absolute;top: 50%;left: 50%;
+transform: translate(-50%,-50%);text-align: center;background: #f7f7f7;
+padding: 0.75rem;border-radius:2.5rem;opacity: 0;transition: 0.3s;}
+.con_slider .case .info01 {font-size: 0.9rem;line-height: 1rem;color: #666;
+font-weight: 700;}
+.con_slider .case .info02 {font-size: 0.7rem;line-height: 3rem;color: #333;
+font-weight: 700;background: #ffff99;padding: 0.25rem 0.75rem;}
+
+.con_slider .case .info03 {font-size: 0.7rem;padding: 0.2rem;background: #006633;
+color: #fff;display: block;margin: 0 2rem;font-weight: 300;}
+
+.con_slider .case:hover .info {opacity: 1;} 
+
+
+
+.con_slider {}
+
+.btn i {position: absolute;top: 57%;left: 50%;transform: translate(-50%,-50%);
+color: #333;font-size: 4rem;;border-radius: 2.5rem;padding: 0.5rem;
+cursor: pointer;}
+    
+.btn .xi-angle-left {margin-left: -35rem;}
+.btn .xi-angle-right {margin-left: 35rem;}
+
+
+/* ---------------------- con02 --------------------------- */
+
+
+
+
+.con02 {position: relative;}
+
+.con02  {}
+.con02 figure {position: relative;}
+
+.con02 .container {text-align: center;position: absolute;
+top: 7.5rem;left: 50%;transform: translateX(-50%);}
+.con02 h2 {font-size: 2rem;font-weight: 700;color: #fff;
+text-align: center;text-shadow: 0.1rem 0.1rem 0.1rem #000;}
+.con02 h2::after {content: "";display: block;width: 18rem;
+height: 0.25rem;position: absolute;top: 3rem;left: 50%;background: #00cc66;
+transform: translateX(-50%);}
+
+.con02 i {cursor: pointer;}
+.con02_slider i {transition: 0.3s;}
+.con02_slider i:hover {color:#006633;}
+
+.btn01 i {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);
+color: #fff;font-size: 4rem;background: rgba(0,0,0,0.5);
+border-radius: 2.5rem;padding: 0.5rem;}
+
+.btn01 .xi-angle-left {margin-left: -40rem;}
+.btn01 .xi-angle-right {margin-left: 40rem;}
+
+.btn02 i {position: absolute;bottom:5rem;left: 50%;transform: translateX(-50%);
+color: #fff;font-size: 4rem;}
+
+.btn02 .xi-play {margin-left: -2rem;}
+.btn02 .xi-pause {margin-left: 2rem;}
+
+
+
+
+
+/* ---------------------- con03 --------------------------- */
+
+
+.con03 {padding: 7.5rem 0;}
+
+.con03 .container {display: flex;}
+
+.con03 .con03_top {width: 60rem;margin: 0 auto;margin-bottom: 2.5rem;
+display: flex;justify-content: space-between;}
+
+.con03 .con03_top>* {padding: 0 0.75rem;}
+.con03_top h2 {font-size: 1.2rem;font-weight: 700;color: #006633;margin-bottom: 1rem;text-align: center;
+position: relative;}
+.con03_top h2:after {content: "";display: block;width: 4rem;height: 2rem;
+position: absolute;top: 0;left: 42%;background: rgba(255,255,0,0.2);}
+.con03_top p {font-weight: 700;color: #333;padding: 0.15rem 0;}
+
+.con03_top p:hover {border-bottom: 1px solid #333;}
+
+.con03 .con03_item {padding: 0 0.75rem;}
+.con03 .con03_slogan {padding: 0 0.75rem;}
+
+.con03 .con03_slogan h3 {font-size: 1.2rem;font-weight: 500;color: #333;
+margin-bottom: 1.5rem;position: relative;}
+.con03 .con03_slogan h3:after {content: "";display: block;width: 15rem;
+height: 0.05rem;position: absolute;top: 150%;left: 0;background: #006633;}
+
+.con03 .con03_slogan p {font-size: 0.65rem;font-weight: 300;color: #666;
+line-height: 1.5rem;}
+
+.con03_visual01 {margin-bottom: 4rem;}
+.con03_visual01 .item01 {position: relative;}
+.con03_visual01 .it02 {position: absolute;top: 0;left: 0;transition: 0.3s;
+opacity: 0;}
+.con03_visual01 .item01:hover .it02 {opacity: 1;}
+
+.con03_visual02 .item02 {position: relative;}
+.con03_visual02 .it02 {position: absolute;top: 0;left: 0;transition: 0.3s;
+opacity: 0;}
+.con03_visual02 .item02:hover .it02 {opacity: 1;}
+
+
+.con03_visual02 {justify-content: space-between;margin-bottom: 4rem;}
+
+
+.con03_visual03 {flex-direction: column;}
+.con03_slider {padding: 0 0.75rem;}
+.con03_slider figure {position: relative;}
+
+.con03_slider .slick-dots {display: flex;justify-content: center;
+position: absolute;bottom: 2.5rem;left: 50%;transform: translateX(-50%);}
+.con03_slider .slick-dots li {background: #fff;width: 2.5rem;height: 0.5rem;
+margin: 0 0.25rem;border-radius: 2.5rem;transition: 0.3s;cursor: pointer;}
+.con03_slider .slick-dots li button {display: none;}
+.con03_slider .slick-dots li.slick-active {background: #003300;}
+
+
+
+.slider_slogan {position: absolute;top: 50%;left:1.5rem;
+transform: translateY(-50%);z-index: 999;}
+
+.slider_slogan h3 {font-size: 1.8rem;font-weight: 300;color: #fff;
+line-height: 1.5rem;margin-bottom: 1.5rem;font-family: 'Nanum Pen Script', cursive;}
+
+.slider_slogan p {font-size: 0.8rem;font-weight: 300;color: #ffcc33;
+line-height: 1.5rem;margin-bottom: 1.5rem;}
+
+.slider_slogan span {font-size: 0.7rem;font-weight: 700;color: #333;
+line-height: 1.5rem;margin-bottom: 1.5rem;background: #fff;
+padding: 0.25rem;border-radius: 2.5rem;}
+
+.slider_slogan i {transform: rotate(90deg);color: #333;}
+
+
+
+/* ---------------------- con04 --------------------------- */
+
+.con04 {padding: 7.5rem 0;background: #e5efea;}
+.con04 .container {display: flex;}
+
+.con04 figure {padding: 0 0.75rem;}
+
+.con04_slider {width: 28.5rem;height: 25rem;}
+.con04_slider figure {position: relative;}
+.con04_slider figure img {height: 25rem;}
+
+.con04_slider .slick-dots {display: flex;justify-content: center;
+position: absolute;bottom: 2.5rem;left: 20%;transform: translateX(-50%);}
+.con04_slider .slick-dots li {background: #00cc66;width: 0.75rem;height: 0.75rem;
+margin: 0 0.25rem;border-radius: 50%;transition: 0.3s;cursor: pointer;}
+.con04_slider .slick-dots li button {display: none;}
+.con04_slider .slick-dots li.slick-active {background: #006633;}
+
+.itemcase {display: flex; padding:1.5rem 0;}
+
+.con04_item02 {position: relative;}
+.subSlogan {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.subSlogan span {}
+
+
+.con04_item03 {background: #cccc99;width: 13.5rem;margin-left: 0.75rem;
+}
+
+
+
+
+
+
+
