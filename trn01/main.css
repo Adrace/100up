@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nanum+Pen+Script&display=swap');
+
+.wrap {min-width: 95rem;}
+
+.header {display: flex;justify-content: space-between;padding: 0 2rem;
+line-height: 7rem;color: #f2f2f2;position: fixed;top: 0;left: 0;
+z-index: 999;width: 100%;transition: 0.5s;
+min-width: 95rem;}
+.header.on {background: rgba(0,0,0,0.6);}
+.header h1 {width: 10.75rem;}
+.header nav ul {display: flex;font-size: 1rem;font-weight: 500;}
+.header nav ul a {display: block;padding: 0 1rem;}
+.header .right a {font-size: 1.5rem;font-weight: 700;}
+.header .right i {padding: 0.5rem;border:  2px solid #fff;border-radius: 50%;
+margin-right: 0.5rem;}
+
+
+.visual {position: relative;}
+.visual::after {content: "";display: block;width: 100%;height: 100vh;
+background: rgba(0,0,0,0.3);position: absolute;top: 0;left: 0;}
+.visual .main_slider {}
+.visual .main_slider figure {height: 100vh;}
+
+.visual .main_slider .item01 {background: url(./img/bg_intro01.jpg)no-repeat center center/cover;}
+.visual .main_slider .item02 {background: url(./img/bg_intro02.jpg)no-repeat center center/cover;}
+.visual .main_slider .item03 {background: url(./img/bg_intro03.jpg)no-repeat center center/cover;}
+
+
+.visual .slogan {position: absolute;top: 50%;left: 50%;
+transform: translate(-50%,-50%);z-index: 999;color: #fff;text-align: center;}
+.visual .slogan strong {font-size: 1.5rem;margin-bottom: 1.3rem;display: block;}
+.visual .slogan h2 {font-size: 3.5rem;margin-bottom: 1.3rem;font-weight: 400;
+font-family: 'Cormorant Garamond', serif;}
+.visual .slogan p {font-weight: 500;line-height: 1.5;}
+
+.visual .slick-dots {position: absolute;bottom: 3rem;left: 0;z-index: 999;
+text-align: center;width: 100%;}
+.visual .slick-dots li {width: 5rem;height: 0.2rem;background: #fff;
+display: inline-block;border-radius: 0.1rem;margin: 0 0.25rem;
+overflow: hidden;}
+.visual .slick-dots li button {display: none;}
+.visual .slick-dots.slick-active {}
+.visual .slick-dots li::after {content: "";display: block;
+width: 0;height: 100%;background: rgb(180, 74, 74);}
+.visual .slick-dots li.slick-active:after {width: 100%;transition: 3s;}
+
+
+
