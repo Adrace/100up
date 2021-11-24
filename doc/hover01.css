@@ -1,0 +1,107 @@
+.hover {width: 400px;height: 400px;background: url(../lib/base/main_item01.jpg);margin: 100px auto;
+padding: 50px;transition: 0.5s;position: relative;}
+.hover h2 {font-size: 25px;font-weight: 500;margin-bottom: 15px;}
+
+
+.hover01:hover {background-position-y:-100px ;}
+.hover02:hover {background-position-x:-100px ;}
+
+
+.hover03 {display: flex;color: #fff;font-size: 13px;text-align: center;
+overflow: hidden;}
+.hover03 p {margin: auto;line-height: 2;opacity: 0;transition: 0.5s;}
+.hover03 p:before {content: "";display: block;width: 150px;height: 1px;
+background: #fff;transform: translateX(500px);transition: 0.5s;}
+.hover03 p:after {content: "";display: block;width: 150px;height: 1px;
+background: #fff;transform: translateX(-500px);transition: 0.5s;}
+.hover03:hover p {opacity: 1;}
+.hover03:hover p:before {transform: translateX(0);}
+.hover03:hover p:after {transform: translateX(0);}
+
+
+.hover04 {display: flex;color: #fff;font-size: 13px;text-align: center;
+overflow: hidden;}
+.hover04 p {margin: auto;line-height: 2;opacity: 0;transition: 0.5s;}
+.hover04 p:before {content: "";display: block;width:1px;height: 40px;
+background: #fff;transform:  translate(40px,-500px);transition: 1.5s cubic-bezier(0.53, 1.32, 0.72, 0.15);}
+.hover04 p:after {content: "";display: block;width: 40px;height: 1px;
+background: #fff;transform: translate(-500px,25px);transition: 1.5s cubic-bezier(0.85, 1.04, 0, 0.01);}
+.hover04:hover p {opacity: 1;}
+.hover04:hover p:before {transform: translate(40px,73px);}
+.hover04:hover p:after {transform: translate(20px,25px);}
+
+.hover05 .case {position: absolute;bottom: 10px;right: 10px;background: #fff;}
+.hover05 i {transition: 0.5s;padding: 10px;font-size: 30px;}
+.hover05:hover i {transform: rotate(180deg);}
+
+.hover06:before {content: "";display: block;width:0;height:0;
+border-top: 1px solid #fff;position: absolute;top: 10px;left:10px;
+border-left: 1px solid #fff;position: absolute;top: 10px;left:10px;
+transition: 0.5s;background: rgba(0,0,0,0.1);}
+.hover06:after {content: "";display: block;width:0;height: 0;
+border-bottom: 1px solid #fff;position: absolute;bottom: 10px;right:10px;
+border-right: 1px solid #fff;position: absolute;bottom: 10px;right:10px;
+transition: 0.5s;background: rgba(0,0,0,0.1);}
+
+.hover06:hover:before {width: 380px;height: 380px;}
+.hover06:hover:after {width: 380px;height: 380px;}
+
+.hover07 {background: #333;}
+.hover07 p {position: absolute;top: 10px;left: 10px;width: 380px;
+height: 380px;background: url(../lib/base/main_item03.jpg);z-index: 999;}
+
+.hover07 span {position: absolute;}
+.hover07 span:nth-of-type(1) {top:0 ;left: 0;width: 0px;height: 10px;
+background: linear-gradient(to left,#f00 , #ff0);transition: 0.5s 1.5s;}
+.hover07 span:nth-of-type(2) {top:0 ;right: 0;width: 10px;height: 0px;
+background: linear-gradient(to bottom,#f00 , #ff0  );transition: 0.5s 1s;}
+.hover07 span:nth-of-type(3) {bottom:0 ;right: 0;width: 0px;height: 10px;
+background: linear-gradient(to right,#f00 , #ff0 );transition: 0.5s 0.5s;}
+.hover07 span:nth-of-type(4) {bottom:0 ;left: 0;width: 10px;height: 0px;
+background: linear-gradient(to top,#f00 , #ff0  );transition: 0.5s;}
+
+.hover07:hover span:nth-of-type(1) {top:0 ;left: 0;width: 400px;height: 10px;transition: 0.5s;}
+.hover07:hover span:nth-of-type(2) {top:0 ;right: 0;width: 10px;height: 400px;transition: 0.5s 0.5s;}
+.hover07:hover span:nth-of-type(3) {bottom:0 ;right: 0;width: 400px;height: 10px;transition: 0.5s 1s;}
+.hover07:hover span:nth-of-type(4) {bottom:0 ;left: 0;width: 10px;height: 400px;transition: 0.5s 1.5s;}
+
+.hover08 h2:after {content: "";display: block;width: 0;height: 5px;
+background: #f00;margin: 10px auto;transition: 0.5s;}
+
+.hover08 h2:hover:after {width: 150px;}
+.hover08 p {position: relative;}
+.hover08 p:after {content: "";display: block;width: 0;height: 5px;
+background: #f00;transition: 0.5s;position: absolute;
+top: 10px;left: 50%;transform: translateX(-50%);}
+.hover08 p:hover:after {width: 150px;}
+
+.hover08 strong {position: relative;display: block;}
+.hover08 strong:after {content: "";display: block;width: 150px;height: 5px;
+background: #f00;transition: 0.5s;position: absolute;
+top: 10px;left: 50%;transform: scaleX(0);}
+
+.hover08 strong:hover:after {transform: scaleX(1);}
+
+
+.hover09 .btn01 {margin: 30px 0;display: block;}
+.hover09 .btn01 span {display: inline-block;width:0;overflow: hidden;
+transition: 0.5s;height: 15px;}
+.hover09 .btn01:hover span {width: 100px;}
+.hover09 .btn02 {display: block;width: 150px;
+border: 3px solid #f00;text-align: center;line-height: 44px;
+border-radius: 10px;transition: 0.5s;}
+.hover09 .btn02:hover {border-radius: 30px;background: #f00;
+color: #fff;line-height: 44px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
