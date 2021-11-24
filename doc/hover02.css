@@ -54,4 +54,40 @@ backface-visibility: hidden;}
 transition: 0.5s;}
 
 
+.h01{
+    width: 400px;
+    height: 400px;
+    margin: 200px auto;
+    position: relative;
+    overflow: hidden;
+}
+.h01 img {
+    width: 100%;
+}
+.h01 span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    text-align:center ;
+    transition: 0.5s;
+    line-height: 100px;
+}
+
+.h01:hover span {
+    top: calc(100% / 2);
+
+}
+
+
+
+
+
+
+
+
 
