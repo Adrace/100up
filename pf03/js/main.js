@@ -14,6 +14,24 @@ $(function(){
         $('.smenu').removeAttr('style')
     });
 
+
+    $('.Slider').slick({
+        arrows:false,
+        fade:true,
+        // autoplay:true,
+        // autoplaySpeed:5000,
+        pauseOnHover:false,
+    });
+
+
+    $('.slbt01').on('click',function(){
+        $('.Slider').slick('slickNext');
+    });
+
+
+       
+
+
     $('.con_slider .case').on('click',function(){
         $('.con_slider .case .info').toggleClass('on');     
     });
@@ -82,6 +100,7 @@ $(function(){
 
     $('.mopenBar').on('click',function(){
         $('header nav').toggleClass('on');
+        $('header .subgnb').toggleClass('on');
     });
 
 
