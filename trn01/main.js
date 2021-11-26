@@ -13,6 +13,14 @@ $(function(){
 
 
 
+    $('.mopen').on('click',function(){
+        $('nav').toggleClass('on');
+        $('.header .right').toggleClass('on');
+
+    });
+
+
+
 
     $('.visual .main_slider').slick({
         arrows:false,
