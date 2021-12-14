@@ -549,7 +549,7 @@ max-width 768px
     .footer .ft_top {border-bottom: 1px solid #ddd;margin-bottom: 2.5rem;}
     .footer .ft_top>ul {display: flex;justify-content: space-between;
     font-size: 0.8rem;font-weight: 500;color: #fff;margin-bottom: 1rem;
-    text-align: start;flex-flow: column wrap;height: 5rem;}
+    text-align: center;flex-flow: column wrap;height: 5rem;}
     .footer .ft_top>ul>li {line-height: 1.5rem;padding: 0 0.5rem;}
 
     .footer .ft_bottom .container {display: flex;justify-content: space-between;line-height: 5rem;margin-bottom: 0;
@@ -736,10 +736,10 @@ max-width 375px
     justify-content: space-between;width: 100%;text-align: center;}
     .visual .ticket_case>div {flex: 1; line-height: 3rem;border: 1px solid #fff;}
 
-    .visual .ticket_case a {display: block;font-size: 0.5rem;color: #fff;transition: 0.3s;background: #006699;width: auto;}
+    .visual .ticket_case a {display: block;font-size: 0.4rem;color: #fff;transition: 0.3s;background: #006699;width: auto;}
     .visual .ticket_case a:hover {background: #006699;}
-    .visual .ticket_case i {margin-right: 1rem;}
-    .visual .ticket_case .xi-angle-right {padding: 0.5rem;background: #fff;border-radius: 50%;
+    .visual .ticket_case i {margin-right: 0.5rem;font-size: 0.5rem}
+    .visual .ticket_case .xi-angle-right {padding: 0.4rem;background: #fff;border-radius: 50%;
     color: #333;margin-left: 1rem;}
 
     .visual .schedule {position: absolute;top: 50%;left:50%;transform: translateX(-50%)
@@ -884,7 +884,7 @@ max-width 375px
     .footer .ft_top {border-bottom: 1px solid #ddd;margin-bottom: 2.5rem;}
     .footer .ft_top>ul {display: flex;justify-content: space-between;
     font-size: 0.6rem;font-weight: 500;color: #fff;margin-bottom: 1rem;
-    text-align: start;flex-flow: column wrap;height: 5rem;}
+    text-align:center;flex-flow: column wrap;height: 5rem;}
     .footer .ft_top>ul>li {line-height: 1.5rem;padding: 0 0.5rem;}
 
     .footer .ft_bottom .container {display: flex;justify-content: space-between;line-height: 5rem;margin-bottom: 0;}
