@@ -14,9 +14,12 @@ $('#ytp').YTPlayer({
 
 $('.ticket02>a').on('click',function(){
     $('.visual .schedule').toggleClass('on');
+
 });
+    
 $('.visual .schedule i').on('click',function(){
     $('.visual .schedule').removeClass('on');
+
 });
 
 
@@ -69,8 +72,11 @@ $('.mopen').on('click',function(){
 
 
 $('.header .gnb>ul>li>a').on('click',function(){
+    if ($('.gnb').hasClass('on')) {
+
     $(this).next().stop().slideToggle(); 
     $(this).parent().siblings().find('.submenu').slideUp();
+}
 }); 
 
 $(window).on('resize',function(){
