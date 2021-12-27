@@ -20,9 +20,6 @@ $('.slide').slick({
     dots:true,
 });
 
-$(window).on('scroll',function(){
-    var sct= $(window).scrollTop();
-});
 
 $(".banner01").on('click',function(){
     $('.banner01_sns').toggleClass('on');
@@ -53,6 +50,9 @@ $('.header .sub_menu>li>a').on('click',function(){
 
 $(window).on('resize',function(){
     $('.header .sub_menu').removeAttr('style')
+    if ($(window).width() < 768) {
+        $('.full_menu').removeClass('on');
+    }
 });
 
 
