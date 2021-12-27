@@ -483,6 +483,7 @@ max-width : 768px
     .header .gnb>ul>li .sub_menu>li {position: relative; font-size: 1.3rem;
     font-weight: 700;}
     .header .gnb>ul>li .sub_menu>li>a {display: block;}
+   
 
     .header .gnb>ul>li:hover:after {visibility: visible;opacity: 1;}
     .header .gnb>ul>li:hover .sub_menu {visibility: visible;opacity: 1;}
@@ -608,10 +609,10 @@ max-width : 768px
 
     .con02 {padding: 15rem 0;background: url(../imges/con02_bg.jpg)no-repeat center center/cover;}
 
-    .con02 .container {display: block;grid-template-columns: 1fr 1fr 1fr 1fr;}
+    .con02 .container {display: grid;grid-template-columns: 1fr 1fr;}
     .con02 .container>div {padding: 1.5rem;position: relative;flex: 1;}
     .con02 .container>div>figure {position: relative;}
-    .con02 .container>div>figure img {width: 100%;box-shadow: 0.5rem 0.5rem 1rem #666;}
+    .con02 .container>div>figure img {width: 100% ;box-shadow: 0.5rem 0.5rem 1rem #666;}
 
     .con02 .it_info {display: block; position: absolute;top: 50%;left: 50%;
     transform: translate(-50%,-50%);z-index: 3;width: 100%;height: 100%;padding: 10rem 5rem;
@@ -783,7 +784,7 @@ max-width : 768px
 
 
 
-    .con03 .notice .notice03 img {width: 70%;display: block;margin: 2rem auto 1rem auto;}
+    .con03 .notice .notice03 img {width: 30%;display: block;margin: 1rem auto 3rem auto;}
     .con03 .notice .notice03 strong {display: block;margin-bottom: 3rem;font-weight: 500;}
     .con03 .notice .notice03 a {border: 1px solid #999;padding: 0.2rem;
     border-radius: 5rem;display: block;width: 10rem;margin: 0 auto;transition: 0.3s;}
@@ -796,14 +797,14 @@ max-width : 768px
 
     .footer ul {display: flex;justify-content: space-between;margin-bottom: 3rem;
     flex-direction: column;}
-    .footer ul>li {font-size: 1.5rem;color: #fff;padding: 0 1.5rem;
+    .footer ul>li {font-size: 1.3rem;color: #fff;padding: 0 1.5rem;
     font-weight: 300;position: relative;line-height: 1.4;}
 
 
     .footer .ft_bottom {display: flex;width: auto;margin: 0 auto;justify-content: space-between;
     border-top: 1px solid #999;padding-top: 3rem;flex-direction: column;}
     .footer .ft_bottom img {width: 10rem;margin: 0 auto;}
-    .footer .ft_bottom .address {font-size: 1.4rem;color: #fff;font-weight: 300;
+    .footer .ft_bottom .address {font-size: 1.3rem;color: #fff;font-weight: 300;
     line-height: 1.4;margin-bottom: 2rem;padding: 0 0.5rem;}
 
     .footer .ft_bottom .logo {width: 15rem;margin-bottom: 2rem;}
