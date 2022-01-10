@@ -126,8 +126,7 @@
     .con02 .container .case02:hover {background: #FF7277;}
  
     .con02 .container>div.on .slogan {opacity: 0;}
-    .con02 .container .case02.on {background: url(../imges/con02_item02.png)
-    no-repeat top center/cover;}
+    .con02 .container .case02.on {background: #FF7277;}
 
     
     .con02 .slogan {text-align: center;color: #fff;position: absolute;
@@ -157,12 +156,12 @@
     transition: 0.3s;}
 
     
-    .con02 .container .case02 .link {padding: 17rem 0;margin: 0 auto;position: relative;
+    .con02 .container .case02 .link {padding: 10rem 0;margin: 0 auto;position: relative;
     z-index: 1;transform: translateY(0);opacity: 0;visibility: hidden;}
     .con02 .container .case02.on .link {visibility: visible;opacity: 1;}
 
     .con02 .container .case02 .link a {display: block;padding: 1rem;background: var(--mc);
-    font-size: 1.5rem;color: #fff;font-weight: 500;}
+    font-size: 2rem;color: #fff;font-weight: 500;}
     .con02 .container .case02:hover .link {transform: translateY(0);opacity: 1;
     transition: none;}
     
@@ -218,12 +217,12 @@
     transform: translateY(100rem);}
     .con03.on .container {opacity: 1;transform: translateY(0);transition: 0.5s;}
     
-    .con03 .itemSlider {width: auto;}
+    .con03 .itemSlider {width: 100%;}
     .con03 .itemSlider figure {display: flex;flex-direction: column;
     padding: 0 1.5rem;}
-    .con03 .itemSlider figure img {width: 100%;}
+    .con03 .itemSlider figure img {width: 50%;margin: 0 auto;}
     
-    .con03 .itemSlider .item_slogan {padding: 3rem;}
+    .con03 .itemSlider .item_slogan {padding: 3rem;text-align: center;}
     .con03 .itemSlider .item_slogan h3 {font-size: 2rem;font-weight: 500;margin-bottom: 1rem;}
     .con03 .itemSlider .item_slogan h3::before {content: "#";color: var(--mc);
     font-size: 2rem;margin-right: 0.5rem;}
@@ -265,9 +264,9 @@
     .con04 .rightBanner figure {margin-right:0;text-align: center;
     padding: 0 1.5rem;}
     .con04 .rightBanner figure img {width: 100%;}
-    .con04 .rightBanner h3 {margin-top: 1.8rem;font-size: 2rem;font-weight: 500;
+    .con04 .rightBanner h3 {margin-top: 1.8rem;font-size: 1.6rem;font-weight: 500;
     margin-bottom: 1rem;white-space:pre-wrap;}
-    .con04 .rightBanner p {font-size: 1.3rem;font-weight: 300;line-height: 1.5;margin-bottom: 2.5rem;}
+    .con04 .rightBanner p {font-size: 1.2rem;font-weight: 300;line-height: 1.5;margin-bottom: 2.5rem;}
     
     .con04 .rightBanner .ck_sns {display: flex;justify-content: center;border-bottom:none;flex-flow: row wrap;}
     .con04 .rightBanner .ck_sns a {display: block;border-right:none;border-top:none;padding: 1rem;}
@@ -357,19 +356,15 @@
     .mgnb>ul>li>a {display: block;font-size: 1.8rem;font-weight: 500;
     }
     
-    
     .mgnb>ul>li:nth-child(2) {color: var(--mc);transition: 0.3s;}
-    
     
     .mgnb>ul>li .subMenu {position:static;top: 8rem;left: 50%;line-height: 1;
     display: none;background: #fff;border-top: none;
     padding-top: 2rem;}
 
-
     .mgnb>ul>li .subMenu>li~li {border-top: 1px solid #999;}
-    .mgnb>ul>li .subMenu>li>a {font-size: 1.7rem;display: block;
-    padding: 1.5rem 0;text-align:left;font-weight: 300;}
-    
+    .mgnb>ul>li .subMenu>li>a {font-size: 1.5rem;display: block;
+    padding: 1rem 0;text-align:left;font-weight: 300;}
     
     .msearch {position: fixed;bottom: 5rem;left: -100%;transition: 0.3s;
     z-index: 9999;}

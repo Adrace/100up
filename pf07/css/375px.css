@@ -56,7 +56,6 @@
     
     
     .con01 {position: relative;overflow: hidden;}
-    .con01 .main_visual {}
     
     .con01 .leftMenu {position: absolute;bottom: 0;left: 50%;transform: translateX(-50%)
     translateY(70%);display: none;}
@@ -358,24 +357,19 @@
     
     .mgnb>ul>li:nth-child(2) {color: var(--mc);transition: 0.3s;}
     
-    
     .mgnb>ul>li .subMenu {position:static;top: 8rem;left: 50%;line-height: 1;
     display: none;background: #fff;border-top: none;
     padding-top: 2rem;}
 
-
     .mgnb>ul>li .subMenu>li~li {border-top: 1px solid #999;}
-    .mgnb>ul>li .subMenu>li>a {font-size: 1.7rem;display: block;
-    padding: 1.5rem 0;text-align:left;font-weight: 300;}
+    .mgnb>ul>li .subMenu>li>a {font-size: 1.5rem;display: block;
+    padding: 1rem 0;text-align:left;font-weight: 300;}
     
-    
-    
-    .msearch {position: fixed;bottom: 5rem;left: -100%;transition: 0.3s;
+    .msearch {position: fixed;bottom: 5rem;left: -100%;transition: 0.3s;width: 100;
     z-index: 9999;}
-    .msearch.on {left: 1rem;}
+    .msearch.on {left: 0.5rem;}
     .msearch input {border: none;outline: none;border-bottom: 1px solid #333;}
     .msearch  i {font-size: 2.4rem;}
-    
     
     
 }
