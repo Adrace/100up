@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+
 :root {
     --mc:#4C96DB;
     --sc:#FFCC6E;
@@ -13,7 +17,7 @@ body {font-size: 0.8rem;color: var(--dc);}
 
 /*------------------- header ------------------------------*/
 
-#header h1 {position: fixed;top: 1rem;left: 1rem;z-index: 999;font-size: 1rem;font-weight: 700;
+#header h1 {position: fixed;top: 1rem;left: 1rem;z-index: 999;font-size: 1rem;font-weight: 700;font-family: 'Luxurious Roman', cursive;
 color: var(--mc);}
 #header nav {position: fixed;top: 50%;right: 3rem;transform: translateY(-50%); z-index: 999;}
 
@@ -64,7 +68,8 @@ transition: 1.5s linear;}
 
 
 .section .desc {margin: 0 auto;}
-.section .desc h2 {font-size: 2rem;font-weight: 500;margin-bottom: 1rem;}
+.section .desc h2 {font-size: 2rem;font-weight: 300;margin-bottom: 1rem;
+font-family: 'Noto Serif KR', serif;}
 .section .desc p {font-size: 0.9rem;font-weight: 300;margin-bottom: 2rem;}
 .section .desc dl {margin-bottom: 1rem;}
 .section .desc dt {font-size: 1.2rem;font-weight: 500;margin-bottom: 1rem;}
