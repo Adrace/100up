@@ -11,6 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
+
 /*
 -------------------------------------
 
@@ -21,7 +22,7 @@ reset
 
 html{font-size:20px;box-sizing:border-box;}
 *,*:before,*:after{box-sizing:inherit;outline:none;}
-body {margin:0; padding:0; font-size:0.8rem; font-family:'Noto Sans KR'; font-weight: inherit; color:#333333;line-height:1;overflow-x:hidden;}
+body {margin:0; padding:0; font-size:0.8rem; font-family:'Noto Sans KR'; font-weight: inherit; color:#333333;line-height:1;}
 ul,ol,li,dl,dt,dd{margin:0; padding:0; list-style: none;}
 p,h1,h2,h3,h4,h5,h6,figure{margin:0; padding:0;font-size: inherit;font-weight: inherit;}
 a {color:inherit; text-decoration:none;}
