@@ -64,7 +64,7 @@ transition: 1.5s linear;}
 
 
 .section .desc {margin: 0 auto;}
-.section .desc h2 {font-size: 2rem;font-weight: 700;margin-bottom: 1rem;}
+.section .desc h2 {font-size: 2rem;font-weight: 500;margin-bottom: 1rem;}
 .section .desc p {font-size: 0.9rem;font-weight: 300;margin-bottom: 2rem;}
 .section .desc dl {margin-bottom: 1rem;}
 .section .desc dt {font-size: 1.2rem;font-weight: 500;margin-bottom: 1rem;}
@@ -90,7 +90,9 @@ position: absolute;top: 28%;left: 50%;transform: translateX(-50%);z-index: -1;}
 
 .intro .container figure img {width: 100%;}
 
-.intro .slogan h2 {position: relative; font-size: 2rem;font-weight: 700;margin-bottom: 1rem;}
+.intro .slogan h2 {position: relative; font-size: 1.5rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: var(--mc);}
+.intro .slogan span {font-size: 4rem;font-weight: 700;color: var(--sc);
+text-shadow: 1px 1px 2.5px #666;}
 .intro .slogan p {font-size: 0.9rem;font-weight: 300;margin-bottom: 1rem;}
 .intro .slogan strong {display: block; font-size: 1rem;font-weight: 500;}
 
