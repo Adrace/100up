@@ -1,0 +1,164 @@
+:root {
+    --mc:#4C96DB;
+    --sc:#FFCC6E;
+    --lc:#f4f4f4;
+    --dc:#333333;
+}
+
+html {font-size: 20px;}
+body {font-size: 0.8rem;color: var(--dc);}
+
+
+#Wrap {min-width: 95rem;}
+
+/*------------------- header ------------------------------*/
+
+#header h1 {position: fixed;top: 1rem;left: 1rem;z-index: 999;font-size: 1rem;font-weight: 700;
+color: var(--mc);}
+#header nav {position: fixed;top: 50%;right: 3rem;transform: translateY(-50%); z-index: 999;}
+
+
+
+#header nav li a {position: relative; display: block;width: 3rem;height: 1rem;text-indent: -99999px;}
+#header nav li a::after {content: "";position: absolute;top: 0.35rem;right: 0; display: block;width: 30%;
+height: 0.1rem;background: var(--mc);border-radius: 0.15rem;transition: 0.3s;}
+#header nav li.on a:after{width: 100%;background: #369;}
+
+#header .infoCase {position: fixed;top: 50%;left: 0;transform: translateY(-50%);z-index: 9999;}
+#header .infoCase>a {border: 1px solid var(--mc);margin: 0.75rem;
+padding: 1rem;transition: 0.3s;display:block;font-weight: 500;
+text-align: center;background: var(--mc);color: var(--lc);}
+
+#header .infoCase>a:hover {background: #fff;color: var(--dc);}
+
+
+/*------------------- section 디자인 ------------------------------*/
+
+
+.section {position: relative;z-index: -2;}
+
+
+.section .container {display: flex;width: 70rem;margin: 0 auto;position: relative;
+align-items: center;}
+.section .mockup {background: url(./pf_img/mockup_mac.png)no-repeat center center/100%;
+padding: 10% 5.7% 11.5%;position: relative;}
+.section .mockup_m {position: absolute;bottom: 0;left: 47.5%;background: url(./pf_img/mockup_phone.png)no-repeat center center/100%;
+padding: 10% 1%;}
+.section:nth-child(3) .mockup_m {position: absolute;bottom: 0;left: 40%;background: url(./pf_img/mockup_phone.png)no-repeat center center/100%;
+padding: 10% 1%;}
+.section:nth-child(5) .mockup_m {position: absolute;bottom: 0;left: 40%;background: url(./pf_img/mockup_phone.png)no-repeat center center/100%;
+padding: 10% 1%;}
+
+.section .mockup .mk_pc {position: relative;padding-bottom: 64%;overflow: hidden;
+width: 25.5rem;}
+.section .mockup .mk_pc img {position: absolute;top: 0;left: 0;width: 100%;}
+.section .mockup .mk_pc:hover img {transform: translateY(-100%);top: 100%;
+transition: 1.5s linear;}
+
+.section .mockup_m .mk_m {position: relative;padding-bottom: 14rem;overflow: hidden;
+width: 7rem;}
+.section .mockup_m .mk_m img {position: absolute;top: 0;left: 0;width: 100%;
+z-index: -1;}
+.section .mockup_m .mk_m:hover img {transform: translateY(-100%);top: 100%;
+transition: 1.5s linear;}
+
+
+.section .desc {margin: 0 auto;}
+.section .desc h2 {font-size: 2rem;font-weight: 700;margin-bottom: 1rem;}
+.section .desc p {font-size: 0.9rem;font-weight: 300;margin-bottom: 2rem;}
+.section .desc dl {margin-bottom: 1rem;}
+.section .desc dt {font-size: 1.2rem;font-weight: 500;margin-bottom: 1rem;}
+.section .desc .desc_c dd {display: inline-block;margin: 0 1rem;border-radius: 50%;
+padding: 0.5rem;}
+.section .desc .desc_t dd {display: inline-block; margin-right: 1rem;
+font-weight: 400;font-size: 0.75rem;}
+.section .container .desc a {display: inline-block;padding: 0.75rem 1rem;
+font-size: 0.7rem;color: #fff;margin-right: 1rem;}
+
+/*------------------- intro 디자인 ------------------------------*/
+
+.intro .container {width: 70rem;margin: 0 auto;display: flex;align-items: center;justify-content: center;}
+.intro .container>* {padding: 0 5rem;}
+
+.intro .container figure {position: relative;}
+.clock01 {width: 0.1rem;height: 5rem;background: #000;transform-origin: bottom center;
+position: absolute;top: 28%;left: 50%;transform: translateX(-50%);z-index: -1;}
+.clock02 {width: 0.1rem;height: 5rem;background: #000;transform-origin: bottom center;
+position: absolute;top: 28%;left: 50%;transform: translateX(-50%);z-index: -1;}
+.clock03 {width: 0.1rem;height: 5rem;background: #f00;transform-origin: bottom center;
+position: absolute;top: 28%;left: 50%;transform: translateX(-50%);z-index: -1;}
+
+.intro .container figure img {width: 100%;}
+
+.intro .slogan h2 {position: relative; font-size: 2rem;font-weight: 700;margin-bottom: 1rem;}
+.intro .slogan p {font-size: 0.9rem;font-weight: 300;margin-bottom: 1rem;}
+.intro .slogan strong {display: block; font-size: 1rem;font-weight: 500;}
+
+.intro .gear {background: url(./pf_img/gear.png)no-repeat center center;position: absolute;
+top: 0;left: -50%;display: block;width: 100%;height: 100%;} 
+
+@keyframes bou {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
+/*------------------- 청강산업대학 ------------------------------*/
+
+.portfolio_01:before {content: "";display: block;position: absolute;
+top: 10%;right: 20%;width: 40rem;height: 40rem;border-radius: 50%;
+border: 2.5px outset #ffb07c;animation: bou 6s infinite linear; z-index: -1;}
+
+.portfolio_01 .desc .desc_c dd:nth-child(2) {background: #F47520;}
+.portfolio_01 .desc .desc_c dd:nth-child(3) {background: #FF858A;}
+.portfolio_01 .desc .desc_c dd:nth-child(4) {background: #ffffff;border: 1px solid #999;}
+
+.portfolio_01 .desc a {background: #F47520;}
+
+/*------------------- BMW ------------------------------*/
+
+.portfolio_02:before {content: "";display: block;position: absolute;
+top: 10%;left: 17%;width: 40rem;height: 40rem;border-radius: 50%;
+border: 2.5px outset #2776af;animation: bou 6s infinite linear; z-index: -1;}
+
+.portfolio_02 .desc .desc_c dd:nth-child(2) {background: #0166B0;}
+.portfolio_02 .desc .desc_c dd:nth-child(3) {background: #333333;}
+.portfolio_02 .desc .desc_c dd:nth-child(4) {background: #ffffff;border: 1px solid #999;}
+
+.portfolio_02 .desc a {background: #0166B0;}
+
+/*------------------- 봉생병원 ------------------------------*/
+
+.portfolio_03:before {content: "";display: block;position: absolute;
+top: 10%;right: 20%;width: 40rem;height: 40rem;border-radius: 50%;
+border: 2.5px outset #ffa7a7;animation: bou 6s infinite linear; z-index: -1;}
+
+.portfolio_03 .desc .desc_c dd:nth-child(2) {background: #FF7978;}
+.portfolio_03 .desc .desc_c dd:nth-child(3) {background: #121A62;}
+.portfolio_03 .desc .desc_c dd:nth-child(4) {background: #ffffff;
+border: 1px solid #999;}
+
+.portfolio_03 .desc a {background: #FF7978;}
+
+/*------------------- Logitech ------------------------------*/
+
+.portfolio_04:before {content: "";display: block;position: absolute;
+top: 10%;left: 17%;width: 40rem;height: 40rem;border-radius: 50%;
+border: 2.5px outset #99CCFF;animation: bou 6s infinite linear; z-index: -1;}
+
+.portfolio_04 .desc .desc_c dd:nth-child(2) {background: #99CCFF;}
+.portfolio_04 .desc .desc_c dd:nth-child(3) {background: #EEEEEE;
+border: 1px solid #999;}
+.portfolio_04 .desc .desc_c dd:nth-child(4) {background: #0099FF;border: 1px solid #999;}
+
+.portfolio_04 .desc a {background: #99CCFF;}
+
+
+
+#footer .toTop {position: fixed;bottom: 3rem;right: 3rem;z-index: 999;}
+#footer .toTop i {font-size: 1.5rem;padding: .5rem;background: var(--mc);
+color: var(--lc);}
+#footer  address {position: fixed;bottom: 1rem;left: 1rem;z-index: 999;}
+
+
+
+
