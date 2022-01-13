@@ -14,9 +14,39 @@ $('#main').fullpage({
         }else{
             $('.toTop').fadeIn();
         }
+        if (idx==0) {
+            $('nav').css({
+                transform:"rotate(0)"
+            })
+        }
+        if (idx==1) {
+            $('nav').css({
+                transform:"rotate(60deg)"
+            })
+        }
+        if (idx==2) {
+            $('nav').css({
+                transform:"rotate(120deg)"
+            })
+        }
+        if (idx==3) {
+            $('nav').css({
+                transform:"rotate(180deg)"
+            })
+        }
+        if (idx==4) {
+            $('nav').css({
+                transform:"rotate(240deg)"
+            })
+        }
+        if (idx==5) {
+            $('nav').css({
+                transform:"rotate(300deg)"
+            })
+        }
     },
-
 });
+
 
 function watch(){
     let today = new Date();   
