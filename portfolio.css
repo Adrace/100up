@@ -83,7 +83,11 @@ animation: cir 4s infinite linear;z-index: -1;}
 }
 
 .section .container {display: flex;width: 70rem;margin: 0 auto;position: relative;
-align-items: center;}
+align-items: center;} 
+
+.section .effect {opacity: 0;transform: translateY(10rem);}
+.section.on .effect {opacity: 1;transition: 0.3s;transform: translateY(0);} 
+
 .section .mockup {background: url(./pf_img/mockup_mac.png)no-repeat center center/100%;
 padding: 10% 5.7% 11.5%;position: relative;}
 .section .mockup_m {position: absolute;bottom: 0;left: 47.5%;background: url(./pf_img/mockup_phone.png)no-repeat center center/100%;
@@ -93,23 +97,20 @@ padding: 10% 1%;}
 .section:nth-child(5) .mockup_m {position: absolute;bottom: 0;left: 40%;background: url(./pf_img/mockup_phone.png)no-repeat center center/100%;
 padding: 10% 1%;}
 
-.section .mockup {opacity: 0;transform: translateY(10rem);}
+
 .section .mockup .mk_pc {position: relative;padding-bottom: 64%;overflow: hidden;
 width: 25.5rem;}
 .section .mockup .mk_pc img {position: absolute;top: 0;left: 0;width: 100%;}
 .section .mockup .mk_pc:hover img {transform: translateY(-100%);top: 100%;
 transition: 1.5s linear;}
 
-.section .mockup_m {opacity: 0;transform: translateY(10rem);}
+
 .section .mockup_m .mk_m {position: relative;padding-bottom: 14rem;overflow: hidden;
 width: 7rem;}
 .section .mockup_m .mk_m img {position: absolute;top: 0;left: 0;width: 100%;
 z-index: -1;}
 .section .mockup_m .mk_m:hover img {transform: translateY(-100%);top: 100%;
 transition: 1.5s linear;}
-
-.section.on .mockup {opacity: 1;transform: translateY(0);transition: 0.3s;}
-.section.on .mockup_m {opacity: 1;transform: translateY(0);transition: 0.3s;}
 
 
 .section .desc {margin: 0 auto;}
