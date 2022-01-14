@@ -15,8 +15,7 @@
     <script src="./lib/js/jquery-1.12.4.min.js"></script>
     <script src="./lib/js/slick.min.js"></script>
     <script src="./lib/js/fullpage.min.js"></script>
-    <script src="./lib/js/typed_cdn.js"></script>
-    <script src="./lib/js/circle-progress.min.js"></script>
+    <script src="./lib/js/jquery-ui.min.js"></script>
     <script src="./portfolio.js"></script>
 </head>
 <body>
@@ -36,9 +35,15 @@
             </ul>
         </nav>
         <div class="infoCase">
-            <a href="#portfolio_01" class="info01">
+            <div class="pf">
                 포트폴리오
-            </a>
+                <ul class="pf_list">
+                    <li><a href="#portfolio_01">포트폴리오 01</a></li>
+                    <li><a href="#portfolio_02">포트폴리오 02</a></li>
+                    <li><a href="#portfolio_03">포트폴리오 03</a></li>
+                    <li><a href="#portfolio_04">포트폴리오 04</a></li>
+                </ul>
+            </div>
             <a href="#profile" class="info02">
                 프로필
             </a>
@@ -203,18 +208,50 @@
             </div>
         </section>
         <section class="section profile">
-            <h2>ABOUT</h2>
-            <figure class="profile_box">
-                a
-            </figure>
-            <div class="skill">
-                b
-            </div>
-            <div class="career">
-                c
+            <h2>Introduce To Me</h2>
+            <div class="container">
+                <div class="profile_box">
+                    <figure>
+                        <img src="./pf_img/gear.png" alt="">
+                    </figure>
+                </div>
+                <div class="skill">
+                    <dl>
+                        <dt>"항상 움직이는 모습을 보여주겠습니다."</dt>
+                        <dd>신입 웹퍼블리셔 강민재</dd>
+                        <dd>1997년 9월 4일</dd>
+                        <dd>2016.03 부산고등학교 졸업</dd>
+                    </dl>
+                    <div class="skill_list">
+                        <strong>Skill</strong>
+                        <div class="icon">
+                            <i class="xi-html5"></i>
+                            <i class="xi-css3"></i>
+                            <i class="xi-javascript"></i>
+                            <i class="xi-photoshop"></i>
+                            <i class="xi-illustrator"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="career">
+                    <strong>Career</strong>
+                    <div class="career_list">
+                        <p>그린컴퓨터 아카데미 웹퍼블리셔 UI/UX과정 수료
+                           <br> (2021.08~2022.02)</p>
+                           <p>홈플러스 주차,카트 아르바이트 
+                            <br> (2016~2017 , 2019~2020)</p>
+                           <p>육군 만기 전역
+                               <br> (2017~2019)
+                           </p>
+                           <p>같이 일한 동료 오피셜
+                            "일 좀 그만해라" 업적 달성
+                            <br> (1997~2020)
+                           </p>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
+    </main> 
     <footer id="footer">
         <div class="toTop">
             <a href="#intro"><i class="xi-angle-up"></i></a>

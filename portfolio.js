@@ -48,6 +48,8 @@ $('#main').fullpage({
 });
 
 
+
+
 function watch(){
     let today = new Date();   
     let hours = today.getHours(); 

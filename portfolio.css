@@ -4,7 +4,6 @@
 
 :root {
     --mc:#4C96DB;
-    --sc:#FFCC6E;
     --lc:#f4f4f4;
     --dc:#333333;
 }
@@ -19,9 +18,12 @@ h1,h2,h3,p,span.strong {letter-spacing: -0.025em;}
 
 /*------------------- header ------------------------------*/
 
-#header h1 {position: fixed;top: 2rem;left: 2rem;z-index: 999;font-size: 1rem;font-weight: 700;font-family: 'Luxurious Roman', cursive;}
+#header h1 {position: fixed;top: 2rem;left: 2rem;z-index: 999;font-size: 1rem;
+font-weight: 700;font-family: 'Luxurious Roman', cursive;}
 
-#header nav {position: fixed;top: 50%;right: -0.5rem;transform: translateY(-50%); z-index: 999;transition: 0.3s;transform-origin: right;}
+#header nav {position: fixed;top: 50%;right: -0.5rem;transform: translateY(-50%); z-index: 999;
+transition: 0.3s;transform-origin: right;}
+
 #header nav li {display: block;width: 5rem;height: 0;background: #ccc;transform-origin:right;}
 #header nav li:nth-child(1) {transform: rotate(0);}
 #header nav li:nth-child(2) {transform: rotate(300deg);}
@@ -41,11 +43,28 @@ opacity: 0;transition: 0.3s;}
 #header nav li.on a:after {opacity: 1;transform: scale(1.4);}
 #header nav li.on a:before {font-size: 0.8rem;text-indent: -145px;
 color: var(--dc);font-weight: 500;}
+#header nav li:nth-child(1).on a:before {text-indent: -160px;}
 
 
-#header .infoCase {position: fixed;top: 2rem;right: 2rem;transform: translateY(-50%);display: flex; z-index: 9999;}
-#header .infoCase>a {display: block; border: 1px solid var(--mc);margin: 0 0.25rem;transition: 0.3s;font-weight: 500;line-height: 2;
-text-align: center;background: var(--mc);color: var(--lc);width: 5rem}
+#header .infoCase {position: fixed;top: 2rem;right: 2rem;display: flex;
+z-index: 9999;}
+
+#header .pf {font-weight: 500;line-height: 2;position: relative;
+text-align: center;background: var(--mc);color: var(--lc);width: 5rem;}
+
+#header .pf_list {display: none; position: absolute;top: 1.6rem;left: 0;
+background: #fff;border: 1px solid var(--mc);color: var(--dc);
+width: 100%;}
+#header .pf_list li>a {display: block; font-size: 0.7rem;font-weight: 400;
+line-height: 3;transition: 0.2s;}
+#header .pf_list li>a:hover {background: var(--mc);color: var(--lc);}
+#header .pf_list li~li {border-top: 1px solid var(--mc);}
+
+#header .pf:hover .pf_list {display: block;}
+
+#header .infoCase>a {display: block; border: 1px solid var(--mc);margin-left: 0.25rem;
+transition: 0.3s;font-weight: 500;line-height: 2;
+text-align: center;background: var(--mc);color: var(--lc);width: 5rem;}
 
 #header .infoCase>a:hover {background: #fff;color: var(--dc);}
 
@@ -123,7 +142,7 @@ position: absolute;top: 28%;left: 50%;transform: translateX(-50%);z-index: -1;}
 animation: type 2s forwards;}
 
 @keyframes type {
-    to {text-shadow: 3px 3px 1px #000;}
+    to {text-shadow: 3px 3px 1px #000;} 
 }
 
 .intro .slogan p {font-size: 0.9rem;font-weight: 300;margin-bottom: 1rem;}
@@ -178,12 +197,56 @@ border: 1px solid #999;}
 
 /*------------------- profile ------------------------------*/
 
-.profile {}
+.profile {background: #EAE2D7;}
+.profile h2 {text-align: center;margin-bottom: 5rem;font-size: 2.4rem;
+font-weight: 700;}
+
+.profile .container {margin-bottom: 5rem;}
+.profile .container>div {flex: 1;text-align: center;
+margin: 0 0.5rem;}
+
+.profile .profile_box {opacity: 0;transform: translateY(10rem);}
+.profile.on .profile_box {opacity: 1;transform: translateY(0);transition: 0.5s;}
+.profile .profile_box img {width: 50%;animation: circle 5s infinite linear;}
 
 
+@keyframes circle {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
 
+.profile .skill {opacity: 0;transform: translateY(10rem);}
+.profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
+.profile .skill dl {margin-bottom: 2rem;border-bottom: 1px solid #666;
+padding-bottom: 2rem;}
+.profile .skill dt {line-height: 1.8;font-size: 1.2rem;margin-bottom: 2rem;}
+.profile .skill dd:nth-child(2) {font-size: 1.1rem;font-weight: 700;}
+.profile .skill dd {line-height: 1.6;font-size: 0.9rem;}
+.profile .skill_list strong {display: block;font-size: 1.2rem;font-weight: 700;
+margin-bottom: 1rem;}
 
+.profile .skill_list .icon {display: flex;}
+.profile .skill_list i {display: block; padding: 1rem;font-size: 2rem;
+background: #555;border-radius: 50%;margin: 0 auto;}
 
+.profile .skill_list .xi-html5 {color: #F16529;}
+.profile .skill_list .xi-css3 {color: #6CB7D0;}
+.profile .skill_list .xi-javascript {color: #FFDE25;}
+.profile .skill_list .xi-photoshop {color: #01C3F8;}
+.profile .skill_list .xi-illustrator {color: #FF821D;}
+
+.profile .career {opacity: 0;transform: translateY(10rem);}
+.profile.on .career {opacity: 1;transform: translateY(0);transition: 0.5s;}
+.profile .career strong {display: block;font-size: 1.7rem;font-weight: 700;
+margin-bottom: 1rem;}
+
+.profile .career_list p {font-weight: 400;
+margin-bottom: 1.5rem;line-height: 1.5;}
+.profile .career_list p:before {content: "";display: block;
+width: 0.5rem;height: 0.5rem;background: var(--mc);margin: 0 auto;
+border-radius: 50%;}
+
+/*------------------- footer ------------------------------*/
 
 #footer .toTop {position: fixed;bottom: 3rem;right: 3rem;z-index: 999;}
 #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: var(--mc);
