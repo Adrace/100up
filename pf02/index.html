@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMW 코리아</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/fullpage.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/fullpage.min.js"></script>
     <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
@@ -22,77 +25,85 @@
     <header id="header">
         <div class="container">
             <h1>
-                <a href="#!"><img src="./img/logo.png" alt="BMW 코리아"></a>
+                <a href="index.html"><img class="logo" src="./img/logo.png" alt="BMW 코리아"></a>
             </h1>
-            <nav>
+            <nav class="gnb">
                 <ul class="bars">
-                    <li class="br">MODELS</li>
-                    <li class="br">FIND & BUY</li>
-                    <li class="br">COMPANY</li>
-                    <li class="br">SERVICES</li>
-                    <li class="br">DISCOVER</li>
+                    <li class="br">
+                        <a href="#!">MODELS</a>
+                            <ul class="subMenu">
+                                <li><a href="#!">All</a></li>
+                                <li><a href="#!">CLASSIC</a></li>
+                                <li><a href="#!">I</a></li>
+                                <li><a href="#!">M</a></li>
+                                <li><a href="#!">X</a></li>
+                                <li><a href="#!">Z</a></li>
+                                <li><a href="#!">eDRIVE</a></li>
+                            </ul>
+                    </li>
+                    <li class="br">
+                        <a href="#!">FIND & BUY</a>
+                            <ul class="subMenu">
+                                <li><a href="#!">BMW 공식 인증 중고차</a></li>
+                                <li><a href="#!">BMW 샵 온라인</a></li>
+                                <li><a href="#!">BMW 디지털 서비스</a></li>
+                                <li><a href="#!">트레이드인 / 로열티 프로그램</a></li>
+                                <li><a href="#!">법인판매 / 스페셜 세일즈</a></li>
+                            </ul>
+                    </li>
+                              
+                    <li class="br">
+                        <a href="#!">COMPANY</a>
+                            <ul class="subMenu">
+                                <li><a href="#!">기업 소개</a></li>
+                                <li><a href="#!">홍보관</a></li>
+                                <li><a href="#!">보고서</a></li>
+                                <li><a href="#!">찾아오시는 길</a></li>
+                            </ul>
+                    </li>
+                    <li class="br">
+                        <a href="#!">SERVICES</a>
+                            <ul class="subMenu">
+                                <li><a href="#!">BMW 라이프스타일</a></li>
+                                <li><a href="#!">BMW 카 액세서리</a></li>
+                                <li><a href="#!">BMW 커넥티드 드라이브</a></li>
+                                <li><a href="#!">BMW 프리미엄 서비스</a></li>
+                                <li><a href="#!">MY BMW APPS</a></li>
+                                <li><a href="#!">서비스 / 부품 정보</a></li>
+                            </ul>
+                    </li>
+                    <li class="br">
+                        <a href="#!">DISCOVER</a>
+                            <ul class="subMenu">
+                                <li><a href="#!">BMW M</a></li>
+                                <li><a href="#!">BMW xDRIVE</a></li>
+                                <li><a href="#!">BMW X RANGE</a></li>
+                                <li><a href="#!">BMW 럭셔리 클래스</a></li>
+                                <li><a href="#!">Concept Car</a></li>
+                                <li><a href="#!">뉴스</a></li>
+                            </ul>
+                    </li>
                 </ul>
-             
-            <div class="tab">
-                <div class="tab_menu">
-                <ul>
-                    <li><a href="#!">All</a></li>
-                    <li><a href="#!">CLASSIC</a></li>
-                    <li><a href="#!">I</a></li>
-                    <li><a href="#!">M</a></li>
-                    <li><a href="#!">X</a></li>
-                    <li><a href="#!">Z</a></li>
-                    <li><a href="#!">eDRIVE</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#!">BMW 공식 인증 중고차</a></li>
-                    <li><a href="#!">BMW 샵 온라인</a></li>
-                    <li><a href="#!">BMW 디지털 서비스</a></li>
-                    <li><a href="#!">트레이드인 / 로열티 프로그램</a></li>
-                    <li><a href="#!">법인판매 / 스페셜 세일즈</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#!">기업 소개</a></li>
-                    <li><a href="#!">홍보관</a></li>
-                    <li><a href="#!">보고서</a></li>
-                    <li><a href="#!">찾아오시는 길</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#!">BMW 라이프스타일</a></li>
-                    <li><a href="#!">BMW 카 액세서리</a></li>
-                    <li><a href="#!">BMW 커넥티드 드라이브</a></li>
-                    <li><a href="#!">BMW 프리미엄 서비스</a></li>
-                    <li><a href="#!">MY BMW APPS</a></li>
-                    <li><a href="#!">서비스 / 부품 정보</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#!">BMW M</a></li>
-                    <li><a href="#!">BMW xDRIVE</a></li>
-                    <li><a href="#!">BMW X RANGE</a></li>
-                    <li><a href="#!">BMW 럭셔리 클래스</a></li>
-                    <li><a href="#!">Concept Car</a></li>
-                    <li><a href="#!">뉴스</a></li>
-                </ul>
-                </div>
-            </div>
 
-            <ul class="bars">
+            <ul class="right_bars">
                 <li><a href="#!">로그인</a></li>
                 <li><a href="#!">회원가입</a></li>
+            </ul>
+        </nav>
+            <div class="butt">
                 <i class="xi-search"></i>
                 <i class="xi-bars"></i>
-            </ul>
-
-
+            </div>
         </div>
     </header>
 
         <!-------------- main ------------------>
-    <main>
+    
+    <main class="main">
         
         <!-------------- main_visual ------------------>
         
-        <section id="main_visual">
+        <section class="section main_visual">
             <div class="main_slider">
                 <figure class="item01">
                     <div class="slogan">
@@ -118,7 +129,7 @@
                 <figure class="item04">
                     <div class="slogan">
                         <h2>THE i4</h2>
-                        <p>   THE BMW i4: 최초의 순수 전기 그란 쿠페</p>
+                        <p>	THE BMW i4: 최초의 순수 전기 그란 쿠페</p>
                         <span><a href="#!">더보기</a></span>
                     </div>
                 </figure>
@@ -127,196 +138,235 @@
                 <i class="xi-angle-left"></i>
                 <i class="xi-angle-right"></i>
             </div>
+            <div class="drag">
+                <i class="xi-mouse"></i>
+                <br>
+                <i class="xi-long-arrow-down"></i>
+            </div>
         </section>
         
         <!-------------- con01 ------------------>
         
-        <section id="con01">
+        <section class="section con01">
             <div class="container">
-
-
                 <h2>BMW 시리즈</h2>
                 <p>다양한 BMW 차량을 만나세요</p>
-
-
-
-                <ul class="tab">
-                    <li>Classic</li>
-                    <li>i</li>
-                    <li>M</li>
-                    <li>X</li>
-                </ul>
-
-                
-                <div class="item01 slider on">
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item01.jpg" alt=""></a>
-                        <h3>BMW 1 시리즈</h3>
-                        <p>DISEL</p>
-                        <span>&#8361; 39.400.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item02.jpg" alt=""></a>
-                        <h3>BMW 2 시리즈</h3>
-                        <p>GASOLINE DISEL</p>
-                        <span>&#8361; 40.900.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item03.jpg" alt=""></a>
-                        <h3>BMW 4 시리즈 쿠페</h3>
-                        <p>GASOLINE</p>
-                        <span>&#8361; 59.400.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item04.jpg" alt=""></a>
-                        <h3>BMW 7 시리즈</h3>
-                        <p>GASOLINE DISEL</p>
-                        <span>&#8361; 138.700.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item05.jpg" alt=""></a>
-                        <h3>BMW 8 시리즈 쿠페</h3>
-                        <p>GASOLINE</p>
-                        <span>&#8361; 139.300.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item06.jpg" alt=""></a>
-                        <h3>BMW 8 시리즈 그란 쿠페</h3>
-                        <p>GASOLINE DISEL</p>
-                        <span>&#8361; 135.500.000~</span>
-                    </figure>
+                <div class="tab_menu">
+                    <div class="tab01">
+                        <strong>Classic</strong>
+                    </div>
+                    <div class="tab02">
+                        <strong>I</strong>
+                    </div>
+                    <div class="tab03">
+                        <strong>M</strong>
+                    </div>
+                    <div class="tab04">
+                        <strong>X</strong>
+                    </div>
+                    <div class="tab05">
+                        <strong>eDRIVE</strong>
+                    </div>
                 </div>
-
-
-                <div class="item02 slider">
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item07.jpg" alt=""></a>
-                        <h3>BMW iX</h3>
-                        <p>FULL-ELECTRIC</p>
-                        <span>출시예정</span>
-                    </figure>
-                    <figure>    
-                        <a href="#!"><img src="./img/con01_item08.jpg" alt=""></a>
-                        <h3>BMW i3</h3>
-                        <p>FULL-ELECTRIC</p>
-                        <span>&#8361; 54.300.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item09.jpg" alt=""></a>
-                        <h3>BMW i4</h3>
-                        <p>FULL-ELECTRIC</p>
-                        <span>출시예정</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item10.jpg" alt=""></a>
-                        <h3>BMW iX3</h3>
-                        <p>FULL-ELECTRIC</p>
-                        <span>출시예정</span>
-                    </figure>
-
-
+                <div class="con01_itm01 itm">
+                    <a href="#!">
+                        <figure data-num="Classic">
+                            <img src="./img/con01_item01.jpg" alt="">
+                            <h3>BMW 1 시리즈</h3>
+                            <p>DIESEL</p>
+                            <span>￦ 40,000,000 ~</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="Classic">
+                            <img src="./img/con01_item02.jpg" alt="">
+                            <h3>BMW 2 시리즈 그란 쿠페</h3>
+                            <p>GASOLINE •DIESEL</p>
+                            <span>￦ 42,100,000 ~</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="Classic">
+                            <img src="./img/con01_item03.jpg" alt="">
+                            <h3>BMW 4 시리즈 쿠페</h3>
+                            <p>GASOLINE</p>
+                            <span>￦ 65,500,000</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="Classic">
+                            <img src="./img/con01_item04.jpg" alt="">
+                            <h3>BMW 7 시리즈</h3>
+                            <p>GASOLINE •DIESEL •PLUG-IN HYBRID</p>
+                            <span>￦ 138,700,000 ~</span>
+                        </figure>
+                    </a>
                 </div>
-
-             
-                
-                <div class="item03 slider">
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item12.jpg" alt=""></a>
-                        <h3>BMW M3</h3>
-                        <p>DISEL</p>
-                        <span>&#8361; 39.400.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item13.jpg" alt=""></a>
-                        <h3>BMW M4 쿠페</h3>
-                        <p>GASOLINE DISEL</p>
-                        <span>&#8361; 40.900.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item14.jpg" alt=""></a>
-                        <h3>BMW M5</h3>
-                        <p>GASOLINE</p>
-                        <span>&#8361; 59.400.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item15.jpg" alt=""></a>
-                        <h3>BMW M8 쿠페</h3>
-                        <p>GASOLINE DISEL</p>
-                        <span>&#8361; 138.700.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item16.jpg" alt=""></a>
-                        <h3>BMW M8 그란 쿠페</h3>
-                        <p>GASOLINE</p>
-                        <span>&#8361; 139.300.000~</span>
-                    </figure>
-
+                <div class="con01_itm02 itm">
+                    <a href="#!">
+                        <figure data-num="I">
+                            <img src="./img/con01_item05.jpg" alt="">
+                            <h3>BMW i4</h3>
+                            <p>FULL-ELECTRIC</p>
+                            <span>출시 예정</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="I">
+                            <img src="./img/con01_item06.jpg" alt="">
+                            <h3>BMW i4 M50</h3>
+                            <p>FULL-ELECTRIC</p>
+                            <span>출시 예정</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="I">
+                            <img src="./img/con01_item07.jpg" alt="">
+                            <h3>BMW iX</h3>
+                            <p>FULL-ELECTRIC</p>
+                            <span>￦ 122,600,000</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="I">
+                            <img src="./img/con01_item08.jpg" alt="">
+                            <h3>BMW iX3</h3>
+                            <p>FULL-ELECTRIC</p>
+                            <span>￦ 75,900,000</span>
+                        </figure>
+                    </a>
                 </div>
-
-
-                <div class="item04 slider">
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item17.jpg" alt=""></a>
-                        <h3>BMW X3</h3>
-                        <p>GASOLIEN DISEL PLUG-IN-HYBRID</p>
-                        <span>&#8361; 39.400.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item19.jpg" alt=""></a>
-                        <h3>BMW X4</h3>
-                        <p>GASOLINE DISEL</p>
-                        <span>&#8361; 40.900.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item18.jpg" alt=""></a>
-                        <h3>BMW X5</h3>
-                        <p>GASOLIEN DISEL PLUG-IN-HYBRID</p>
-                        <span>&#8361; 103.300.000~</span>
-                    </figure>
-                    <figure>
-                        <a href="#!"><img src="./img/con01_item20.jpg" alt=""></a>
-                        <h3>BMW X7 쿠페</h3>
-                        <p>GASOLIEN DISEL PLUG-IN-HYBRID</p>
-                        <span>&#8361; 126.300.000~</span>
-                    </figure>
+                <div class="con01_itm03 itm">
+                    <a href="#!">
+                        <figure data-num="M">
+                            <img src="./img/con01_item09.jpg" alt="">
+                            <h3>BMW M4 쿠페</h3>
+                            <p>GASOLINE</p>
+                            <span>￦ 132,100,000</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="M">
+                            <img src="./img/con01_item10.jpg" alt="">
+                            <h3>BMW M4 컨버터블</h3>
+                            <p>GASOLINE</p>
+                            <span>￦ 132,100,000</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="M">
+                            <img src="./img/con01_item11.jpg" alt="">
+                            <h3>BMW M8 쿠페</h3>
+                            <p>GASOLINE</p>
+                            <span>￦ 239,700,000 ~</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="M">
+                            <img src="./img/con01_item12.jpg" alt="">
+                            <h3>BMW M8 그란 쿠페</h3>
+                            <p>GASOLINE</p>
+                            <span>￦ 236,700,000 ~</span>
+                        </figure>
+                    </a>
                 </div>
-                
-            </div>
-
-            <div class="btn">
-                <a href="#!"><strong>시리즈 전체 보기</strong></a>
-            </div>
+                <div class="con01_itm04 itm">
+                    <a href="#!">
+                        <figure data-num="X">
+                            <img src="./img/con01_item13.jpg" alt="">
+                            <h3>BMW X1</h3>
+                            <p>GASOLINE •DIESEL</p>
+                            <span>￦ 50,800,000 ~</span>
+                        </figure>
+                    </a>    
+                    <a href="#!">
+                        <figure data-num="X">
+                            <img src="./img/con01_item14.jpg" alt="">
+                            <h3>BMW X3</h3>
+                            <p>GASOLINE •DIESEL •PLUG-IN HYBRID</p>
+                            <span>￦ 64,400,000</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="X">
+                            <img src="./img/con01_item15.jpg" alt="">
+                            <h3>BMW X4</h3>
+                            <p>GASOLINE •DIESEL</p>
+                            <span>￦ 66,700,000</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="X">
+                            <img src="./img/con01_item16.jpg" alt="">
+                            <h3>BMW X7</h3>
+                            <p>GASOLINE •DIESEL</p>
+                            <span>￦ 130,300,000 ~</span>
+                        </figure>
+                    </a>
+                </div>
+                <div class="con01_itm05 itm">
+                    <a href="#!">
+                        <figure data-num="eDRIVE">
+                            <img src="./img/con01_item17.jpg" alt="">
+                            <h3>BMW 530e</h3>
+                            <p>PLUG-IN HYBRID</p>
+                            <span>￦ 80,800,000</span>
+                        </figure>
+                    </a>    
+                    <a href="#!">
+                        <figure data-num="eDRIVE">
+                            <img src="./img/con01_item18.jpg" alt="">
+                            <h3>BMW 745e</h3>
+                            <p>PLUG-IN HYBRID</p>
+                            <span>￦ 151,400,000</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="eDRIVE">
+                            <img src="./img/con01_item19.jpg" alt="">
+                            <h3>BMW X3 xDrive30e</h3>
+                            <p>PLUG-IN HYBRID</p>
+                            <span>￦ 75,200,000 ~</span>
+                        </figure>
+                    </a>
+                    <a href="#!">
+                        <figure data-num="eDRIVE">
+                            <img src="./img/con01_item20.jpg" alt="">
+                            <h3>BMW X5 xDrive45e</h3>
+                            <p>PLUG-IN HYBRID</p>
+                            <span>￦ 113,220,000 ~</span>
+                        </figure>
+                    </a>
+                </div>
+            </div>    
         </section>
         
         <!-------------- con02 ------------------>
         
-        <section id="con02">
-            
+        <section class="section con02">
             <div class="container case">
                 <figure>
                     <iframe src="https://www.youtube.com/embed/oDqsl2-HmbM" title="YouTube video player" 
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                     gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </figure>
-                <figure>
+                <div>
                 <h2>[BMW] UNSTOPPABLE JOY. BMW x YGX</h2>
-                <p>좋아하는 건 어디서든 끝까지. 
-
+                <p>좋아하는 건 어디서든 끝까지.
                     <br> BMW와 YGX의 “UNSTOPPABLE JOY” 스토리가 담긴
                     <br> 퍼포먼스 뮤직 비디오!
                     <br> 지금 바로 만나보세요!</p>
-                </figure>
+                </div>
             </div>
             <div class="container">
-                <figure>
+                <div>
                     <h2>[BMW] UNSTOPPABLE JOY</h2>
                     <p> 더 자유롭게.
                         <br> 더 남다르게. 
                         <br> 더 대담하게. 
                         <br> 더 강렬하게. 
-                        
                         <br> 멈출 수 없는 즐거움으로 진정한 드라이빙이 시작된다. </p>
-                    </figure>
+                </div>
                     <figure>
                         <iframe src="https://www.youtube.com/embed/HvxU7AZLiP0" title="YouTube video player"
                          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -327,43 +377,46 @@
         
         <!-------------- con03 ------------------>
         
-        <section id="con03">
+        <section class="section con03">
             <div class="container">
                 <h2>BMW SERVICE & CONTENT </h2>
                 <P>다양한 BMW의 컨텐츠들을 만나보세요</P>
-
                 <div class="item">
-                    <div>
                     <figure>
-                        <a href="#!">
-                            <img src="./img/con03_item01.jpg" alt="">
-                        </a>
+                        <img src="./img/con03_item01.jpg" alt="">
+                        <div class="con03_info">
+                            <h3>BMW PROMOTION</h3>
+                            <p>BMW 11월 
+                               <br> 프로모션을 만나보세요.</p>
+                            <a href="#!">more</a>
+                        </div>
                     </figure>
-                    </div>
-                    <div>
                     <figure>
-                        <a href="#!">
-                            <img src="./img/con03_item02.jpg" alt="">
-                        </a>
+                        <img src="./img/con03_item02.jpg" alt="">
+                        <div class="con03_info">
+                            <h3>BMW SERVICE CENTER</h3>
+                            <p>서비스 센터</p>
+                            <a href="#!">more</a>
+                        </div>
                     </figure>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div>
                     <figure>
-                        <a href="#!">
-                            <img src="./img/con03_item03.jpg" alt="">
-                        </a>
+                        <img src="./img/con03_item03.jpg" alt="">
+                        <div class="con03_info">
+                            <h3>BMW DRIVING MUSIC</h3>
+                            <p>매 순간을 즐겁게 하는 
+                               <br> 드라이빙과 음악의 만남</p>
+                            <a href="#!">more</a>
+                        </div>
                     </figure>
-                    </div>
-                    <div>
                     <figure>
-                        <a href="#!">
-                            <img src="./img/con03_item04.jpg" alt="">
-                        </a>
-                    </figure>
-                    </div>
+                        <img src="./img/con03_item04.jpg" alt="">
+                        <div class="con03_info">
+                            <h3>BMW PLUS</h3>
+                            <p>카페, 키즈카페, 부티크 
+                            <br> 문화를 발전하는 BMW</p>
+                            <a href="#!">more</a>
+                        </div>
+                    </figure>   
                 </div>
             </div>
         </section>
@@ -371,7 +424,7 @@
         <!-------------- con04 ------------------>
         
         <div class="bmw"></div>
-        <section id="con04">
+        <section class="section con04">
                 <div class="case">
                     <div class="slogan">
                         <p>지속 가능한 미래를 열어갈 아이들의 잠재력을 이끌어 냅니다</p>
@@ -382,79 +435,69 @@
                             <span class="slogan02">Innovate <br> 변화를 만들고</span>
                             <span class="slogan03">Society <br> 공감을 이끕니다</span>
                         </div>
-                        <a href="#!">미래 후원하기<i class="xi-"></i></a>
+                        <a href="https://www.bmwkoreafuturefund.co.kr/ko/" target="_blank">미래 후원하기<i class="xi-"></i></a>
                     </div>
                 </div>
-
-                <div class="btn">
-                    <i class="xi-info"></i>
-                </div>
         </section>
-        
-        <!-------------- con05 ------------------>
-        
-        <section id="con05">
-            <div class="container">
-                <ul>
-                    <li><a href="#!"><i class="bi bi-mouse2"></i> <br> 시승 신청</a></li>
-                    <li><a href="#!"><i class="bi bi-chat-dots"></i><br>고객 안내</a></li>
-                    <li><a href="#!"><i class="xi-car"></i><br>내 차량 꾸미기</a></li>
-                    <li><a href="#!"><i class="bi bi-geo-alt"></i><br>딜러 위치</a></li>
-                    <li><a href="#!"><i class="bi bi-file-text"></i><br>가격표</a></li>
-                </ul>
-            </div>
-        </section>
-    </main>
+              
     
     <!-------------- footer ------------------>
     
-    <footer id="footer">
-        <div class="container">
-            <ul>
-                <li><a href="#!">BMW 코리아</a>
-                    <ul>
-                        <li><a href="#!">인재 채용</a></li>
-                        <li><a href="#!">BMW 컨택트</a></li>
-                        <li><a href="#!">시스템 설정</a></li>
-                        <li><a href="#!">소프트웨어 다운로드</a></li>
-                        <li><a href="#!">BMW의 모든 웹사이트</a></li>
-                    </ul>
-                </li>
-                <li><a href="#!">공지사항</a>
-                    <ul>
-                        <li><a href="#!">BMW 멤버십 개인정보 이용 및 처리 방침 안내</a></li>
-                        <li><a href="#!">외부감사인 변경선임 공고</a></li>
-                        <li><a href="#!">BMW '개인정보처리방침'변경에 대한 안내</a></li>
-                        <li><a href="#!">커넥티드 드라이브 ‘이용약관’ 개정 안내</a></li>
-                    </ul>
-                </li>
-                <li><a href="#!">연관 채널</a>
-                    <ul>
-                        <a href="#!"><i class="xi-youtube-play"></i></a>
-                        <a href="#!"><i class="xi-facebook"></i></a>
-                        <a href="#!"><i class="xi-instagram"></i></a>
-                    </ul>
-                </li>
-                <li><a href="#!">법률 약관 정보</a>
-                    <ul>
-                        <li><a href="#!">법적고지</a></li>
-                        <li><a href="#!">쿠키 정책</a></li>
-                        <li><a href="#!">개인정보처리방침</a></li>
-                        <li><a href="#!">영상정보처리기기 운영·관리 방침</a></li>
-                        <li><a href="#!">커넥티드 드라이브 이용약관</a></li>
-                    </ul>
-                </li>
-            </ul>
+    <footer class="section footer fp-auto-height">
+        <div class="ft_top">
+            <a href="#!">시승 신청</a>
+            <a href="#!">고객 안내</a>
+            <a href="#!">내 차량 꾸미기</a>
+            <a href="#!">딜러 위치</a>
+            <a href="#!">가격표</a>
         </div>
-        <div class="bottom">
-            <strong>
-                &copy;BMW Korea 2021
-            </strong>
-        </div>
-        <div id="toTop">
-            <i class="xi-angle-up"></i>
+            <div class="ft_bt container">
+                <ul>
+                    <li><a href="#!">BMW 코리아</a>
+                        <ul>
+                            <li><a href="#!">인재 채용</a></li>
+                            <li><a href="#!">BMW 컨택트</a></li>
+                            <li><a href="#!">시스템 설정</a></li>
+                            <li><a href="#!">소프트웨어 다운로드</a></li>
+                            <li><a href="#!">BMW의 모든 웹사이트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">공지사항</a>
+                        <ul>
+                            <li><a href="#!">BMW 멤버십 개인정보 이용 및 처리 방침 안내</a></li>
+                            <li><a href="#!">외부감사인 변경선임 공고</a></li>
+                            <li><a href="#!">BMW '개인정보처리방침'변경에 대한 안내</a></li>
+                            <li><a href="#!">커넥티드 드라이브 ‘이용약관’ 개정 안내</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">연관 채널</a>
+                        <ul>
+                            <a href="#!"><i class="xi-youtube-play"></i></a>
+                            <a href="#!"><i class="xi-facebook"></i></a>
+                            <a href="#!"><i class="xi-instagram"></i></a>
+                        </ul>
+                    </li>
+                    <li><a href="#!">법률 약관 정보</a>
+                        <ul>
+                            <li><a href="#!">법적고지</a></li>
+                            <li><a href="#!">쿠키 정책</a></li>
+                            <li><a href="#!">개인정보처리방침</a></li>
+                            <li><a href="#!">영상정보처리기기 운영·관리 방침</a></li>
+                            <li><a href="#!">커넥티드 드라이브 이용약관</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <div class="bottom">
+                <strong>
+                    &copy;BMW Korea 2021
+                </strong>
+            </div>
         </div>
     </footer>
+</main>
+    <a href="#main"class="toTop">
+        <i class="xi-arrow-top"></i>
+    </a>
 </div>    
 </body>
 </html>
