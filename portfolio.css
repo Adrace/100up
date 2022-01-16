@@ -168,8 +168,8 @@ animation: type 2s forwards;}
 
 /*------------------- BMW ------------------------------*/
 
-.portfolio_02 {background: var(--lc);}
-.portfolio_02:before {left: 16%;background:linear-gradient(to left, #b8bde9,var(--lc));}
+.portfolio_02 {background: #a8dbff;}
+.portfolio_02:before {left: 16%;background:linear-gradient(to left,#a8dbff,var(--lc));}
 
 .portfolio_02 .desc .desc_c dd:nth-child(2) {background: #0166B0;}
 .portfolio_02 .desc .desc_c dd:nth-child(3) {background: var(--dc);}
@@ -191,7 +191,7 @@ border: 1px solid #999;}
 
 /*------------------- Logitech ------------------------------*/
 
-.portfolio_04 {background: var(--lc);}
+.portfolio_04 {background: #99CCFF;}
 .portfolio_04:before {left: 16%;background: linear-gradient(to left,#99CCFF,var(--lc));}
 
 .portfolio_04 .desc .desc_c dd:nth-child(2) {background: #99CCFF;}
@@ -249,7 +249,7 @@ margin-bottom: 1rem;}
 .profile .career_list p {font-weight: 400;
 margin-bottom: 1.5rem;line-height: 1.5;}
 .profile .career_list p:before {content: "";display: block;
-width: 0.5rem;height: 0.5rem;background: var(--mc);margin: 0 auto;
+width: 0.5rem;height: 0.5rem;background: #F47520;margin: 0 auto;
 border-radius: 50%;}
 
 /*------------------- footer ------------------------------*/
