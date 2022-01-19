@@ -99,10 +99,9 @@ transform: translate(-50%,50%);justify-content: center;}
 transition: 0.3s;box-shadow: 0 0 0.5rem #666;} 
 .main_visual .quick_menu>div~div {border-left: 1px solid #fff;} 
 
-.main_visual .quick01 {background: url(../imges/con02_item01.jpg)
-no-repeat center center/cover;position: relative;}
-.main_visual .quick02 {background: url(../imges/con02_item02.jpg)no-repeat center center/cover;position: relative;}
-.main_visual .quick03 {background: url(../imges/con02_item03.jpg)no-repeat center center/cover;position: relative;}
+.main_visual .quick01 {background:#5ba5e4;position: relative;}
+.main_visual .quick02 {background:#5ba5e4;position: relative;}
+.main_visual .quick03 {background: #5ba5e4;position: relative;}
 
 .main_visual .quick_menu i {padding: 1.5rem;background: #fff;border-radius: 50%;
 color: #333;font-size: 3rem;vertical-align: middle;}
