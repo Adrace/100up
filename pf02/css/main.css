@@ -8,7 +8,7 @@
 /* ---------------------- header ------------------------- */
 
 #header {position: fixed;top: 0;left: 0;width: 100%;z-index: 999;
-background: #fff;border-bottom: 1px solid #369;}
+background: #fff;}
 
 
 #header .container {display: flex;position: relative;justify-content: space-between;}
@@ -42,7 +42,6 @@ display: block;padding: 10px 0;transition: 0.3s;}
 #header .bars>li .subMenu>li {color: #333;}
 #header .bars>li .subMenu>li>a {display: block;line-height: 3;text-align: center;
 font-size: 13px;font-weight: 300;transition: 0.3s;}
-#header .bars>li .subMenu>li>a:hover {color: #99ccff;}
 
 #header .right_bars {display: flex;line-height: 100px;margin-left: 100px;}
 #header .right_bars>li {padding: 0 15px;font-size: 14px;color: #333;}
@@ -76,12 +75,11 @@ letter-spacing:0.2em;margin-bottom: 10px;}
 .main_visual .slogan span a {padding: 10px;background: #fff;display: block;
 color: #333;font-weight: 400;width: 80px;text-align: center;font-size: 18px;}
 
-.main_visual .btn {position: absolute;top: 50%;left: 50%;
-font-size: 80px;color: #fff;text-shadow: 2px 2px 2px #333;transform: translateY(-50%);
+.main_visual .btn {font-size: 40px;color: #fff;}
+.main_visual .btn i {padding: 10px;background: rgba(255,255,255,0.5);
 cursor: pointer;}
-
-.main_visual .xi-angle-left {margin-left: -800px;}
-.main_visual .xi-angle-right {margin-left: 1400px;}
+.main_visual .btn .xi-angle-left {position: absolute;top: 50%;left: 0;}
+.main_visual .btn .xi-angle-right {position: absolute;top: 50%;right: 0;}
 
 
 .main_visual .drag {position: absolute;bottom: 50px;left: 50%;
@@ -94,7 +92,6 @@ transform: translateX(-50%);color: #fff;text-align: center;
 
 /* ---------------------- con01 ------------------------- */
 
-.con01 {}
 
 .con01 .container {text-align: center;position: relative;}
 .con01 .container h2 {position: relative; font-size: 40px;font-weight: 300;letter-spacing: 0.5em;
@@ -149,7 +146,6 @@ color: #333;margin-bottom: 50px;line-height: 30px;color: #fff;}
 
 /* ---------------------- con03 ------------------------- */
 
-.con03 {}
 .con03 .container {text-align: center;width: 1200px;margin: 0 auto;}
 .con03 .container h2 {font-size: 24px;font-weight: 700;letter-spacing: 0.5em;
 color: #333;margin-bottom: 30px;position: relative;}
@@ -280,7 +276,7 @@ max-width 768px
     /* ---------------------- header ------------------------- */
 
     #header {position: fixed;top: 0;left: 0;width: 100%;z-index: 999;
-    background: #fff;border-bottom: 1px solid #369;}
+    background: #fff;}
 
 
     #header .container {display: flex;position: relative;justify-content: space-between;}
@@ -293,7 +289,7 @@ max-width 768px
 
     #header .gnb.on {left: 0;}
 
-    #header .bars {display: flex;line-height: 100px;flex-direction: column;}
+    #header .bars {display: flex;line-height: 50px;flex-direction: column;}
     #header .bars:after {content: "";display: none;width: 100%;
     height: 0;position: absolute;top: 101px;left: 0;background: #fff;z-index: -1;
     transition: 0.3s;}
@@ -356,12 +352,12 @@ max-width 768px
     .main_visual .slogan span a {padding: 5px;background: #fff;display: block;margin: 0 auto;
     color: #333;font-weight: 300;width: 80px;text-align: center;font-size: 18px;}
 
-    .main_visual .btn {position: absolute;top: 50%;left: 50%;
-    font-size: 20px;color: #fff;text-shadow: 2px 2px 2px #333;transform: translateY(-50%);
+    .main_visual .btn {font-size: 30px;color: #fff;}
+    .main_visual .btn i {padding: 10px;background: rgba(255,255,255,0.5);
     cursor: pointer;}
-
-    .main_visual .xi-angle-left {margin-left: -130px;}
-    .main_visual .xi-angle-right {margin-left: 220px;}
+    .main_visual .btn .xi-angle-left {position: absolute;top: 50%;left: 0;}
+    .main_visual .btn .xi-angle-right {position: absolute;top: 50%;right: 0;}
+    
 
 
     .main_visual .drag {position: absolute;bottom: 50px;left: 50%;
@@ -374,7 +370,6 @@ max-width 768px
 
     /* ---------------------- con01 ------------------------- */
 
-    .con01 {}
 
     .con01 .container {text-align: center;position: relative;}
     .con01 .container h2 {position: relative; font-size: 16px;font-weight: 300;letter-spacing: 0.5em;
@@ -431,7 +426,6 @@ max-width 768px
 
     /* ---------------------- con03 ------------------------- */
 
-    .con03 {}
     .con03 .container {text-align: center;width: auto;margin: 0 auto;}
     .con03 .container h2 {font-size: 16px;font-weight: 500;letter-spacing: 0.5em;
     color: #333;margin-bottom: 30px;position: relative;line-height: 1.4;}
@@ -563,7 +557,7 @@ max-width 370px
     /* ---------------------- header ------------------------- */
 
     #header {position: fixed;top: 0;left: 0;width: 100%;z-index: 999;
-    background: #fff;border-bottom: 1px solid #369;}
+    background: #fff;}
 
 
     #header .container {display: flex;position: relative;justify-content: space-between;}
@@ -576,7 +570,7 @@ max-width 370px
 
     #header .gnb.on {left: 0;}
 
-    #header .bars {display: flex;line-height: 100px;flex-direction: column;}
+    #header .bars {display: flex;line-height: 50px;flex-direction: column;}
     #header .bars:after {content: "";display: none;width: 100%;
     height: 0;position: absolute;top: 101px;left: 0;background: #fff;z-index: -1;
     transition: 0.3s;}
@@ -639,12 +633,12 @@ max-width 370px
     .main_visual .slogan span a {padding: 5px;background: #fff;display: block;margin: 0 auto;
     color: #333;font-weight: 300;width: 80px;text-align: center;font-size: 18px;}
 
-    .main_visual .btn {position: absolute;top: 50%;left: 50%;
-    font-size: 20px;color: #fff;text-shadow: 2px 2px 2px #333;transform: translateY(-50%);
+    .main_visual .btn {font-size: 20px;color: #fff;}
+    .main_visual .btn i {padding: 10px;background: rgba(255,255,255,0.5);
     cursor: pointer;}
-
-    .main_visual .xi-angle-left {margin-left: -130px;}
-    .main_visual .xi-angle-right {margin-left: 220px;}
+    .main_visual .btn .xi-angle-left {position: absolute;top: 50%;left: 0;}
+    .main_visual .btn .xi-angle-right {position: absolute;top: 50%;right: 0;}
+    
 
 
     .main_visual .drag {position: absolute;bottom: 50px;left: 50%;
@@ -657,7 +651,6 @@ max-width 370px
 
     /* ---------------------- con01 ------------------------- */
 
-    .con01 {}
 
     .con01 .container {text-align: center;position: relative;}
     .con01 .container h2 {position: relative; font-size: 16px;font-weight: 300;letter-spacing: 0.5em;
@@ -714,7 +707,6 @@ max-width 370px
 
     /* ---------------------- con03 ------------------------- */
 
-    .con03 {}
     .con03 .container {text-align: center;width: auto;margin: 0 auto;}
     .con03 .container h2 {font-size: 16px;font-weight: 500;letter-spacing: 0.5em;
     color: #333;margin-bottom: 30px;position: relative;line-height: 1.4;}
