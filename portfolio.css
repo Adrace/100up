@@ -84,6 +84,7 @@ background: var(--mc);animation: mouse 1.5s infinite;}
 
 
 .section {position: relative;z-index: -2;}
+
 .section:before {content: attr(data-);position: absolute;top:0;
 left: 15rem;font-size: 25rem;font-weight: 900;color: #fff;
 text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
@@ -172,7 +173,7 @@ animation: type 2s forwards;}
 
 /*------------------- BMW ------------------------------*/
 
-
+.portfolio_02 {background: url(./pf_img/patten2.jpg);}
 .portfolio_02 .desc .desc_c dd:nth-child(2) {background: #0166B0;}
 .portfolio_02 .desc .desc_c dd:nth-child(3) {background: var(--dc);}
 .portfolio_02 .desc .desc_c dd:nth-child(4) {background: #ffffff;border: 1px solid #999;}
@@ -180,7 +181,6 @@ animation: type 2s forwards;}
 .portfolio_02 .desc a {background: #0166B0;}
 
 /*------------------- 봉생병원 ------------------------------*/
-
 
 .portfolio_03 .desc .desc_c dd:nth-child(2) {background: #FF7978;}
 .portfolio_03 .desc .desc_c dd:nth-child(3) {background: #121A62;}
@@ -191,7 +191,7 @@ border: 1px solid #999;}
 
 /*------------------- Logitech ------------------------------*/
 
-
+.portfolio_04 {background: url(./pf_img/patten2.jpg);}
 .portfolio_04 .desc .desc_c dd:nth-child(2) {background: #99CCFF;}
 .portfolio_04 .desc .desc_c dd:nth-child(3) {background: #EEEEEE;
 border: 1px solid #999;}
@@ -211,7 +211,7 @@ margin: 0 0.5rem;}
 
 .profile .profile_box {opacity: 0;transform: translateY(10rem);}
 .profile.on .profile_box {opacity: 1;transform: translateY(0);transition: 0.5s;}
-.profile .profile_box video {border-radius: 50%;}
+.profile .profile_box figure img {border-radius: 50%;width: 80%;}
 
 
 .profile .skill {opacity: 0;transform: translateY(10rem);}
@@ -296,7 +296,7 @@ max width : 768px
     
     /*------------------- header ------------------------------*/
     
-    #header h1 {position: fixed;top: 1rem;left: 0;z-index: 999;font-size: 1.2rem;width: 100%;text-align: center;
+    #header h1 {position: fixed;top: 1rem;left: 0;z-index: 999;font-size: 0.75rem;width: 100%;text-align: center;
     font-weight: 700;font-family: 'Luxurious Roman', cursive;}
     
     #header nav {position: fixed;top: 50%;right: -0.5rem;transform: translateY(-50%);
@@ -324,13 +324,14 @@ max width : 768px
     #header nav li:nth-child(1).on a:before {text-indent: -160px;}
     
     
-    #header .infoCase {position: fixed;top: 3rem;right: 50%;display: flex;flex-direction: column;transform: translateX(50%);
+    #header .infoCase {position: fixed;top: 2rem;right: 50%;display: flex;flex-direction: column;transform: translateX(50%);
     z-index: 9999;}
     
-    #header .pf {font-weight: 500;line-height: 1.5;position: relative;
-    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;margin-bottom: 0.25rem;}
+    #header .pf {font-weight: 500;line-height: 1.4;position: relative;
+    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;
+    margin-bottom: 0.25rem;font-size: 0.6rem;font-weight: 300;}
     
-    #header .pf_list {display: none; position: absolute;top: 1.2rem;left: 0;
+    #header .pf_list {display: none; position: absolute;top: 0.8rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--dc);
     width: 100%;}
     #header .pf_list li>a {display: block; font-size: 0.7rem;font-weight: 400;
@@ -341,7 +342,7 @@ max width : 768px
     #header .pf:hover .pf_list {display: none;}
     
     #header .infoCase>a {display: block; border: 1px solid var(--mc);margin-left: 0;
-    transition: 0.3s;font-weight: 500;line-height: 1.5;
+    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.6rem;font-weight: 300;
     text-align: center;background: var(--mc);color: var(--lc);width: 5rem;}
     
     #header .infoCase>a:hover {background: var(--mc);color: var(--lc);}
@@ -579,7 +580,7 @@ max width : 690px
     
     /*------------------- header ------------------------------*/
     
-    #header h1 {position: fixed;top: 1rem;left: 0;z-index: 999;font-size: 1.2rem;width: 100%;text-align: center;
+    #header h1 {position: fixed;top: 1rem;left: 0;z-index: 999;font-size: 0.75rem;width: 100%;text-align: center;
     font-weight: 700;font-family: 'Luxurious Roman', cursive;}
     
     #header nav {position: fixed;top: 50%;right: -0.5rem;transform: translateY(-50%);
@@ -607,13 +608,14 @@ max width : 690px
     #header nav li:nth-child(1).on a:before {text-indent: -160px;}
     
     
-    #header .infoCase {position: fixed;top: 3rem;right: 50%;display: flex;flex-direction: column;transform: translateX(50%);
+    #header .infoCase {position: fixed;top: 2rem;right: 50%;display: flex;flex-direction: column;transform: translateX(50%);
     z-index: 9999;}
     
-    #header .pf {font-weight: 500;line-height: 1.5;position: relative;
-    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;margin-bottom: 0.25rem;}
+    #header .pf {font-weight: 500;line-height: 1.4;position: relative;
+    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;
+    margin-bottom: 0.25rem;font-size: 0.6rem;font-weight: 300;}
     
-    #header .pf_list {display: none; position: absolute;top: 1.2rem;left: 0;
+    #header .pf_list {display: none; position: absolute;top: 0.8rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--dc);
     width: 100%;}
     #header .pf_list li>a {display: block; font-size: 0.7rem;font-weight: 400;
@@ -624,7 +626,7 @@ max width : 690px
     #header .pf:hover .pf_list {display: none;}
     
     #header .infoCase>a {display: block; border: 1px solid var(--mc);margin-left: 0;
-    transition: 0.3s;font-weight: 500;line-height: 1.5;
+    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.6rem;font-weight: 300;
     text-align: center;background: var(--mc);color: var(--lc);width: 5rem;}
     
     #header .infoCase>a:hover {background: var(--mc);color: var(--lc);}
@@ -864,7 +866,7 @@ max width : 540px
     
     /*------------------- header ------------------------------*/
     
-    #header h1 {position: fixed;top: 1rem;left: 0;z-index: 999;font-size: 1.2rem;width: 100%;text-align: center;
+    #header h1 {position: fixed;top: 1rem;left: 0;z-index: 999;font-size: 0.75rem;width: 100%;text-align: center;
     font-weight: 700;font-family: 'Luxurious Roman', cursive;}
     
     #header nav {position: fixed;top: 50%;right: -0.5rem;transform: translateY(-50%); z-index: 999;display: none;
@@ -892,13 +894,14 @@ max width : 540px
     #header nav li:nth-child(1).on a:before {text-indent: -160px;}
     
     
-    #header .infoCase {position: fixed;top: 3rem;right: 50%;display: flex;flex-direction: column;transform: translateX(50%);
+    #header .infoCase {position: fixed;top: 2rem;right: 50%;display: flex;flex-direction: column;transform: translateX(50%);
     z-index: 9999;}
     
-    #header .pf {font-weight: 500;line-height: 1.5;position: relative;
-    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;margin-bottom: 0.25rem;}
+    #header .pf {font-weight: 500;line-height: 1.4;position: relative;
+    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;
+    margin-bottom: 0.25rem;font-size: 0.6rem;font-weight: 300;}
     
-    #header .pf_list {display: none; position: absolute;top: 1.2rem;left: 0;
+    #header .pf_list {display: none; position: absolute;top: 0.8rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--dc);
     width: 100%;}
     #header .pf_list li>a {display: block; font-size: 0.7rem;font-weight: 400;
@@ -909,7 +912,7 @@ max width : 540px
     #header .pf:hover .pf_list {display: none;}
     
     #header .infoCase>a {display: block; border: 1px solid var(--mc);margin-left: 0;
-    transition: 0.3s;font-weight: 500;line-height: 1.5;
+    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.6rem;font-weight: 300;
     text-align: center;background: var(--mc);color: var(--lc);width: 5rem;}
     
     #header .infoCase>a:hover {background: var(--mc);color: var(--lc);}
