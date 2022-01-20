@@ -83,7 +83,7 @@ background: var(--mc);animation: mouse 1.5s infinite;}
 /*------------------- section 디자인 ------------------------------*/
 
 
-.section {position: relative;z-index: -2;}
+.section {position: relative;z-index: -2;background: url(./pf_img/patten2.jpg);}
 
 .section:before {content: attr(data-);position: absolute;top:0;
 left: 15rem;font-size: 25rem;font-weight: 900;color: #fff;
@@ -129,10 +129,10 @@ font-family: 'Noto Serif KR', serif;}
 .section .desc p {font-size: 0.9rem;font-weight: 300;margin-bottom: 2rem;}
 .section .desc dl {margin-bottom: 1rem;}
 .section .desc dt {font-size: 1.2rem;font-weight: 500;margin-bottom: 1rem}
-.section .desc .desc_c dd {display: inline-block;margin: 0 0.5rem;border-radius: 50%;padding: 0.5rem;position: relative;}
+.section .desc .desc_c dd {display: inline-block;margin-right: 0.5rem; border-radius: 50%;padding: 0.5rem;position: relative;}
 
-.section .desc .desc_t dt {border-top: 1px solid #bbb;padding-top: 0.5rem;}
-.section .desc .desc_t dd {display: inline-block; margin-right: 1rem;
+.section .desc .desc_t dt {border-top: 1px solid #d4d4d4;padding-top: 0.5rem;}
+.section .desc .desc_t dd {display: inline-block; margin-right: 0.5rem;
 font-weight: 400;font-size: 0.75rem;}
 .section .container .desc a {display: inline-block;padding: 0.75rem 1rem;
 font-size: 0.8rem;color: #fff;margin-right: 0.25rem;}
@@ -173,7 +173,7 @@ animation: type 2s forwards;}
 
 /*------------------- BMW ------------------------------*/
 
-.portfolio_02 {background: url(./pf_img/patten2.jpg);}
+
 .portfolio_02 .desc .desc_c dd:nth-child(2) {background: #0166B0;}
 .portfolio_02 .desc .desc_c dd:nth-child(3) {background: var(--dc);}
 .portfolio_02 .desc .desc_c dd:nth-child(4) {background: #ffffff;border: 1px solid #999;}
@@ -191,7 +191,7 @@ border: 1px solid #999;}
 
 /*------------------- Logitech ------------------------------*/
 
-.portfolio_04 {background: url(./pf_img/patten2.jpg);}
+
 .portfolio_04 .desc .desc_c dd:nth-child(2) {background: #99CCFF;}
 .portfolio_04 .desc .desc_c dd:nth-child(3) {background: #EEEEEE;
 border: 1px solid #999;}
@@ -202,8 +202,7 @@ border: 1px solid #999;}
 /*------------------- profile ------------------------------*/
 
 .profile {background: #EAE2D7;}
-.profile h2 {text-align: center;margin-bottom: 5rem;font-size: 2.4rem;
-font-weight: 700;}
+
 
 .profile .container {margin-bottom: 5rem;}
 .profile .container>div {flex: 1;text-align: center;
@@ -211,8 +210,10 @@ margin: 0 0.5rem;}
 
 .profile .profile_box {opacity: 0;transform: translateY(10rem);}
 .profile.on .profile_box {opacity: 1;transform: translateY(0);transition: 0.5s;}
-.profile .profile_box figure img {border-radius: 50%;width: 80%;}
+/* .profile .profile_box figure img {border-radius: 50%;width: 80%;} */
 
+.profile h2 {text-align: center;font-size: 2rem;
+font-weight: 500;}
 
 .profile .skill {opacity: 0;transform: translateY(10rem);}
 .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
@@ -487,16 +488,18 @@ max width : 768px
     /*------------------- profile ------------------------------*/
     
     .profile {background: #EAE2D7;}
-    .profile h2 {text-align: center;margin-bottom: 2.5rem;font-size: 1.2rem;
-    font-weight: 700;}
+
     
     .profile .container {margin-bottom: 0;flex-direction:column;}
     .profile .container>div {flex: 1;text-align: center;
     margin: 0 0.5rem;}
     
-    .profile .profile_box {opacity: 0;transform: translateY(10rem);display: none;}
+    .profile .profile_box {opacity: 0;transform: translateY(10rem);}
     .profile.on .profile_box {opacity: 1;transform: translateY(0);transition: 0.5s;}
-    
+    .profile h2 {text-align: center;font-size: 1.2rem;
+    font-weight: 500;}
+
+
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
     .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #666;
@@ -771,15 +774,15 @@ max width : 690px
     /*------------------- profile ------------------------------*/
     
     .profile {background: #EAE2D7;}
-    .profile h2 {text-align: center;margin-bottom: 2.5rem;font-size: 1.2rem;
-    font-weight: 700;}
-    
+
     .profile .container {margin-bottom: 0;flex-direction:column;}
     .profile .container>div {flex: 1;text-align: center;
     margin: 0 0.5rem;}
     
-    .profile .profile_box {opacity: 0;transform: translateY(10rem);display: none;}
+    .profile .profile_box {opacity: 0;transform: translateY(10rem);}
     .profile.on .profile_box {opacity: 1;transform: translateY(0);transition: 0.5s;}
+    .profile h2 {text-align: center;font-size: 1.2rem;
+    font-weight: 500;}
     
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
@@ -1057,15 +1060,15 @@ max width : 540px
     /*------------------- profile ------------------------------*/
     
     .profile {background: #EAE2D7;}
-    .profile h2 {text-align: center;margin-bottom: 2.5rem;font-size: 1.2rem;
-    font-weight: 700;}
     
     .profile .container {margin-bottom: 0;flex-direction:column;}
     .profile .container>div {flex: 1;text-align: center;
     margin: 0 0.5rem;}
     
-    .profile .profile_box {opacity: 0;transform: translateY(10rem);display: none;}
+    .profile .profile_box {opacity: 0;transform: translateY(10rem);}
     .profile.on .profile_box {opacity: 1;transform: translateY(0);transition: 0.5s;}
+    .profile h2 {text-align: center;font-size: 1.2rem;
+    font-weight: 500;}
     
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
@@ -1341,15 +1344,15 @@ max width : 375px
     /*------------------- profile ------------------------------*/
     
     .profile {background: #EAE2D7;}
-    .profile h2 {text-align: center;margin-bottom: 1rem;font-size: 1.2rem;
-    font-weight: 700;}
     
     .profile .container {margin-bottom: 0;flex-direction:column;}
     .profile .container>div {flex: 1;text-align: center;
     margin: 0 0.5rem;}
     
-    .profile .profile_box {opacity: 0;transform: translateY(10rem);display: none;}
+    .profile .profile_box {opacity: 0;transform: translateY(10rem);}
     .profile.on .profile_box {opacity: 1;transform: translateY(0);transition: 0.5s;}
+    .profile h2 {text-align: center;font-size: 1.2rem;
+    font-weight: 500;}
     
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
