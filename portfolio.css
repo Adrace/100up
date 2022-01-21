@@ -55,7 +55,7 @@ text-align: center;background: #fff;width: 5rem;}
 background: #fff;border: 1px solid var(--mc);color: var(--dc);
 width: 100%;}
 #header .pf_list li>a {display: block; font-size: 0.7rem;font-weight: 400;
-line-height: 3;transition: 0.2s;}
+line-height: 3;transition: 0.2s;outline: 1px solid #999;}
 #header .pf_list li>a:hover {background: var(--mc);color: var(--lc);}
 #header .pf_list li~li {border-top: 1px solid var(--mc);}
 
@@ -505,7 +505,7 @@ max width : 768px
     .profile .profile_box {opacity: 0;transform: translateY(10rem);}
     .profile.on .profile_box {opacity: 1;transform: translateY(0);transition: 0.5s;}
     .profile h2 {text-align: center;font-size: 1.2rem;
-    font-weight: 500;}
+    font-weight: 500;margin-bottom: 1.5rem;}
 
 
     .profile .skill {opacity: 0;transform: translateY(10rem);}
@@ -1230,6 +1230,8 @@ max width : 375px
     
     
     .section {position: relative;background: linear-gradient(to left,#0f0f0f,var(--mc));color: #fff;z-index: -2;}
+    .section:nth-child(odd) {background:linear-gradient(to left,#0f0f0f,var(--mc)) ;}
+
     .section:before {content: attr(data-);position: absolute;top:8rem;
     left: auto;right: 0; font-size: 5rem;font-weight: 900;color: #fff;
     text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);z-index: -2;}
