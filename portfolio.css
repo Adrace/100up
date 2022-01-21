@@ -17,11 +17,11 @@ h1,h2,h3,p,span,strong {letter-spacing: -0.025em;}
 
 /*------------------- header ------------------------------*/
 
-#header h1 {position: fixed;top: 2rem;left: 2rem;z-index: 999;font-size: 1rem;
-font-weight: 700;font-family: 'Luxurious Roman', cursive;}
+#header h1 {position: fixed;top: 2rem;left: 2rem;font-size: 1rem;color: #fff;
+font-weight: 700;font-family: 'Luxurious Roman', cursive;z-index: 999;}
 
-#header nav {position: fixed;top: 50%;right: -0.5rem;transform: translateY(-50%); z-index: 999;
-transition: 0.3s;transform-origin: right;}
+#header nav {position: fixed;top: 50%;right: -0.5rem;transform: translateY(-50%); 
+transition: 0.3s;transform-origin: right;z-index: 999;}
 
 #header nav li {display: block;width: 5rem;height: 0;background: #ccc;transform-origin:right;}
 #header nav li:nth-child(1) {transform: rotate(0);}
@@ -35,13 +35,13 @@ transition: 0.3s;transform-origin: right;}
 border-radius: 50%;transition: 1s;font-size: 0.5rem;font-weight: 300;}
 #header nav li a:before {content: attr(data-);display: block;position: absolute;
 top: 0;left: 0;background: #999;width: 100%;height: 100%;border-radius: 50%;
-opacity: 1;transition: 0.3s;text-indent: -95px;color: #999;}
+opacity: 1;transition: 0.3s;text-indent: -95px;color: #ddd;}
 #header nav li a:after {content: "";display: block;position: absolute;
-top: 0;left: 0;background: var(--mc);width: 100%;height: 100%;border-radius: 50%;
+top: 0;left: 0;background: #fff;width: 100%;height: 100%;border-radius: 50%;
 opacity: 0;transition: 0.3s;}
 #header nav li.on a:after {opacity: 1;transform: scale(1.4);}
 #header nav li.on a:before {font-size: 0.8rem;text-indent: -145px;
-color: var(--dc);font-weight: 500;}
+color:#fff;font-weight: 500;}
 #header nav li:nth-child(1).on a:before {text-indent: -160px;}
 
 
@@ -49,7 +49,7 @@ color: var(--dc);font-weight: 500;}
 z-index: 9999;}
 
 #header .pf {font-weight: 500;line-height: 2;position: relative;
-text-align: center;background: var(--mc);color: var(--lc);width: 5rem;}
+text-align: center;background: #fff;width: 5rem;}
 
 #header .pf_list {display: none; position: absolute;top: 1.6rem;left: 0;
 background: #fff;border: 1px solid var(--mc);color: var(--dc);
@@ -61,18 +61,16 @@ line-height: 3;transition: 0.2s;}
 
 #header .pf:hover .pf_list {display: block;}
 
-#header .infoCase>a {display: block; border: 1px solid var(--mc);margin-left: 0.25rem;
+#header .infoCase>a {display: block;margin-left: 0.25rem;
 transition: 0.3s;font-weight: 500;line-height: 2;
-text-align: center;background: var(--mc);color: var(--lc);width: 5rem;}
-
-#header .infoCase>a:hover {background: #fff;color: var(--dc);}
+text-align: center;background: #fff;width: 5rem;}
 
 .mouse {position: absolute;bottom: 5rem;left: 50%;transform: translateX(-50%);}
-.mouse span {position: relative; width: 2rem;height: 5rem;border: 3px solid var(--mc);
+.mouse a {position: relative; width: 2rem;height: 5rem;border: 3px solid #fff;
 padding: 1rem;border-radius: 8rem 8rem 10rem 10rem;}
-.mouse span:after {content: "";display: block;position: absolute;top: 0.5rem;
+.mouse a:after {content: "";display: block;position: absolute;top: 0.5rem;
 left: 50%;transform: translateX(-50%);width: 0.1rem;height: 0.75rem;
-background: var(--mc);animation: mouse 1.5s infinite;}
+background: #fff;animation: mouse 1.5s infinite;}
 
 @keyframes mouse {
     0% {top: 0.5rem;}
@@ -83,11 +81,13 @@ background: var(--mc);animation: mouse 1.5s infinite;}
 /*------------------- section 디자인 ------------------------------*/
 
 
-.section {position: relative;z-index: -2;background: url(./pf_img/patten2.jpg);}
+.section {position: relative;background: linear-gradient(to left,#0f0f0f,var(--mc));color: #fff;
+z-index: -2;}
+.section:nth-child(odd) {background:linear-gradient(to right,#0f0f0f,var(--mc)) ;}
+.section:nth-child(1) {background: var(--mc);}
 
 .section:before {content: attr(data-);position: absolute;top:0;
 left: 15rem;font-size: 25rem;font-weight: 900;color: #fff;
-text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
 z-index: -2;}
 .section:nth-child(odd):before {left:auto; right: 15rem;}
 
@@ -122,40 +122,41 @@ z-index: -1;}
 transition: 1.5s linear;}
 
 
-.section .desc {margin: 0 auto;margin-right: 3.5rem;}
-.section:nth-child(odd) .desc {margin-left: 3.5rem;margin-right: auto;}
-.section .desc h2 {font-size: 2rem;font-weight: 300;margin-bottom: 1rem;
+.section .desc {margin: 0 auto;margin-right: 5rem;}
+.section:nth-child(odd) .desc {margin-left: 1rem;margin-right: auto;}
+.section .desc h2 {font-size: 2rem;font-weight: 500;margin-bottom: 1rem;
 font-family: 'Noto Serif KR', serif;}
-.section .desc p {font-size: 0.9rem;font-weight: 300;margin-bottom: 2rem;}
+.section .desc p {font-size: 0.8rem;font-weight: 100;margin-bottom: 1rem;}
+.section .desc span {display: block;margin-bottom: 2rem;
+font-size: 1rem;}
+
 .section .desc dl {margin-bottom: 1rem;}
 .section .desc dt {font-size: 1.2rem;font-weight: 500;margin-bottom: 1rem}
-.section .desc .desc_c dd {display: inline-block;margin-right: 0.5rem; border-radius: 50%;padding: 0.5rem;position: relative;}
+.section .desc .desc_c dd {display: inline-block;margin:0 0.5rem 0 0; border-radius: 50%;padding: 0.5rem;position: relative;}
 
-.section .desc .desc_t dt {border-top: 1px solid #d4d4d4;padding-top: 0.5rem;}
+.section .desc .desc_t dt {padding-top: 1.5rem;}
 .section .desc .desc_t dd {display: inline-block; margin-right: 0.5rem;
-font-weight: 400;font-size: 0.75rem;}
+font-weight: 300;font-size: 0.75rem;}
 .section .container .desc a {display: inline-block;padding: 0.75rem 1rem;
 font-size: 0.8rem;color: #fff;margin-right: 0.25rem;}
 
 /*------------------- intro 디자인 ------------------------------*/
 
-.intro {background: url(./pf_img/patten.jpg);}
-.intro .container {width: 70rem;margin: 0 auto;display: flex;align-items: center;justify-content: center;}
+.intro .container {width: 70rem;margin: 0 auto;display: flex;align-items: center;justify-content: space-between;}
 .intro .container>* {padding: 0 5rem;}
 
 .intro .container figure {position: relative;}
-.clock01 {width: 0.1rem;height: 5rem;background: #000;transform-origin: bottom center;
+.clock01 {width: 0.1rem;height: 5rem;background: #fff;transform-origin: bottom center;
 position: absolute;top: 28%;left: 50%;transform: translateX(-50%);z-index: -1;}
-.clock02 {width: 0.1rem;height: 5rem;background: #000;transform-origin: bottom center;
+.clock02 {width: 0.1rem;height: 5rem;background: #fff;transform-origin: bottom center;
 position: absolute;top: 28%;left: 50%;transform: translateX(-50%);z-index: -1;}
 .clock03 {width: 0.1rem;height: 5rem;background: #f00;transform-origin: bottom center;
 position: absolute;top: 28%;left: 50%;transform: translateX(-50%);z-index: -1;}
 
 .intro .container figure img {width: 100%;}
 
-.intro .slogan h2 {position: relative; font-size: 1.5rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: var(--mc);}
-.intro .slogan span {font-size: 4rem;font-weight: 700;color: #eee;
-animation: type 2s forwards;}
+.intro .slogan h2 {position: relative; font-size: 1.5rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;}
+.intro .slogan span {display: block; font-size: 4rem;font-weight: 700;color: #fff;animation: type 2s forwards;text-indent:-5px;}
 
 @keyframes type {
     to {text-shadow: 3px 3px 1px #000;} 
@@ -201,7 +202,7 @@ border: 1px solid #999;}
 
 /*------------------- profile ------------------------------*/
 
-.profile {background: #EAE2D7;}
+.profile {background:var(--mc);}
 
 
 .profile .container {margin-bottom: 5rem;}
@@ -217,7 +218,7 @@ font-weight: 500;}
 
 .profile .skill {opacity: 0;transform: translateY(10rem);}
 .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
-.profile .skill dl {margin-bottom: 2rem;border-bottom: 1px solid #666;
+.profile .skill dl {margin-bottom: 2rem;border-bottom: 1px solid #ddd;
 padding-bottom: 2rem;}
 .profile .skill dt {line-height: 1.8;font-size: 1.2rem;margin-bottom: 2rem;}
 .profile .skill dd:nth-child(2) {font-size: 1.1rem;font-weight: 700;}
@@ -227,7 +228,7 @@ margin-bottom: 1rem;}
 
 .profile .skill_list .icon {display: flex;}
 .profile .skill_list i {display: block; padding: 1rem;font-size: 2rem;
-background: #555;border-radius: 50%;margin: 0 auto;}
+background: #333;border-radius: 50%;margin: 0 auto;}
 
 .profile .skill_list .xi-html5 {color: #F16529;}
 .profile .skill_list .xi-css3 {color: #6CB7D0;}
@@ -240,7 +241,7 @@ background: #555;border-radius: 50%;margin: 0 auto;}
 .profile .career strong {display: block;font-size: 1.7rem;font-weight: 700;
 margin-bottom: 1rem;}
 
-.profile .career_list p {font-weight: 400;
+.profile .career_list p {font-weight: 300;
 margin-bottom: 1.5rem;line-height: 1.5;}
 .profile .career_list p:before {content: "";display: block;
 width: 0.5rem;height: 0.5rem;background: #F47520;margin: 0 auto;
@@ -249,9 +250,10 @@ border-radius: 50%;}
 /*------------------- footer ------------------------------*/
 
 #footer .toTop {position: fixed;bottom: 3rem;right: 3rem;z-index: 999;}
-#footer .toTop i {font-size: 1.5rem;padding: .5rem;background: var(--mc);
-color: var(--lc);}
-#footer  address {position: fixed;bottom: 1rem;left: 1rem;z-index: 999;}
+#footer .toTop i {font-size: 1.5rem;padding: .5rem;background: #fff;
+color: var(--dc);}
+#footer  address {position: fixed;bottom: 1rem;left: 1rem;
+color: #fff;font-weight: 300; z-index: 999;}
 
 /* 
 
@@ -329,8 +331,8 @@ max width : 768px
     z-index: 9999;}
     
     #header .pf {font-weight: 500;line-height: 1.4;position: relative;
-    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;
-    margin-bottom: 0.25rem;font-size: 0.6rem;font-weight: 300;}
+    text-align: center;background: #fff;width: 5rem;
+    margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
     #header .pf_list {display: none; position: absolute;top: 0.8rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--dc);
@@ -342,18 +344,16 @@ max width : 768px
     
     #header .pf:hover .pf_list {display: none;}
     
-    #header .infoCase>a {display: block; border: 1px solid var(--mc);margin-left: 0;
-    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.6rem;font-weight: 300;
-    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;}
-    
-    #header .infoCase>a:hover {background: var(--mc);color: var(--lc);}
-    
+    #header .infoCase>a {display: block;margin-left: 0;
+    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;
+    text-align: center;background: #fff;width: 5rem;}
+      
     .mouse {position: absolute;bottom: 5rem;left: 50%;transform: translateX(-50%);}
-    .mouse span {position: relative; width: 2rem;height: 5rem;border: 2px solid var(--mc);
+    .mouse a {position: relative; width: 2rem;height: 5rem;border: 2px solid #fff;
     padding: 0.5rem;border-radius: 8rem 8rem 10rem 10rem;}
-    .mouse span:after {content: "";display: block;position: absolute;top: 0.25rem;
+    .mouse a:after {content: "";display: block;position: absolute;top: 0.25rem;
     left: 50%;transform: translateX(-50%);width: 0.1rem;height: 0.5rem;
-    background: var(--mc);animation: mouse 1.5s infinite;}
+    background: #fff;animation: mouse 1.5s infinite;}
 
     @keyframes mouse {
         0% {top: 0.25rem;}
@@ -365,7 +365,7 @@ max width : 768px
     /*------------------- section 디자인 ------------------------------*/
     
     
-    .section {position: relative;z-index: -2;}
+    .section {position: relative;background: linear-gradient(to left,#0f0f0f,var(--mc));color: #fff;z-index: -2;}
     .section:before {content: attr(data-);position: absolute;top:6rem;
     left: auto;right: 0; font-size: 8rem;font-weight: 900;color: #fff;
     text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);z-index: -2;}
@@ -406,39 +406,47 @@ max width : 768px
     .section .desc h2 {font-size: 0.9rem;font-weight: 500;margin-bottom: 1rem;
     font-family: 'Noto Serif KR', serif;}
     .section .desc p {font-size: 0.7rem;font-weight: 300;margin-bottom: 1rem;}
+
+    .section .desc span {display: block;margin-bottom: 2rem;
+    font-size: 0.6rem;font-weight: 300;width: 50%;margin-left: auto;
+    line-height: 1.2;}
+    .section:nth-child(odd) .desc span {margin-left: 0;}
+
     .section .desc dl {margin-bottom: 1rem;}
     .section .desc dt {font-size: 1rem;font-weight: 500;margin-bottom: 1rem;}
-    .section .desc .desc_c dd {display: inline-block;margin: 0 0.5rem;border-radius: 50%;padding: 0.25rem;position: relative;}
-    
+    .section .desc .desc_c dd {display: inline-block;margin: 0 0.5rem 0 0;border-radius: 50%;padding: 0.25rem;position: relative;}
+    .section:nth-child(even) .desc .desc_c dd {margin: 0 0 0 0.5rem;}
+
     .section .desc .desc_t dt {border-top:none;padding-top: 0.5rem;}
-    .section .desc .desc_t dd {display: inline-block; margin-right:0.5rem;
+    .section .desc .desc_t dd {display: inline-block; margin:0 0.5rem 0 0;
     font-weight: 300;font-size: 0.7rem;text-align: center;
     margin-bottom: 0.5rem;}
+    .section:nth-child(even) .desc .desc_t dd {margin: 0 0 0 0.5rem;}
 
     .section .container .link {display: flex;justify-content: right;}
     .section:nth-child(odd) .container .link {justify-content: left;}
     .section .container .desc a {display:block;padding: 0.5rem 0.25rem ;
     font-size: 0.6rem;color: #fff;font-weight: 300;border-radius: 0.25rem;
-    margin-right: 0.25rem;}
+    margin:0 0.25rem 0 0;}
+    .section:nth-child(even) .container .desc a {margin: 0 0 0 0.25rem;}
 
     
     /*------------------- intro 디자인 ------------------------------*/
     
-    .intro {background: url(./pf_img/patten.jpg);}
     .intro .container {width: auto;margin: 0 auto;display: flex;align-items: center;justify-content: center;flex-direction: column;}
     .intro .container>* {padding: 0 5rem;}
     
     .intro .container figure {position: relative;width:400px;}
-    .clock01 {width: 0.1rem;height: 1.65rem;background: #000;transform-origin: bottom center;
+    .clock01 {width: 0.1rem;height: 1.65rem;background: #fff;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
-    .clock02 {width: 0.1rem;height: 1.65rem;background: #000;transform-origin: bottom center;
+    .clock02 {width: 0.1rem;height: 1.65rem;background: #fff;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     .clock03 {width: 0.1rem;height: 1.65rem;background: #f00;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     
     .intro .slogan {text-align: center;}
-    .intro .slogan h2 {position: relative; font-size: 1.4rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: var(--mc);}
-    .intro .slogan span {font-size: 2.4rem;font-weight: 700;color: #eee;
+    .intro .slogan h2 {position: relative; font-size: 1.4rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: #fff;}
+    .intro .slogan span {font-size: 2.4rem;font-weight: 700;color: #fff;
     animation: type 2s forwards;}
     
     @keyframes type {
@@ -487,7 +495,7 @@ max width : 768px
     
     /*------------------- profile ------------------------------*/
     
-    .profile {background: #EAE2D7;}
+    .profile {background: var(--mc);}
 
     
     .profile .container {margin-bottom: 0;flex-direction:column;}
@@ -502,7 +510,7 @@ max width : 768px
 
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
-    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #666;
+    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #FFF;
     padding-bottom: 1rem;}
     .profile .skill dt {line-height: 1.8;font-size: 0.7rem;margin-bottom: 1rem;}
     .profile .skill dd:nth-child(2) {font-size: 0.9rem;font-weight: 700;}
@@ -533,8 +541,8 @@ max width : 768px
     /*------------------- footer ------------------------------*/
     
     #footer .toTop {position: fixed;bottom: 3rem;right: 0;z-index: 999;}
-    #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: var(--mc);
-    color: var(--lc);}
+    #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: #fff;
+        color: var(--dc);}
     #footer  address {position: fixed;bottom: 1rem;left: 1rem;
     font-size: 0.6rem; z-index: 999;line-height: 1.2;}
 }
@@ -615,8 +623,8 @@ max width : 690px
     z-index: 9999;}
     
     #header .pf {font-weight: 500;line-height: 1.4;position: relative;
-    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;
-    margin-bottom: 0.25rem;font-size: 0.6rem;font-weight: 300;}
+    text-align: center;background: #fff;width: 5rem;
+    margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
     #header .pf_list {display: none; position: absolute;top: 0.8rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--dc);
@@ -628,18 +636,16 @@ max width : 690px
     
     #header .pf:hover .pf_list {display: none;}
     
-    #header .infoCase>a {display: block; border: 1px solid var(--mc);margin-left: 0;
-    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.6rem;font-weight: 300;
-    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;}
-    
-    #header .infoCase>a:hover {background: var(--mc);color: var(--lc);}
+    #header .infoCase>a {display: block;margin-left: 0;
+    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;
+    text-align: center;background: #fff;width: 5rem;}
     
     .mouse {position: absolute;bottom: 5rem;left: 50%;transform: translateX(-50%);}
-    .mouse span {position: relative; width: 2rem;height: 5rem;border: 2px solid var(--mc);
+    .mouse a {position: relative; width: 2rem;height: 5rem;border: 2px solid #fff;
     padding: 0.5rem;border-radius: 8rem 8rem 10rem 10rem;}
-    .mouse span:after {content: "";display: block;position: absolute;top: 0.25rem;
+    .mouse a:after {content: "";display: block;position: absolute;top: 0.25rem;
     left: 50%;transform: translateX(-50%);width: 0.1rem;height: 0.5rem;
-    background: var(--mc);animation: mouse 1.5s infinite;}
+    background: #fff;animation: mouse 1.5s infinite;}
 
     @keyframes mouse {
         0% {top: 0.25rem;}
@@ -651,7 +657,7 @@ max width : 690px
     /*------------------- section 디자인 ------------------------------*/
     
     
-    .section {position: relative;z-index: -2;}
+    .section {position: relative;background: linear-gradient(to left,#0f0f0f,var(--mc));color: #fff;z-index: -2;}
     .section:before {content: attr(data-);position: absolute;top:6rem;
     left: auto;right: 0; font-size: 8rem;font-weight: 900;color: #fff;
     text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);z-index: -2;}
@@ -664,7 +670,7 @@ max width : 690px
     .section.on .effect {opacity: 1;transition: 0.3s;transform: translateY(0);} 
     
     .section .mockup {background: url(./pf_img/mockup_mac.png)no-repeat center center/100%;
-    padding: 5% 5% 6.5%;position: relative;overflow: hidden;width: 15rem;}
+    padding: 7% 6.3% 8.5%;position: relative;overflow: hidden;width: 15rem;}
 
     .section .mockup_m {position:static;bottom: 4rem;left: 0;background: url(./pf_img/mockup_phone.png)no-repeat center center/100%;
     width: 7rem;padding: 2% ;margin-left: 0.5rem;display: none;}
@@ -672,7 +678,7 @@ max width : 690px
     padding: 2.5%;width: 7rem;margin-right: 0.5rem;}
   
     
-    .section .mockup .mk_pc {position: relative;padding-bottom: 64%;
+    .section .mockup .mk_pc {position: relative;padding-bottom: 63%;
     overflow: hidden;width: 11.5rem;}
     .section .mockup .mk_pc img {position: absolute;top: 0;left: 0;width: 100%;}
     .section .mockup .mk_pc:hover img {transform: translateY(-100%);top: 100%;
@@ -694,37 +700,39 @@ max width : 690px
     .section .desc p {font-size: 0.7rem;font-weight: 300;margin-bottom: 1rem;}
     .section .desc dl {margin-bottom: 1rem;}
     .section .desc dt {font-size: 1rem;font-weight: 500;margin-bottom: 1rem;}
-    .section .desc .desc_c dd {display: inline-block;margin: 0 0.5rem;border-radius: 50%;padding: 0.25rem;position: relative;}
-    
+    .section .desc .desc_c dd {display: inline-block;margin: 0 0.5rem 0 0;border-radius: 50%;padding: 0.25rem;position: relative;}
+    .section:nth-child(even) .desc .desc_c dd {margin: 0 0 0 0.5rem;}
+
     .section .desc .desc_t dt {border-top:none;padding-top: 0.5rem;}
-    .section .desc .desc_t dd {display: inline-block; margin-right:0.5rem;
+    .section .desc .desc_t dd {display: inline-block; margin:0 0.5rem 0 0;
     font-weight: 300;font-size: 0.7rem;text-align: center;
     margin-bottom: 0.5rem;}
+    .section:nth-child(even) .desc .desc_t dd {margin: 0 0 0 0.5rem;}
 
     .section .container .link {display: flex;justify-content: right;}
     .section:nth-child(odd) .container .link {justify-content: left;}
     .section .container .desc a {display:block;padding: 0.5rem 0.25rem ;
     font-size: 0.6rem;color: #fff;font-weight: 300;border-radius: 0.25rem;
-    margin-right: 0.25rem;}
+    margin:0 0.25rem 0 0;}
+    .section:nth-child(even) .container .desc a {margin: 0 0 0 0.25rem;}
 
     
     /*------------------- intro 디자인 ------------------------------*/
     
-    .intro {background: url(./pf_img/patten.jpg);}
     .intro .container {width: auto;margin: 0 auto;display: flex;align-items: center;justify-content: center;flex-direction: column;}
     .intro .container>* {padding: 0 5rem;}
     
     .intro .container figure {position: relative;width:400px;}
-    .clock01 {width: 0.1rem;height: 1.65rem;background: #000;transform-origin: bottom center;
+    .clock01 {width: 0.1rem;height: 1.65rem;background: #fff;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
-    .clock02 {width: 0.1rem;height: 1.65rem;background: #000;transform-origin: bottom center;
+    .clock02 {width: 0.1rem;height: 1.65rem;background: #fff;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     .clock03 {width: 0.1rem;height: 1.65rem;background: #f00;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     
     .intro .slogan {text-align: center;}
-    .intro .slogan h2 {position: relative; font-size: 1.4rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: var(--mc);}
-    .intro .slogan span {font-size: 2.4rem;font-weight: 700;color: #eee;
+    .intro .slogan h2 {position: relative; font-size: 1.4rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: #fff;}
+    .intro .slogan span {font-size: 2.4rem;font-weight: 700;color: #fff;
     animation: type 2s forwards;}
     
     @keyframes type {
@@ -773,7 +781,7 @@ max width : 690px
     
     /*------------------- profile ------------------------------*/
     
-    .profile {background: #EAE2D7;}
+    .profile {background: var(--mc);}
 
     .profile .container {margin-bottom: 0;flex-direction:column;}
     .profile .container>div {flex: 1;text-align: center;
@@ -786,7 +794,7 @@ max width : 690px
     
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
-    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #666;
+    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #fff;
     padding-bottom: 1rem;}
     .profile .skill dt {line-height: 1.8;font-size: 0.7rem;margin-bottom: 1rem;}
     .profile .skill dd:nth-child(2) {font-size: 0.9rem;font-weight: 700;}
@@ -817,8 +825,8 @@ max width : 690px
     /*------------------- footer ------------------------------*/
     
     #footer .toTop {position: fixed;bottom: 3rem;right: 0;z-index: 999;}
-    #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: var(--mc);
-    color: var(--lc);}
+    #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: #fff;
+        color: var(--dc);}
     #footer  address {position: fixed;bottom: 1rem;left: 1rem;
     font-size: 0.6rem; z-index: 999;line-height: 1.2;}
 }
@@ -901,8 +909,8 @@ max width : 540px
     z-index: 9999;}
     
     #header .pf {font-weight: 500;line-height: 1.4;position: relative;
-    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;
-    margin-bottom: 0.25rem;font-size: 0.6rem;font-weight: 300;}
+    text-align: center;background: #fff;width: 5rem;
+    margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
     #header .pf_list {display: none; position: absolute;top: 0.8rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--dc);
@@ -914,18 +922,16 @@ max width : 540px
     
     #header .pf:hover .pf_list {display: none;}
     
-    #header .infoCase>a {display: block; border: 1px solid var(--mc);margin-left: 0;
-    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.6rem;font-weight: 300;
-    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;}
-    
-    #header .infoCase>a:hover {background: var(--mc);color: var(--lc);}
+    #header .infoCase>a {display: block;margin-left: 0;
+    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;
+    text-align: center;background: #fff;width: 5rem;}
     
     .mouse {position: absolute;bottom: 5rem;left: 50%;transform: translateX(-50%);}
-    .mouse span {position: relative; width: 2rem;height: 5rem;border: 2px solid var(--mc);
+    .mouse a {position: relative; width: 2rem;height: 5rem;border: 2px solid #fff;
     padding: 0.5rem;border-radius: 8rem 8rem 10rem 10rem;}
-    .mouse span:after {content: "";display: block;position: absolute;top: 0.25rem;
+    .mouse a:after {content: "";display: block;position: absolute;top: 0.25rem;
     left: 50%;transform: translateX(-50%);width: 0.1rem;height: 0.5rem;
-    background: var(--mc);animation: mouse 1.5s infinite;}
+    background: #fff;animation: mouse 1.5s infinite;}
 
     @keyframes mouse {
         0% {top: 0.25rem;}
@@ -937,7 +943,7 @@ max width : 540px
     /*------------------- section 디자인 ------------------------------*/
     
     
-    .section {position: relative;z-index: -2;}
+    .section {position: relative;background: linear-gradient(to left,#0f0f0f,var(--mc));color: #fff;z-index: -2;}
     .section:before {content: attr(data-);position: absolute;top:6rem;
     left: auto;right: 0; font-size: 8rem;font-weight: 900;color: #fff;
     text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);z-index: -2;}
@@ -980,23 +986,25 @@ max width : 540px
     .section .desc p {font-size: 0.7rem;font-weight: 300;margin-bottom: 1rem;}
     .section .desc dl {margin-bottom: 1rem;}
     .section .desc dt {font-size: 1rem;font-weight: 500;margin-bottom: 1rem;}
-    .section .desc .desc_c dd {display: inline-block;margin: 0 0.5rem;border-radius: 50%;padding: 0.25rem;position: relative;}
-    
+    .section .desc .desc_c dd {display: inline-block;margin: 0 0.5rem 0 0;border-radius: 50%;padding: 0.25rem;position: relative;}
+    .section:nth-child(even) .desc .desc_c dd {margin: 0 0 0 0.5rem;}
+
     .section .desc .desc_t dt {border-top:none;padding-top: 0.5rem;}
-    .section .desc .desc_t dd {display: inline-block; margin-right:0.5rem;
+    .section .desc .desc_t dd {display: inline-block; margin:0 0.5rem 0 0;
     font-weight: 300;font-size: 0.7rem;text-align: center;
     margin-bottom: 0.5rem;}
+    .section:nth-child(even) .desc .desc_t dd {margin: 0 0 0 0.5rem;}
 
     .section .container .link {display: flex;justify-content: right;}
     .section:nth-child(odd) .container .link {justify-content: left;}
     .section .container .desc a {display:block;padding: 0.5rem 0.25rem ;
     font-size: 0.6rem;color: #fff;font-weight: 300;border-radius: 0.25rem;
-    margin-right: 0.25rem;}
+    margin:0 0.25rem 0 0;}
+    .section:nth-child(even) .container .desc a {margin: 0 0 0 0.25rem;}
 
     
     /*------------------- intro 디자인 ------------------------------*/
     
-    .intro {background: url(./pf_img/patten.jpg);}
     .intro .container {width: auto;margin: 0 auto;display: flex;align-items: center;justify-content: center;flex-direction: column;}
     .intro .container>* {padding: 0 5rem;}
     
@@ -1009,8 +1017,8 @@ max width : 540px
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     
     .intro .slogan {text-align: center;}
-    .intro .slogan h2 {position: relative; font-size: 1.4rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: var(--mc);}
-    .intro .slogan span {font-size: 2.4rem;font-weight: 700;color: #eee;
+    .intro .slogan h2 {position: relative; font-size: 1.4rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: #fff;}
+    .intro .slogan span {font-size: 2.4rem;font-weight: 700;color: #fff;
     animation: type 2s forwards;}
     
     @keyframes type {
@@ -1059,7 +1067,7 @@ max width : 540px
     
     /*------------------- profile ------------------------------*/
     
-    .profile {background: #EAE2D7;}
+    .profile {background: var(--mc);}
     
     .profile .container {margin-bottom: 0;flex-direction:column;}
     .profile .container>div {flex: 1;text-align: center;
@@ -1072,7 +1080,7 @@ max width : 540px
     
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
-    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #666;
+    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #fff;
     padding-bottom: 1rem;}
     .profile .skill dt {line-height: 1.8;font-size: 0.7rem;margin-bottom: 1rem;}
     .profile .skill dd:nth-child(2) {font-size: 0.9rem;font-weight: 700;}
@@ -1103,8 +1111,8 @@ max width : 540px
     /*------------------- footer ------------------------------*/
     
     #footer .toTop {position: fixed;bottom: 3rem;right: 0;z-index: 999;}
-    #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: var(--mc);
-    color: var(--lc);}
+    #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: #fff;
+        color: var(--dc);}
     #footer  address {position: fixed;bottom: 1rem;left: 1rem;
     font-size: 0.6rem; z-index: 999;line-height: 1.2;}
 }
@@ -1187,8 +1195,8 @@ max width : 375px
     z-index: 9999;}
     
     #header .pf {font-weight: 500;line-height: 1.4;position: relative;
-    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;
-    margin-bottom: 0.25rem;font-size: 0.6rem;font-weight: 300;}
+    text-align: center;background: #fff;width: 5rem;
+    margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
     #header .pf_list {display: none; position: absolute;top: 0.8rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--dc);
@@ -1200,18 +1208,16 @@ max width : 375px
     
     #header .pf:hover .pf_list {display: none;}
     
-    #header .infoCase>a {display: block; border: 1px solid var(--mc);margin-left: 0;
-    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.6rem;font-weight: 300;
-    text-align: center;background: var(--mc);color: var(--lc);width: 5rem;}
-    
-    #header .infoCase>a:hover {background: var(--mc);color: var(--lc);}
+    #header .infoCase>a {display: block; margin-left: 0;
+    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;
+    text-align: center;background: #fff;width: 5rem;}
     
     .mouse {position: absolute;bottom: 5rem;left: 50%;transform: translateX(-50%);}
-    .mouse span {position: relative; width: 2rem;height: 5rem;border: 2px solid var(--mc);
+    .mouse a {position: relative; width: 2rem;height: 5rem;border: 2px solid #fff;
     padding: 0.5rem;border-radius: 8rem 8rem 10rem 10rem;}
-    .mouse span:after {content: "";display: block;position: absolute;top: 0.25rem;
+    .mouse a:after {content: "";display: block;position: absolute;top: 0.25rem;
     left: 50%;transform: translateX(-50%);width: 0.1rem;height: 0.5rem;
-    background: var(--mc);animation: mouse 1.5s infinite;}
+    background: #fff;animation: mouse 1.5s infinite;}
 
     @keyframes mouse {
         0% {top: 0.25rem;}
@@ -1223,7 +1229,7 @@ max width : 375px
     /*------------------- section 디자인 ------------------------------*/
     
     
-    .section {position: relative;z-index: -2;}
+    .section {position: relative;background: linear-gradient(to left,#0f0f0f,var(--mc));color: #fff;z-index: -2;}
     .section:before {content: attr(data-);position: absolute;top:8rem;
     left: auto;right: 0; font-size: 5rem;font-weight: 900;color: #fff;
     text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);z-index: -2;}
@@ -1264,37 +1270,42 @@ max width : 375px
     .section .desc h2 {font-size: 0.9rem;font-weight: 500;margin-bottom: 1rem;
     font-family: 'Noto Serif KR', serif;}
     .section .desc p {font-size: 0.7rem;font-weight: 300;margin-bottom: 1rem;}
+
+    .section:nth-child(odd) .desc span {margin-left: auto;}
+
     .section .desc dl {margin-bottom: 1rem;}
     .section .desc dt {font-size: 1rem;font-weight: 500;margin-bottom: 1rem;}
-    .section .desc .desc_c dd {display: inline-block;margin: 0 0.5rem;border-radius: 50%;padding: 0.25rem;position: relative;}
-    
-    .section .desc .desc_t dt {border-top: none;padding-top: 0.5rem;}
-    .section .desc .desc_t dd {display: block; margin-right:0;
-    font-weight: 300;font-size: 0.7rem;text-align: right;
+    .section .desc .desc_c dd {display: inline-block;margin: 0 0.5rem 0 0;border-radius: 50%;padding: 0.25rem;position: relative;}
+    .section:nth-child(odd) .desc .desc_c dd {margin: 0 0 0 0.5rem;}
+
+    .section .desc .desc_t dt {border-top:none;padding-top: 0.5rem;}
+    .section .desc .desc_t dd {display: inline-block; margin:0 0.5rem 0 0;
+    font-weight: 300;font-size: 0.7rem;text-align: center;
     margin-bottom: 0.5rem;}
+    .section:nth-child(odd) .desc .desc_t dd {margin: 0 0 0 0.5rem;}
 
     .section .container .link {display: flex;}
+    .section:nth-child(odd) .container .link {justify-content: right;}
     .section .container .desc a {display:block;padding: 0.5rem 0.25rem ;
-    font-size: 0.6rem;color: #fff;font-weight: 300;border-radius: 0.25rem;
-    margin-left:0.25rem;}
+    font-size: 0.6rem;color: #fff;font-weight: 300;border-radius: 0.25rem;}
+    .section:nth-child(odd) .container .desc a {margin:0 0 0 0.25rem;}
     
     /*------------------- intro 디자인 ------------------------------*/
     
-    .intro {background: url(./pf_img/patten.jpg);}
     .intro .container {width: auto;margin: 0 auto;display: flex;align-items: center;justify-content: center;flex-direction: column;}
     .intro .container>* {padding: 0 5rem;}
     
     .intro .container figure {position: relative;width:400px;}
-    .clock01 {width: 0.1rem;height: 1.65rem;background: #000;transform-origin: bottom center;
+    .clock01 {width: 0.1rem;height: 1.65rem;background: #fff;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
-    .clock02 {width: 0.1rem;height: 1.65rem;background: #000;transform-origin: bottom center;
+    .clock02 {width: 0.1rem;height: 1.65rem;background: #fff;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     .clock03 {width: 0.1rem;height: 1.65rem;background: #f00;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     
     .intro .slogan {text-align: center;}
-    .intro .slogan h2 {position: relative; font-size: 1.2rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: var(--mc);}
-    .intro .slogan span {font-size: 2rem;font-weight: 700;color: #eee;
+    .intro .slogan h2 {position: relative; font-size: 1.2rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: #fff;}
+    .intro .slogan span {font-size: 2rem;font-weight: 700;color: #fff;
     animation: type 2s forwards;}
     
     @keyframes type {
@@ -1343,7 +1354,7 @@ max width : 375px
     
     /*------------------- profile ------------------------------*/
     
-    .profile {background: #EAE2D7;}
+    .profile {background: var(--mc);}
     
     .profile .container {margin-bottom: 0;flex-direction:column;}
     .profile .container>div {flex: 1;text-align: center;
@@ -1356,7 +1367,7 @@ max width : 375px
     
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
-    .profile .skill dl {margin-bottom: 0.5rem;border-bottom: 1px solid #666;
+    .profile .skill dl {margin-bottom: 0.5rem;border-bottom: 1px solid #fff;
     padding-bottom: 0.5rem;}
     .profile .skill dt {line-height: 1.2;font-size: 0.7rem;margin-bottom: 0.5rem;}
     .profile .skill dd:nth-child(2) {font-size: 0.9rem;font-weight: 700;}
@@ -1387,8 +1398,8 @@ max width : 375px
     /*------------------- footer ------------------------------*/
     
     #footer .toTop {position: fixed;bottom: 3rem;right: 0;z-index: 999;}
-    #footer .toTop i {font-size: 1.5rem;padding: .25rem;background: var(--mc);
-    color: var(--lc);}
+    #footer .toTop i {font-size: 1.5rem;padding: .25rem;background: #fff;
+    color: var(--dc);}
     #footer  address {position: fixed;bottom: 1rem;left: 1rem;
     font-size: 0.6rem; z-index: 999;line-height: 1.2;}
 }
