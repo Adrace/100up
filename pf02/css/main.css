@@ -392,14 +392,14 @@ max-width 768px
 
     .con01 .itm {display: none;}
     .con01 .itm.on {display: block;}
-    .con01 .itm figure {border: 1px solid #999;margin: 0 15px;position: relative;}
+    .con01 .itm figure {border: 1px solid #999;margin: 5px 50px;position: relative;}
     .con01 .itm figure:after {content: attr(data-num);display: block;padding: 3px 10px;
     background: #0166B0;position: absolute;top: 0;left: 0;transform: translate(-10%,-50%);
     color: #fff;transition: 0.15s;font-size: 12px;width: 100px;}
-    .con01 .itm figure img {width: 25%;}
+    .con01 .itm figure img {width: 20%;}
     .con01 .itm figure:hover:after {background: #0166B0;color: #fff;}
 
-    .con01 .itm h3 {font-size: 20px;font-weight: 500;margin-bottom: 20px;}
+    .con01 .itm h3 {font-size: 16px;font-weight: 300;margin-bottom: 20px;}
     .con01 .itm p {display: none;font-size: 14px;font-weight: 500;margin-bottom: 10px;}
     .con01 .itm span {display: none;margin-bottom: 20px;font-size: 12px;}
 
@@ -430,25 +430,27 @@ max-width 768px
     .con03 .container h2 {font-size: 16px;font-weight: 500;letter-spacing: 0.5em;
     color: #333;margin-bottom: 30px;position: relative;line-height: 1.4;}
     .con03 .container h2:after {content: "";display: block;width: 100px;
-    height: 1px;background: #369;position: absolute;top: 65px;left: 50%;
+    height: 1px;background: #369;position: absolute;top: 80px;left: 50%;
     transform: translateX(-50%);}
 
     .con03 .container p {font-weight: 300;letter-spacing: -0.025em;
     color: #333;margin-bottom: 50px;font-size: 13px;}
 
-    .con03 .item {display: block;grid-template-columns: 1fr 1fr;}
+    .con03 .item {display: block;grid-template-columns: 1fr;}
 
-    .con03 .item figure {position: relative;margin: 15px;overflow: hidden;}
+    .con03 .item figure {position: relative;margin: 15px auto;overflow: hidden;
+    width: 45%;}
     .con03 .item figure:after {content: "";display: block;width: 70%;height: 100%;
     background: rgba(0,0,0,0.4);position: absolute;top: 0;left: 0;transition: 0.3s;}
     .con03 .item figure img {width: 100%;}
 
     .con03 .con03_info {position: absolute;top:50%;left: 5%;transform: translateY(-50%);
     z-index: 999;color: #fff;transition: 0.3s;text-align: left;}
-    .con03 .con03_info h3 {font-size: 14px;font-weight: 300;margin-bottom: 20px;}
+    .con03 .con03_info h3 {font-size: 13px;font-weight: 300;margin-bottom: 10px;
+    width: 70%;line-height: 1.4;}
     .con03 .con03_info p {display: none;font-size: 15px;font-weight: 300;margin-bottom: 20px;
     color: #fff;line-height: 1.4;}
-    .con03 .con03_info a {font-size: 14px;font-weight: 300;line-height: 1.2;
+    .con03 .con03_info a {font-size: 13px;font-weight: 300;line-height: 1.2;
     padding: 2.5px;background: #369;display: block;width: 70px;text-align: center;}
 
 
@@ -680,7 +682,7 @@ max-width 370px
     .con01 .itm figure img {width: 25%;}
     .con01 .itm figure:hover:after {background: #0166B0;color: #fff;}
 
-    .con01 .itm h3 {font-size: 20px;font-weight: 500;margin-bottom: 20px;}
+    .con01 .itm h3 {font-size: 16px;font-weight: 300;margin-bottom: 20px;}
     .con01 .itm p {display: none;font-size: 14px;font-weight: 500;margin-bottom: 10px;}
     .con01 .itm span {display: none;margin-bottom: 20px;font-size: 12px;}
 
@@ -719,7 +721,8 @@ max-width 370px
 
     .con03 .item {display: block;grid-template-columns: 1fr 1fr;}
 
-    .con03 .item figure {position: relative;margin: 15px;overflow: hidden;}
+    .con03 .item figure {position: relative;margin: 15px auto;overflow: hidden;
+    width: 80%;}
     .con03 .item figure:after {content: "";display: block;width: 70%;height: 100%;
     background: rgba(0,0,0,0.4);position: absolute;top: 0;left: 0;transition: 0.3s;}
     .con03 .item figure img {width: 100%;}
