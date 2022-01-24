@@ -13,7 +13,7 @@ body {font-size: 0.8rem;color: var(--dc);}
 
 h1,h2,h3,p,span,strong {letter-spacing: -0.025em;}
 
-#Wrap {min-width: 95rem;}
+#Wrap {min-width: 95rem;min-height: 100%;}
 
 /*------------------- header ------------------------------*/
 
@@ -56,7 +56,7 @@ background: #fff;border: 1px solid var(--mc);color: var(--dc);
 width: 100%;}
 #header .pf_list li>a {display: block; font-size: 0.7rem;font-weight: 400;
 line-height: 3;transition: 0.2s;outline: 1px solid #999;}
-#header .pf_list li>a:hover {background: var(--mc);color: var(--lc);}
+#header .pf_list li>a:hover {background: #999;color: var(--lc);}
 #header .pf_list li~li {border-top: 1px solid var(--mc);}
 
 #header .pf:hover .pf_list {display: block;}
@@ -81,9 +81,8 @@ background: #fff;animation: mouse 1.5s infinite;}
 /*------------------- section 디자인 ------------------------------*/
 
 
-.section {position: relative;background: linear-gradient(to left,#0f0f0f,var(--mc));color: #fff;
-z-index: -2;}
-.section:nth-child(odd) {background:linear-gradient(to right,#0f0f0f,var(--mc)) ;}
+.section {position: relative;color: #fff;background: linear-gradient(to left,#0f0f0f,var(--mc));z-index: -2;}
+.section:nth-child(odd) {background:linear-gradient(to right,#0f0f0f,var(--mc));}
 .section:nth-child(1) {background: var(--mc);}
 
 .section:before {content: attr(data-);position: absolute;top:0;
@@ -142,6 +141,14 @@ font-size: 0.8rem;color: #fff;margin-right: 0.25rem;}
 
 /*------------------- intro 디자인 ------------------------------*/
 
+
+.intro::after {content: "";display: block;position: absolute;
+top: 0;left: -10%;width: 50%;height: 100%;background:#fff;
+transform: rotate(45deg); transition: 0.3s;
+z-index: -1;}
+
+.intro.on:after {transform: rotate(120deg);}
+
 .intro .container {width: 70rem;margin: 0 auto;display: flex;align-items: center;justify-content: space-between;}
 .intro .container>* {padding: 0 5rem;}
 
@@ -155,11 +162,13 @@ position: absolute;top: 28%;left: 50%;transform: translateX(-50%);z-index: -1;}
 
 .intro .container figure img {width: 100%;}
 
+.intro .slogan {color: #333;}
 .intro .slogan h2 {position: relative; font-size: 1.5rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;}
-.intro .slogan span {display: block; font-size: 4rem;font-weight: 700;color: #fff;animation: type 2s forwards;text-indent:-5px;}
+.intro .slogan span {display: block; font-size: 4rem;font-weight: 700;animation: type 2s forwards;
+color: #fff; text-indent:-5px;}
 
 @keyframes type {
-    to {text-shadow: 3px 3px 1px #000;} 
+    to {text-shadow: 4px 4px 1px rgba(0,0,0,0.8);} 
 }
 
 .intro .slogan p {font-size: 0.9rem;font-weight: 300;margin-bottom: 1rem;}
@@ -253,7 +262,7 @@ border-radius: 50%;}
 #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: #fff;
 color: var(--dc);}
 #footer  address {position: fixed;bottom: 1rem;left: 1rem;
-color: #fff;font-weight: 300; z-index: 999;}
+color: #fff;font-weight: 300;text-shadow: 1px 1px 1px #333; z-index: 999;}
 
 /* 
 
@@ -334,7 +343,7 @@ max width : 768px
     text-align: center;background: #fff;width: 5rem;
     margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
-    #header .pf_list {display: none; position: absolute;top: 0.8rem;left: 0;
+    #header .pf_list {display: none; position: absolute;top: 1rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--dc);
     width: 100%;}
     #header .pf_list li>a {display: block; font-size: 0.7rem;font-weight: 400;
@@ -366,8 +375,8 @@ max width : 768px
     
     
     .section {position: relative;background: linear-gradient(to left,#0f0f0f,var(--mc));color: #fff;z-index: -2;}
-    .section:before {content: attr(data-);position: absolute;top:6rem;
-    left: auto;right: 0; font-size: 8rem;font-weight: 900;color: #fff;
+    .section:before {content: attr(data-);position: absolute;top:0;
+    left: auto;right: 0; font-size: 6rem;font-weight: 900;color: #fff;
     text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);z-index: -2;}
     .section:nth-child(odd):before {right: 0;left: auto;}
 
@@ -433,6 +442,10 @@ max width : 768px
     
     /*------------------- intro 디자인 ------------------------------*/
     
+    .intro::after {content: "";display:none;position: absolute;
+    top: 0;left: -10%;width: 50%;height: 100%;background: #369;
+    transform: rotate(45deg); z-index: -1;}
+
     .intro .container {width: auto;margin: 0 auto;display: flex;align-items: center;justify-content: center;flex-direction: column;}
     .intro .container>* {padding: 0 5rem;}
     
@@ -444,7 +457,7 @@ max width : 768px
     .clock03 {width: 0.1rem;height: 1.65rem;background: #f00;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     
-    .intro .slogan {text-align: center;}
+    .intro .slogan {text-align: center;color: #fff;}
     .intro .slogan h2 {position: relative; font-size: 1.4rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: #fff;}
     .intro .slogan span {font-size: 2.4rem;font-weight: 700;color: #fff;
     animation: type 2s forwards;}
@@ -626,7 +639,7 @@ max width : 690px
     text-align: center;background: #fff;width: 5rem;
     margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
-    #header .pf_list {display: none; position: absolute;top: 0.8rem;left: 0;
+    #header .pf_list {display: none; position: absolute;top: 1rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--dc);
     width: 100%;}
     #header .pf_list li>a {display: block; font-size: 0.7rem;font-weight: 400;
@@ -658,8 +671,8 @@ max width : 690px
     
     
     .section {position: relative;background: linear-gradient(to left,#0f0f0f,var(--mc));color: #fff;z-index: -2;}
-    .section:before {content: attr(data-);position: absolute;top:6rem;
-    left: auto;right: 0; font-size: 8rem;font-weight: 900;color: #fff;
+    .section:before {content: attr(data-);position: absolute;top:0;
+    left: auto;right: 0; font-size: 6rem;font-weight: 900;color: #fff;
     text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);z-index: -2;}
     .section:nth-child(odd):before {right: 0;left: auto;}
 
@@ -670,7 +683,7 @@ max width : 690px
     .section.on .effect {opacity: 1;transition: 0.3s;transform: translateY(0);} 
     
     .section .mockup {background: url(./pf_img/mockup_mac.png)no-repeat center center/100%;
-    padding: 7% 6.3% 8.5%;position: relative;overflow: hidden;width: 15rem;}
+    padding: 7% 5% 8.5%;position: relative;overflow: hidden;width:auto;}
 
     .section .mockup_m {position:static;bottom: 4rem;left: 0;background: url(./pf_img/mockup_phone.png)no-repeat center center/100%;
     width: 7rem;padding: 2% ;margin-left: 0.5rem;display: none;}
@@ -679,7 +692,7 @@ max width : 690px
   
     
     .section .mockup .mk_pc {position: relative;padding-bottom: 63%;
-    overflow: hidden;width: 11.5rem;}
+    overflow: hidden;width: 9rem;}
     .section .mockup .mk_pc img {position: absolute;top: 0;left: 0;width: 100%;}
     .section .mockup .mk_pc:hover img {transform: translateY(-100%);top: 100%;
     transition: 1.5s linear;}
@@ -730,7 +743,7 @@ max width : 690px
     .clock03 {width: 0.1rem;height: 1.65rem;background: #f00;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     
-    .intro .slogan {text-align: center;}
+    .intro .slogan {text-align: center;color: #fff;}
     .intro .slogan h2 {position: relative; font-size: 1.4rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: #fff;}
     .intro .slogan span {font-size: 2.4rem;font-weight: 700;color: #fff;
     animation: type 2s forwards;}
@@ -912,7 +925,7 @@ max width : 540px
     text-align: center;background: #fff;width: 5rem;
     margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
-    #header .pf_list {display: none; position: absolute;top: 0.8rem;left: 0;
+    #header .pf_list {display: none; position: absolute;top: 1rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--dc);
     width: 100%;}
     #header .pf_list li>a {display: block; font-size: 0.7rem;font-weight: 400;
@@ -944,8 +957,8 @@ max width : 540px
     
     
     .section {position: relative;background: linear-gradient(to left,#0f0f0f,var(--mc));color: #fff;z-index: -2;}
-    .section:before {content: attr(data-);position: absolute;top:6rem;
-    left: auto;right: 0; font-size: 8rem;font-weight: 900;color: #fff;
+    .section:before {content: attr(data-);position: absolute;top:0;
+    left: auto;right: 0; font-size: 4rem;font-weight: 900;color: #fff;
     text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);z-index: -2;}
     .section:nth-child(odd):before {right: 0;left: auto;}
 
@@ -1009,14 +1022,14 @@ max width : 540px
     .intro .container>* {padding: 0 5rem;}
     
     .intro .container figure {position: relative;width:400px;}
-    .clock01 {width: 0.1rem;height: 1.65rem;background: #000;transform-origin: bottom center;
+    .clock01 {width: 0.1rem;height: 1.65rem;background: #fff;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
-    .clock02 {width: 0.1rem;height: 1.65rem;background: #000;transform-origin: bottom center;
+    .clock02 {width: 0.1rem;height: 1.65rem;background: #fff;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     .clock03 {width: 0.1rem;height: 1.65rem;background: #f00;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     
-    .intro .slogan {text-align: center;}
+    .intro .slogan {text-align: center;color: #fff;}
     .intro .slogan h2 {position: relative; font-size: 1.4rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: #fff;}
     .intro .slogan span {font-size: 2.4rem;font-weight: 700;color: #fff;
     animation: type 2s forwards;}
@@ -1198,7 +1211,7 @@ max width : 375px
     text-align: center;background: #fff;width: 5rem;
     margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
-    #header .pf_list {display: none; position: absolute;top: 0.8rem;left: 0;
+    #header .pf_list {display: none; position: absolute;top: 1rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--dc);
     width: 100%;}
     #header .pf_list li>a {display: block; font-size: 0.7rem;font-weight: 400;
@@ -1231,9 +1244,10 @@ max width : 375px
     
     .section {position: relative;background: linear-gradient(to left,#0f0f0f,var(--mc));color: #fff;z-index: -2;}
     .section:nth-child(odd) {background:linear-gradient(to left,#0f0f0f,var(--mc)) ;}
+    .section:nth-child(1) {background: var(--mc);}
 
-    .section:before {content: attr(data-);position: absolute;top:8rem;
-    left: auto;right: 0; font-size: 5rem;font-weight: 900;color: #fff;
+    .section:before {content: attr(data-);position: absolute;top:0;
+    left: auto;right: 0; font-size: 3rem;font-weight: 900;color: #fff;
     text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);z-index: -2;}
 
     .section:nth-child(odd):before {right: 0;left: auto;}
@@ -1305,7 +1319,7 @@ max width : 375px
     .clock03 {width: 0.1rem;height: 1.65rem;background: #f00;transform-origin: bottom center;
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     
-    .intro .slogan {text-align: center;}
+    .intro .slogan {text-align: center;color: #fff;}
     .intro .slogan h2 {position: relative; font-size: 1.2rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;color: #fff;}
     .intro .slogan span {font-size: 2rem;font-weight: 700;color: #fff;
     animation: type 2s forwards;}
