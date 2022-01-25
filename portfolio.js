@@ -15,13 +15,9 @@ $(function(){
                 $('.toTop').fadeIn();
             }
             if (idx==0) {
-                $('h1').css({
-                    color:"#fff"
-                })
+                $('h1').addClass('on');
             }else{
-                $('h1').css({
-                    color:"#333"
-                })
+                $('h1').removeClass('on');
             }
             if (idx==0) {
                 $('nav').css({
