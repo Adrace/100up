@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 :root {
-    --mc:#4C96DB;
+    --mc:#0d6efd;;
     --lc:#f4f4f4;
     --dc:#333333;
 }
@@ -19,9 +19,7 @@ h1,h2,h3,p,span,strong {letter-spacing: -0.025em;}
 
 #header h1 {position: fixed;top: 2rem;left: 2rem;font-size: 1rem;
 font-weight: 700;font-family: 'Luxurious Roman', cursive;
-color: var(--mc);border: 1px solid var(--mc);padding: 0.5rem;border-radius: 10rem;background: #fff; z-index: 999;}
-
-#header h1:hover {background: var(--mc);color: #fff;}
+color: var(--dc);padding: 0.5rem;border-radius: 10rem;transition: 0.3s; z-index: 999;letter-spacing: 0.8em;}
 
 #header nav {position: fixed;top: 50%;right: -0.5rem;transform: translateY(-50%); 
 transition: 0.3s;transform-origin: right;z-index: 999;}
@@ -40,7 +38,7 @@ border-radius: 50%;transition: 1s;font-size: 0.5rem;font-weight: 300;}
 top: 0;left: 0;background: #999;width: 100%;height: 100%;border-radius: 50%;
 opacity: 1;transition: 0.3s;text-indent: -95px;color: #999;}
 #header nav li a:after {content: "";display: block;position: absolute;
-top: 0;left: 0;background: var(--mc);width: 100%;height: 100%;border-radius: 50%;
+top: 0;left: 0;background: var(--dc);width: 100%;height: 100%;border-radius: 50%;
 opacity: 0;transition: 0.3s;}
 #header nav li.on a:after {opacity: 1;transform: scale(1.4);}
 #header nav li.on a:before {font-size: 0.8rem;text-indent: -145px;
@@ -52,24 +50,24 @@ color: var(--dc);font-weight: 500;}
 z-index: 9999;}
 
 #header .pf {font-weight: 300;line-height: 2;position: relative;
-text-align: center;background: var(--mc); width: 5rem;border-radius: 10rem;color: #fff;border: 1px solid var(--mc);}
+text-align: center;background: var(--mc); width: 7.5rem;border-radius: 1rem 1rem 0 0;color: #fff;border: 1px solid var(--mc);}
 
-#header .pf:hover {background: #fff;color: var(--mc);
-border: 1px solid var(--mc);}
+#header .pf:hover {background: #fff;color: var(--dc);
+border: 1px solid var(--dc);}
 
 #header .pf_list {display: none; position: absolute;top: 1.6rem;left: 0;
-background: #fff;border: 1px solid var(--mc);color: var(--mc);
-width: 100%;border-radius: 0.75rem;}
-#header .pf_list li>a {display: block; font-size: 0.7rem;font-weight: 400;line-height: 3;}
-#header .pf_list li~li {border-top: 1px solid var(--mc);}
+background: #fff;border: 1px solid var(--dc);color: var(--dc);
+width: 100%;border-radius: 0 0 0.75rem 0.75rem;}
+#header .pf_list li>a {display: block; font-size: 0.8rem;font-weight: 400;line-height: 3;}
+#header .pf_list li~li {border-top: 1px solid var(--dc);}
 
 #header .pf:hover .pf_list {display: block;}
 
 #header .infoCase>a {display: block;margin-left: 0.25rem;
 font-weight: 300;line-height: 2;color:#fff;
-text-align: center;background: var(--mc); border-radius: 10rem; width: 5rem;border: 1px solid var(--mc);}
+text-align: center;background: var(--mc); border-radius: 0 0 1rem 1rem; width: 5rem;border: 1px solid var(--mc);}
 
-#header .infoCase>a:hover {background: #fff;color: var(--mc);border: 1px solid var(--mc);} 
+#header .infoCase>a:hover {background: #fff;color: var(--dc);border: 1px solid var(--dc);} 
 
 .mouse {position: absolute;bottom: 5rem;left: 50%;transform: translateX(-50%);}
 .mouse a {position: relative; width: 2rem;height: 5rem;border: 3px solid var(--mc);
@@ -90,8 +88,11 @@ background: var(--mc);animation: mouse 1.5s infinite;}
 .section {position: relative;overflow: hidden;background: url(./pf_img/bg_patten.png);z-index: -2;}
 
 .section:before {content: attr(data-);position: absolute;top:0;
-left: 25rem;font-size: 25rem;font-weight: 900;color:#fff;
-text-shadow: -1px 0 var(--dc), 0 1px var(--dc),  1px 0 var(--dc), 0 -1px var(--dc);z-index: -2;}
+left: 25rem;font-size: 20rem;font-weight: 900;color:#fff;text-shadow: -1px 0 #999, 0 1px var(--dc), 1px 0 var(--dc), 0 -1px #999;
+transition: 0.3s; z-index: -2;}
+
+.section.on:before {text-shadow: -1px 0 #999, 0 5px var(--dc), 10px 0 var(--dc), 0 -1px #999;}
+
 .section:nth-child(odd):before {left:auto; right: 25rem;}
 
 .section .container {display: flex;width: 70rem;margin: 0 auto;position: relative;align-items: center;} 
@@ -110,8 +111,7 @@ padding: 10% 1%;}
 padding: 10% 1%;}
 
 
-.section .mockup .mk_pc {position: relative;padding-bottom: 64%;overflow: hidden;
-width: 25.5rem;}
+.section .mockup .mk_pc {position: relative;padding-bottom: 64%;overflow: hidden;width: 25.5rem;}
 .section .mockup .mk_pc img {position: absolute;top: 0;left: 0;width: 100%;}
 .section .mockup .mk_pc:hover img {transform: translateY(-100%);top: 100%;
 transition: 1.5s linear;}
@@ -141,14 +141,14 @@ font-size: 1rem;}
 .section .desc .desc_t dd {display: inline-block; margin-right: 0.5rem;
 font-weight: 300;font-size: 0.75rem;}
 .section .container .desc a {display: inline-block;padding: 0.75rem 1rem;
-font-size: 0.8rem;color: #fff;margin-right: 0.25rem;}
+font-size: 0.8rem;color: #fff;margin-right: 0.25rem;border-radius: 5rem;}
 
 /*------------------- intro 디자인 ------------------------------*/
 
 
 .intro::after {content: "";display: block;position: absolute;
-top: 0;left: -10%;width: 50%;height: 100%;background:var(--mc); transition: 0.3s;z-index: -1;
-animation: sqare 10s infinite linear;}
+top: -10%;left: -15%;width: 50%;height: 100%;background:var(--mc); transition: 0.3s;animation: sqare 12s infinite linear;z-index: -1;}
+
 
 @keyframes sqare {
     0% {transform: rotate(0);}
@@ -158,7 +158,7 @@ animation: sqare 10s infinite linear;}
 
 
 .intro .container {width: 70rem;margin: 0 auto;display: flex;align-items: center;justify-content: space-between;}
-.intro .container>* {padding: 0 5rem;}
+.intro .container>* {padding: 0 6rem;}
 
 .intro .container figure {position: relative;}
 .clock01 {width: 0.1rem;height: 5rem;background: #000;transform-origin: bottom center;
@@ -172,12 +172,8 @@ position: absolute;top: 28%;left: 50%;transform: translateX(-50%);z-index: -1;}
 
 .intro .slogan {color: #fff;}
 .intro .slogan h2 {position: relative; font-size: 1.5rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;}
-.intro .slogan span {display: block; font-size: 4rem;font-weight: 700;animation: type 2s forwards;
+.intro .slogan span {display: block; font-size: 4rem;font-weight: 700;
 color: #fff; text-indent:-5px;}
-
-@keyframes type {
-    to {text-shadow: 4px 4px 1px rgba(0,0,0,0.8);} 
-}
 
 .intro .slogan p {font-size: 0.9rem;font-weight: 300;margin-bottom: 1rem;}
 
@@ -223,28 +219,26 @@ border: 1px solid #999;}
 .profile {background: #f4f4f4;}
 
 .profile .container {margin-bottom: 5rem;}
-.profile .container>div {flex: 1;text-align: center;
-margin: 0 0.5rem;}
+.profile .container>div {flex: 1;margin: 0 0.5rem;}
 
 .profile .profile_box {opacity: 0;transform: translateY(10rem);}
 .profile.on .profile_box {opacity: 1;transform: translateY(0);transition: 0.5s;}
-/* .profile .profile_box figure img {border-radius: 50%;width: 80%;} */
 
-.profile h2 {text-align: center;font-size: 2rem;
-font-weight: 500;}
+.profile h2 {text-align: center;font-size: 1.6rem;
+font-weight: 300;}
 
 .profile .skill {opacity: 0;transform: translateY(10rem);}
 .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
 .profile .skill dl {margin-bottom: 2rem;border-bottom: 1px solid #ddd;
 padding-bottom: 2rem;}
-.profile .skill dt {line-height: 1.8;font-size: 1.2rem;margin-bottom: 2rem;}
-.profile .skill dd:nth-child(2) {font-size: 1.1rem;font-weight: 700;}
-.profile .skill dd {line-height: 1.6;font-size: 0.9rem;}
+.profile .skill dt {line-height: 1.8;font-size: 1.2rem;margin-bottom: 2rem;font-family: 'Noto Serif KR', serif;font-weight: 100;}
+.profile .skill dd:nth-child(2) {font-size: 1.1rem;font-weight: 500;}
+.profile .skill dd {line-height: 1.6;font-size: 0.9rem;font-weight: 300;}
 .profile .skill_list strong {display: block;font-size: 1.2rem;font-weight: 700;
 margin-bottom: 1rem;}
 
 .profile .skill_list .icon {display: flex;}
-.profile .skill_list i {display: block; padding: 1rem;font-size: 2rem;
+.profile .skill_list i {display: block; padding: 0.5rem;font-size: 2rem;
 background: #333;border-radius: 50%;margin: 0 auto;}
 
 .profile .skill_list .xi-html5 {color: #F16529;}
@@ -255,24 +249,25 @@ background: #333;border-radius: 50%;margin: 0 auto;}
 
 .profile .career {opacity: 0;transform: translateY(10rem);}
 .profile.on .career {opacity: 1;transform: translateY(0);transition: 0.5s;}
-.profile .career strong {display: block;font-size: 1.7rem;font-weight: 700;
-margin-bottom: 1rem;}
 
 .profile .career_list p {font-weight: 300;
-margin-bottom: 1.5rem;line-height: 1.5;}
-.profile .career_list p:before {content: "";display: block;
-width: 0.5rem;height: 0.5rem;background: #F47520;margin: 0 auto;
+margin-bottom: 1rem;line-height: 1.5;white-space:nowrap;
+margin-left: 1.5rem;}
+.profile .career_list p:before {content: "";display: inline-block;
+width: 0.5rem;height: 0.5rem;background: #F47520;margin-right: 1rem;
 border-radius: 50%;}
 
 /*------------------- footer ------------------------------*/
 
-#footer .toTop {position: fixed;bottom: 3rem;right: 3rem;z-index: 999;}
+#footer .toTop {position: fixed;bottom: 1rem;right: 3rem;z-index: 999;}
 #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: #fff;
-color: var(--mc);border: 2px solid var(--mc);border-radius: 0.5rem;}
-#footer .toTop i:hover {background: var(--mc);color: #fff;}
+color: var(--dc);border: 2px solid var(--dc);border-radius: 0.5rem;}
+#footer .toTop i:hover {background: var(--dc);color: #fff;}
 
 #footer  address {position: fixed;bottom: 1rem;left: 1rem;
-font-weight: 300;z-index: 999;}
+font-weight: 300;padding: 0.5rem;background: #fff;border-radius: 5rem;
+border: 1px solid var(--dc);
+z-index: 999;}
 
 /* 
 
@@ -318,8 +313,7 @@ max width : 768px
     
     /*------------------- header ------------------------------*/
     
-    #header h1 {position: fixed;top: 1rem;left: 50%;z-index: 999;font-size: 0.75rem;width: 8rem;text-align: center;transform: translateX(-50%);
-    font-weight: 700;font-family: 'Luxurious Roman', cursive;}
+    #header h1 {position: fixed;top: 1rem;left: 50%;z-index: 999;font-size: 0.75rem;width: 8rem;text-align: center;transform: translateX(-50%);font-weight: 700;font-family: 'Luxurious Roman', cursive;}
     
     #header nav {position: fixed;top: 50%;right: -0.5rem;transform: translateY(-50%);
     display: none;transition: 0.3s;transform-origin: right;z-index: 999;}
@@ -350,9 +344,11 @@ max width : 768px
     z-index: 9999;}
     
     #header .pf {font-weight: 500;line-height: 1.4;position: relative;
-    text-align: center;background: #fff;width: 5rem;color: var(--mc);
+    text-align: center;background: var(--mc);width: 5rem;color: var(--lc);
     margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
+    #header .pf:hover {color: var(--lc);background: var(--mc);border: 1px solid var(--mc);}
+
     #header .pf_list {display: none; position: absolute;top: 1rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--mc);
     width: 100%;}
@@ -363,8 +359,11 @@ max width : 768px
     #header .pf:hover .pf_list {display: none;}
     
     #header .infoCase>a {display: block;margin-left: 0;
-    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;color: var(--mc);
-    text-align: center;background: #fff;width: 5rem;}
+    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;color: var(--lc);
+    text-align: center;background: var(--mc);width: 5rem;}
+
+    #header .infoCase>a:hover {background: var(--mc);color: var(--lc);
+    border: 1px solid var(--mc);}
       
     .mouse {position: absolute;bottom: 5rem;left: 50%;transform: translateX(-50%);}
     .mouse a {position: relative; width: 2rem;height: 5rem;border: 2px solid #fff;
@@ -389,6 +388,8 @@ max width : 768px
     left: auto;right: 0; font-size: 6rem;font-weight: 900;color: #fff;
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;z-index: -2;}
     .section:nth-child(odd):before {right: 0;left: auto;}
+
+    .section.on:before {text-shadow: -1px 0 var(--dc), 0 3px var(--dc), 3px 0 var(--dc), 0 -1px var(--dc);}
 
     .section .container {display: flex;width: auto;margin: 0 auto;position: relative;
     align-items: center;} 
@@ -532,7 +533,7 @@ max width : 768px
 
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
-    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #FFF;
+    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #ddd;
     padding-bottom: 1rem;}
     .profile .skill dt {line-height: 1.8;font-size: 0.7rem;margin-bottom: 1rem;}
     .profile .skill dd:nth-child(2) {font-size: 0.9rem;font-weight: 700;}
@@ -555,7 +556,8 @@ max width : 768px
     margin-bottom: 1rem;}
     
     .profile .career_list p {font-weight: 300;
-    margin-bottom: 1.3rem;line-height: 1.5;font-size: 0.6rem;}
+    margin-bottom: 0.5rem;line-height: 1.5;font-size: 0.6rem;
+    margin-left: 0;}
     .profile .career_list p:before {content: "";display: block;
     width: 0.5rem;height: 0.5rem;background: #F47520;margin: 0 auto;
     border-radius: 50%;}
@@ -564,8 +566,8 @@ max width : 768px
     
     #footer .toTop {position: fixed;bottom: 3rem;right: 0;z-index: 999;}
     #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: #fff;
-    color: var(--mc);}
-    #footer .toTop i:hover {background: #fff;color: var(--mc);}
+    color: var(--dc);}
+    #footer .toTop i:hover {background: #fff;color: var(--dc);}
     #footer  address {position: fixed;bottom: 1rem;left: 1rem;
     font-size: 0.6rem; z-index: 999;line-height: 1.2;}
 }
@@ -646,9 +648,11 @@ max width : 690px
     z-index: 9999;}
     
     #header .pf {font-weight: 500;line-height: 1.4;position: relative;
-    text-align: center;background: #fff;width: 5rem;color: var(--mc);
+    text-align: center;background: var(--mc);width: 5rem;color: var(--lc);
     margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
+    #header .pf:hover {color: var(--lc);background: var(--mc);border: 1px solid var(--mc);}
+
     #header .pf_list {display: none; position: absolute;top: 1rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--mc);
     width: 100%;}
@@ -659,8 +663,11 @@ max width : 690px
     #header .pf:hover .pf_list {display: none;}
     
     #header .infoCase>a {display: block;margin-left: 0;
-    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;color: var(--mc);
-    text-align: center;background: #fff;width: 5rem;}
+    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;color: var(--lc);
+    text-align: center;background: var(--mc);width: 5rem;}
+
+    #header .infoCase>a:hover {background: var(--mc);color: var(--lc);
+    border: 1px solid var(--mc);}
     
     .mouse {position: absolute;bottom: 5rem;left: 50%;transform: translateX(-50%);}
     .mouse a {position: relative; width: 2rem;height: 5rem;border: 2px solid #fff;
@@ -816,7 +823,7 @@ max width : 690px
     
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
-    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #fff;
+    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #ddd;
     padding-bottom: 1rem;}
     .profile .skill dt {line-height: 1.8;font-size: 0.7rem;margin-bottom: 1rem;}
     .profile .skill dd:nth-child(2) {font-size: 0.9rem;font-weight: 700;}
@@ -839,7 +846,7 @@ max width : 690px
     margin-bottom: 1rem;}
     
     .profile .career_list p {font-weight: 300;
-    margin-bottom: 1.3rem;line-height: 1.5;font-size: 0.6rem;}
+    margin-bottom: 0.5rem;line-height: 1.5;font-size: 0.6rem;}
     .profile .career_list p:before {content: "";display: block;
     width: 0.5rem;height: 0.5rem;background: #F47520;margin: 0 auto;
     border-radius: 50%;}
@@ -848,7 +855,7 @@ max width : 690px
     
     #footer .toTop {position: fixed;bottom: 3rem;right: 0;z-index: 999;}
     #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: #fff;
-    color: var(--mc);}
+    color: var(--dc);}
     #footer .toTop i:hover {background: #fff;color: var(--mc);}
     #footer  address {position: fixed;bottom: 1rem;left: 1rem;
     font-size: 0.6rem; z-index: 999;line-height: 1.2;}
@@ -932,9 +939,11 @@ max width : 540px
     z-index: 9999;}
     
     #header .pf {font-weight: 500;line-height: 1.4;position: relative;
-    text-align: center;background: #fff;width: 5rem;color: var(--mc);
+    text-align: center;background: var(--mc);width: 5rem;color: var(--lc);
     margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
+    #header .pf:hover {color: var(--lc);background: var(--mc);border: 1px solid var(--mc);}
+
     #header .pf_list {display: none; position: absolute;top: 1rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--mc);
     width: 100%;}
@@ -945,8 +954,11 @@ max width : 540px
     #header .pf:hover .pf_list {display: none;}
     
     #header .infoCase>a {display: block;margin-left: 0;
-    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;color: var(--mc);
-    text-align: center;background: #fff;width: 5rem;}
+    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;color: var(--lc);
+    text-align: center;background: var(--mc);width: 5rem;}
+
+    #header .infoCase>a:hover {background: var(--mc);color: var(--lc);
+    border: 1px solid var(--mc);}
     
     .mouse {position: absolute;bottom: 5rem;left: 50%;transform: translateX(-50%);}
     .mouse a {position: relative; width: 2rem;height: 5rem;border: 2px solid #fff;
@@ -1102,7 +1114,7 @@ max width : 540px
     
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
-    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #fff;
+    .profile .skill dl {margin-bottom: 1rem;border-bottom: 1px solid #ddd;
     padding-bottom: 1rem;}
     .profile .skill dt {line-height: 1.8;font-size: 0.7rem;margin-bottom: 1rem;}
     .profile .skill dd:nth-child(2) {font-size: 0.9rem;font-weight: 700;}
@@ -1125,7 +1137,7 @@ max width : 540px
     margin-bottom: 1rem;}
     
     .profile .career_list p {font-weight: 300;
-    margin-bottom: 1.3rem;line-height: 1.5;font-size: 0.6rem;}
+    margin-bottom: 0.5rem;line-height: 1.5;font-size: 0.6rem;}
     .profile .career_list p:before {content: "";display: block;
     width: 0.5rem;height: 0.5rem;background: #F47520;margin: 0 auto;
     border-radius: 50%;}
@@ -1134,7 +1146,7 @@ max width : 540px
     
     #footer .toTop {position: fixed;bottom: 3rem;right: 0;z-index: 999;}
     #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: #fff;
-    color: var(--mc);}
+    color: var(--dc);}
     #footer .toTop i:hover {background: #fff;color: var(--mc);}
     #footer  address {position: fixed;bottom: 1rem;left: 1rem;
     font-size: 0.6rem; z-index: 999;line-height: 1.2;}
@@ -1186,7 +1198,7 @@ max width : 375px
     
     /*------------------- header ------------------------------*/
     
-    #header h1 {position: fixed;top: 1rem;left: 50%;z-index: 999;font-size: 0.75rem;width: 8rem;text-align: center;transform: translateX(-50%);
+    #header h1 {position: fixed;top: 1rem;left: 50%;z-index: 999;font-size: 0.75rem;width: 8rem;text-align: center;transform: translateX(-50%);padding: 0.2rem;
     font-weight: 700;font-family: 'Luxurious Roman', cursive;}
     
     #header nav {position: fixed;top: 50%;right: -0.5rem;transform: translateY(-50%); z-index: 999;display: none;
@@ -1218,9 +1230,11 @@ max width : 375px
     z-index: 9999;}
     
     #header .pf {font-weight: 500;line-height: 1.4;position: relative;
-    text-align: center;background: #fff;width: 5rem;color: var(--mc);
+    text-align: center;background: var(--mc);width: 5rem;color: var(--lc);
     margin-bottom: 0.25rem;font-size: 0.7rem;font-weight: 300;}
     
+    #header .pf:hover {color: var(--lc);background: var(--mc);border: 1px solid var(--mc);}
+
     #header .pf_list {display: none; position: absolute;top: 1rem;left: 0;
     background: #fff;border: 1px solid var(--mc);color: var(--mc);
     width: 100%;}
@@ -1231,8 +1245,11 @@ max width : 375px
     #header .pf:hover .pf_list {display: none;}
     
     #header .infoCase>a {display: block;margin-left: 0;
-    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;color: var(--mc);
-    text-align: center;background: #fff;width: 5rem;}
+    transition: 0.3s;font-weight: 500;line-height: 1.4;font-size: 0.7rem;font-weight: 300;color: var(--lc);
+    text-align: center;background: var(--mc);width: 5rem;}
+
+    #header .infoCase>a:hover {background: var(--mc);color: var(--lc);
+    border: 1px solid var(--mc);}
     
     .mouse {position: absolute;bottom: 5rem;left: 50%;transform: translateX(-50%);}
     .mouse a {position: relative; width: 2rem;height: 5rem;border: 2px solid #fff;
@@ -1253,8 +1270,8 @@ max width : 375px
     
     .section {position: relative;z-index: -2;}
 
-    .section:before {content: attr(data-);position: absolute;top:7rem;
-    left: auto;right: 0; font-size: 6rem;font-weight: 900;color: #fff;
+    .section:before {content: attr(data-);position: absolute;top:4rem;
+    left: auto;right: 0; font-size: 4rem;font-weight: 900;color: #fff;
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;z-index: -2;}
     .section:nth-child(odd):before {right: 0;left: auto;}
     
@@ -1326,7 +1343,7 @@ max width : 375px
     position: absolute;top: 33%;left: 50%;transform: translateX(-50%);z-index: -1;}
     
     .intro .slogan {text-align: center;color: var(--dc);}
-    .intro .slogan h2 {position: relative; font-size: 1.2rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;(--dc);}
+    .intro .slogan h2 {position: relative; font-size: 1.2rem;font-weight: 500;margin-bottom: 1rem;line-height: 1.2;}
     .intro .slogan span {font-size: 2rem;font-weight: 700;
     animation: type 2s forwards;}
     
@@ -1384,15 +1401,15 @@ max width : 375px
     
     .profile .profile_box {opacity: 0;transform: translateY(10rem);}
     .profile.on .profile_box {opacity: 1;transform: translateY(0);transition: 0.5s;}
-    .profile h2 {text-align: center;font-size: 1.2rem;
+    .profile h2 {text-align: center;font-size: 1rem;
     font-weight: 500;}
     
     .profile .skill {opacity: 0;transform: translateY(10rem);}
     .profile.on .skill {opacity: 1;transform: translateY(0);transition: 0.5s;}
-    .profile .skill dl {margin-bottom: 0.5rem;border-bottom: 1px solid #fff;
+    .profile .skill dl {margin-bottom: 0.5rem;border-bottom: 1px solid #ddd;
     padding-bottom: 0.5rem;}
-    .profile .skill dt {line-height: 1.2;font-size: 0.7rem;margin-bottom: 0.5rem;}
-    .profile .skill dd:nth-child(2) {font-size: 0.9rem;font-weight: 700;}
+    .profile .skill dt {line-height: 1.2;font-size: 0.6rem;margin-bottom: 0.5rem;}
+    .profile .skill dd:nth-child(2) {font-size: 0.7rem;font-weight: 700;}
     .profile .skill dd {line-height: 1.6;font-size: 0.7rem;}
     .profile .skill_list strong {display: block;font-size: 1rem;font-weight: 700;margin-bottom: 1rem;}
     
@@ -1419,10 +1436,10 @@ max width : 375px
     
     /*------------------- footer ------------------------------*/
     
-    #footer .toTop {position: fixed;bottom: 3rem;right: 0;z-index: 999;}
-    #footer .toTop i {font-size: 1.5rem;padding: .5rem;background: #fff;
-    color: var(--mc);}
+    #footer .toTop {position: fixed;bottom: 5rem;right: 0;z-index: 999;}
+    #footer .toTop i {font-size: 1rem;padding: .4rem;background: #fff;
+    color: var(--dc);}
     #footer .toTop i:hover {background: #fff;color: var(--mc);}
     #footer  address {position: fixed;bottom: 1rem;left: 1rem;
-    font-size: 0.6rem; z-index: 999;line-height: 1.2;}
+    font-size: 0.6rem;border: none; z-index: 999;}
 }
