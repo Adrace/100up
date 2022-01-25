@@ -63,6 +63,10 @@ $(function(){
     $('#header .gnb').on('scroll wheel',function(){
         return false;
     });
+    $('.butt').on('scroll wheel',function(){
+        return false;
+    });
+
     
     $('#header .bars>li>a').on('click',function(){
         if ($('.gnb').hasClass('on')) {
