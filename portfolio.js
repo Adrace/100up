@@ -79,8 +79,12 @@ $(function(){
         }
     });
     
+    $(window).on('resize',function(){
+        $('#header .pf_list').removeAttr('style')
+    });
     
-    
+
+
     
     // --------------------------------------------------
     });
